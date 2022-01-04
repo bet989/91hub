@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h4>E HTML APIs</h4>
+         <h4> E1 HTML GEOLOCATION</h4>
+         <p>
+            HTML Geolocation API<br>
+            The HTML Geolocation API is used to locate a user's position.<br>
+            
+            Locate the User's Position<br>
+            The HTML Geolocation API is used to get the geographical position of a user.<br>
+            
+            Since this can compromise privacy, the position is not available unless the user approves it.<br>
+            
+            
+            Note: Geolocation is most accurate for devices with GPS, like smartphones.<br>
+            
+            Browser Support<br>
+            The numbers in the table specify the first browser version that fully supports Geolocation.<br>
+            Note: As of Chrome 50, the Geolocation API will only work on secure contexts such as HTTPS. If your site is hosted on an non-secure origin (such as HTTP) the requests to get the users location will no longer function.<br>
+
+Using HTML Geolocation<br>
+The getCurrentPosition() method is used to return the user's position.<br>
+
+The example below returns the latitude and longitude of the user's position:<br>
+Handling Errors and Rejections<br>
+The second parameter of the getCurrentPosition() method is used to handle errors. It specifies a function to run if it fails to get the user's location:<br>
+Displaying the Result in a Map<br>
+To display the result in a map, you need access to a map service, like Google Maps.<br>
+
+In the example below, the returned latitude and longitude is used to show the location in a Google Map (using a static image):<br>
+Location-specific Information<br>
+This page has demonstrated how to show a user's position on a map.<br>
+
+Geolocation is also very useful for location-specific information, like:<br>
+
+Up-to-date local information<br>
+Showing Points-of-interest near the user<br>
+Turn-by-turn navigation (GPS)<br>
+<xmp>
+    The getCurrentPosition() Method - Return Data
+The getCurrentPosition() method returns an object on success. The latitude, longitude and accuracy properties are always returned. The other properties are returned if available:
+
+Property	Returns
+coords.latitude	The latitude as a decimal number (always returned)
+coords.longitude	The longitude as a decimal number (always returned)
+coords.accuracy	The accuracy of position (always returned)
+coords.altitude	The altitude in meters above the mean sea level (returned if available)
+coords.altitudeAccuracy	The altitude accuracy of position (returned if available)
+coords.heading	The heading as degrees clockwise from North (returned if available)
+coords.speed	The speed in meters per second (returned if available)
+timestamp	The date/time of the response (returned if available)
+</xmp>
+Geolocation Object - Other interesting Methods<br>
+The Geolocation object also has other interesting methods:<br>
+
+watchPosition() - Returns the current position of the user and continues to return updated position as the user moves (like the GPS in a car).<br>
+clearWatch() - Stops the watchPosition() method.<br>
+The example below shows the watchPosition() method. You need an accurate GPS device to test this (like smartphone):<br>
+
+         </p>
+     <h4> E2 HTML DRAG/DROP</h4>
+     <p>
+        HTML Drag and Drop API<br>
+        In HTML, any element can be dragged and dropped.<br>
+        Drag and Drop<br>
+Drag and drop is a very common feature. It is when you "grab" an object and drag it to a different location.<br>
+
+Browser Support<br>
+The numbers in the table specify the first browser version that fully supports Drag and Drop.<br>
+
+Make an Element Draggable<br>
+First of all: To make an element draggable, set the draggable attribute to true:<br>
+What to Drag - ondragstart and setData()<br>
+Then, specify what should happen when the element is dragged.<br>
+
+In the example above, the ondragstart attribute calls a function, drag(event), that specifies what data to be dragged.<br>
+
+The dataTransfer.setData() method sets the data type and the value of the dragged data:<br>
+
+function drag(ev) {<br>
+  ev.dataTransfer.setData("text", ev.target.id);<br>
+}<br>
+In this case, the data type is "text" and the value is the id of the draggable element ("drag1").<br>
+Where to Drop - ondragover<br>
+The ondragover event specifies where the dragged data can be dropped.<br>
+
+By default, data/elements cannot be dropped in other elements. To allow a drop, we must prevent the default handling of the element.<br>
+
+This is done by calling the event.preventDefault() method for the ondragover event:<br>
+Do the Drop - ondrop<br>
+When the dragged data is dropped, a drop event occurs.<br>
+
+In the example above, the ondrop attribute calls a function, drop(event):<br>
+
+
+</p>
+         <h4> E3 HTML WEB STORAGE</h4>
+         <p>
+            HTML Web Storage API<br>
+            HTML web storage; better than cookies.<br>
+            
+            What is HTML Web Storage?<br>
+            With web storage, web applications can store data locally within the user's browser.<br>
+            
+            Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.<br>
+            
+            Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.<br>
+            
+            Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.<br>
+            
+            Browser Support<br>
+            The numbers in the table specify the first browser version that fully supports Web Storage.<br>
+            HTML Web Storage Objects<br>
+HTML web storage provides two objects for storing data on the client:<br>
+
+window.localStorage - stores data with no expiration date<br>
+window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)<br>
+Before using web storage, check browser support for localStorage and sessionStorage:<br>
+
+if (typeof(Storage) !== "undefined") {<br>
+  // Code for localStorage/sessionStorage.<br>
+} else {<br>
+  // Sorry! No Web Storage support..<br>
+}<br>
+The localStorage Object<br>
+The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year.<br>
+The sessionStorage Object<br>
+The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab.<br>
+
+The following example counts the number of times a user has clicked a button, in the current session:<br>
+
+         </p>
+         <h4> E4 HTML WEB WORKERS</h4>
+         <p>
+            HTML Web Workers API<br>
+            A web worker is a JavaScript running in the background, without affecting the performance of the page.<br>
+            
+            What is a Web Worker?<br>
+            When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.<br>
+            
+            A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.<br>
+            
+            Browser Support<br>
+            The numbers in the table specify the first browser version that fully support Web Workers.<br>
+            Check Web Worker Support<br>
+Before creating a web worker, check whether the user's browser supports it:<br>
+Create a Web Worker File<br>
+Now, let's create our web worker in an external JavaScript.<br>
+
+Here, we create a script that counts. The script is stored in the "demo_workers.js" file:<br>
+The important part of the code above is the postMessage() method - which is used to post a message back to the HTML page.<br>
+Note: Normally web workers are not used for such simple scripts, but for more CPU intensive tasks.
+
+Create a Web Worker Object<br>
+Now that we have the web worker file, we need to call it from an HTML page.<br>
+
+The following lines checks if the worker already exists, if not - it creates a new web worker object and runs the code in "demo_workers.js":<br>
+Then we can send and receive messages from the web worker.<br>
+
+Add an "onmessage" event listener to the web worker.<br>
+When the web worker posts a message, the code within the event listener is executed. The data from the web worker is stored in event.data.<br>
+
+Terminate a Web Worker<br>
+When a web worker object is created, it will continue to listen for messages (even after the external script is finished) until it is terminated.<br>
+
+To terminate a web worker, and free browser/computer resources, use the terminate() method:<br>
+Reuse the Web Worker<br>
+If you set the worker variable to undefined, after it has been terminated, you can reuse the code:<br>
+Full Web Worker Example Code<br>
+We have already seen the Worker code in the .js file. Below is the code for the HTML page:<br>
+Web Workers and the DOM<br>
+Since web workers are in external files, they do not have access to the following JavaScript objects:<br>
+
+The window object<br>
+The document object<br>
+The parent object<br>
+
+         </p>
+          <h4> E5 HTML SSE</h4>
+          <p>
+            HTML SSE API<br>
+            Server-Sent Events (SSE) allow a web page to get updates from a server.<br>
+            
+            Server-Sent Events - One Way Messaging<br>
+            A server-sent event is when a web page automatically gets updates from a server.<br>
+            
+            This was also possible before, but the web page would have to ask if any updates were available. With server-sent events, the updates come automatically.<br>
+            
+            Examples: Facebook/Twitter updates, stock price updates, news feeds, sport results, etc.<br>
+            
+            Browser Support<br>
+            The numbers in the table specify the first browser version that fully support server-sent events.<br>
+            Receive Server-Sent Event Notifications<br>
+The EventSource object is used to receive server-sent event notifications:<br>
+Check Server-Sent Events Support<br>
+In the tryit example above there were some extra lines of code to check browser support for server-sent events:<br>
+Server-Side Code Example<br>
+For the example above to work, you need a server capable of sending data updates (like PHP or ASP).<br>
+
+The server-side event stream syntax is simple. Set the "Content-Type" header to "text/event-stream". Now you can start sending event streams.<br>
+
+Code in PHP (demo_sse.php)<br>
+<xmp>
+    The EventSource Object
+In the examples above we used the onmessage event to get messages. But other events are also available:
+
+Events	Description
+onopen	When a connection to the server is opened
+onmessage	When a message is received
+onerror	When an error occurs
+</xmp>
+          </p> 
+</body>
+
+</html>

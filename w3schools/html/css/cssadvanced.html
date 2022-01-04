@@ -1,0 +1,3754 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h4>  B   CSS ADVANCED  </h4>
+
+<h4>B1 CSS ROUNDED CORNERS</h4>
+<p>
+  CSS Rounded Corners  <br>
+  CSS Rounded Corners
+  With the CSS border-radius property, you can give any element "rounded corners". <br>
+  
+  CSS border-radius Property <br>
+  The CSS border-radius property defines the radius of an element's corners. <br>
+  
+  Tip: This property allows you to add rounded corners to elements! <br>
+  
+  Here are three examples: <br>
+  
+  1. Rounded corners for an element with a specified background color: <br>
+  
+  Rounded corners! <br>
+  
+  2. Rounded corners for an element with a border: <br>
+  
+  Rounded corners! <br>
+  
+  3. Rounded corners for an element with a background image: <br>
+  
+  Rounded corners! <br>
+  
+  Here is the code: <br>
+  Tip: The border-radius property is actually a shorthand property for the border-top-left-radius, border-top-right-radius, border-bottom-right-radius and border-bottom-left-radius properties. <br>
+  CSS border-radius - Specify Each Corner <br>
+The border-radius property can have from one to four values. Here are the rules: <br>
+
+Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner):  <br>
+
+Three values - border-radius: 15px 50px 30px; (first value applies to top-left corner, second value applies to top-right and bottom-left corners, and third value applies to bottom-right corner): <br>
+
+Two values - border-radius: 15px 50px; (first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners): <br>
+
+One value - border-radius: 15px; (the value applies to all four corners, which are rounded equally: <br>
+
+Here is the code: <br>
+You could also create elliptical corners: <br>
+<xmp>
+  CSS Rounded Corners Properties
+Property	Description
+border-radius	A shorthand property for setting all the four border-*-*-radius properties
+border-top-left-radius	Defines the shape of the border of the top-left corner
+border-top-right-radius	Defines the shape of the border of the top-right corner
+border-bottom-right-radius	Defines the shape of the border of the bottom-right corner
+border-bottom-left-radius	Defines the shape of the border of the bottom-left corner
+</xmp>
+</p>
+<h4> B2 CSS BORDER IMAGES</h4>
+<p>
+  CSS Border Images <br>
+  CSS Border Images <br>
+  With the CSS border-image property, you can set an image to be used as the border around an element. <br>
+  
+  CSS border-image Property <br>
+  The CSS border-image property allows you to specify an image to be used instead of the normal border around an element. <br>
+  
+  The property has three parts: <br>
+  
+  The image to use as the border <br>
+  Where to slice the image <br>
+  Define whether the middle sections should be repeated or stretched <br>
+  We will use the following image (called "border.png"): <br>
+  
+  Border <br>
+  
+  The border-image property takes the image and slices it into nine sections, like a tic-tac-toe board. It then places the corners at the corners, and the middle sections are repeated or stretched as you specify. <br>
+  
+  Note: For border-image to work, the element also needs the border property set! <br>
+  
+  Here, the middle sections of the image are repeated to create the border: <br>
+  
+  An image as a border! <br>
+  
+  Here is the code: <br>
+  Here, the middle sections of the image are stretched to create the border: <br>
+
+An image as a border! <br>
+
+Here is the code: <br>
+Tip: The border-image property is actually a shorthand property for the border-image-source, border-image-slice, border-image-width, border-image-outset and border-image-repeat properties. <br>
+CSS border-image - Different Slice Values <br>
+Different slice values completely changes the look of the border: <br>
+
+Example 1: <br>
+
+border-image: url(border.png) 50 round; <br>
+
+Example 2: <br>
+
+border-image: url(border.png) 20% round; <br>
+
+Example 3: <br>
+
+border-image: url(border.png) 30% round; <br>
+
+Here is the code: <br>
+<xmp>
+  CSS Border Image Properties
+Property	Description
+border-image	A shorthand property for setting all the border-image-* properties
+border-image-source	Specifies the path to the image to be used as a border
+border-image-slice	Specifies how to slice the border image
+border-image-width	Specifies the widths of the border image
+border-image-outset	Specifies the amount by which the border image area extends beyond the border box
+border-image-repeat	Specifies whether the border image should be repeated, rounded or stretched
+
+</xmp>
+</p>
+    <h4>B3   CSS BACKGROUNDS</h4>
+    <p>
+      CSS Multiple Backgrounds <br>
+      In this chapter you will learn how to add multiple background images to one element. <br>
+      
+      You will also learn about the following properties: <br>
+      
+      background-size <br>
+      background-origin <br>
+      background-clip <br>
+      CSS Multiple Backgrounds <br>
+      CSS allows you to add multiple background images for an element, through the background-image property. <br>
+      
+      The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer. <br>
+      
+      The following example has two background images, the first image is a flower (aligned to the bottom and right) and the second image is a paper background (aligned to the top-left corner): <br>
+      Multiple background images can be specified using either the individual background properties (as above) or the background shorthand property.
+
+      The following example uses the background shorthand property (same result as example above): <br>
+      CSS Background Size <br>
+The CSS background-size property allows you to specify the size of background images. <br>
+
+The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover. <br>
+
+The following example resizes a background image to much smaller than the original image (using pixels):
+
+Lorem Ipsum Dolor <br>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br>
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br>
+
+Here is the code: <br>
+The two other possible values for background-size are contain and cover. <br>
+
+The contain keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image. <br>
+
+The cover keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area. <br>
+
+The following example illustrates the use of contain and cover: <br>
+Define Sizes of Multiple Background Images <br>
+The background-size property also accepts multiple values for background size (using a comma-separated list), when working with multiple backgrounds. <br>
+
+The following example has three background images specified, with different background-size value for each image: <br>
+Full Size Background Image <br>
+Now we want to have a background image on a website that covers the entire browser window at all times. <br>
+
+The requirements are as follows: <br>
+
+Fill the entire page with the image (no white space) <br>
+Scale image as needed <br>
+Center image on page <br>
+Do not cause scrollbars <br>
+The following example shows how to do it; Use the html element (the html element is always at least the height of the browser window). Then set a fixed and centered background on it. Then adjust its size with the background-size property: <br>
+  Hero Image <br>
+You could also use different background properties on a div to create a hero image (a large image with text), and place it where you want. <br>
+  CSS background-origin Property <br>
+The CSS background-origin property specifies where the background image is positioned. <br>
+
+The property takes three different values: <br>
+
+border-box - the background image starts from the upper left corner of the border <br>
+padding-box - (default) the background image starts from the upper left corner of the padding edge <br>
+content-box - the background image starts from the upper left corner of the content <br>
+The following example illustrates the background-origin property: <br>
+CSS background-clip Property <br>
+The CSS background-clip property specifies the painting area of the background. <br>
+
+The property takes three different values: <br>
+
+border-box - (default) the background is painted to the outside edge of the border <br>
+padding-box - the background is painted to the outside edge of the padding <br>
+content-box - the background is painted within the content box <br>
+The following example illustrates the background-clip property: <br>
+
+
+
+
+
+<xmp>
+   CSS Advanced Background Properties
+   Property	Description
+   background	A shorthand property for setting all the background properties in one declaration
+   background-clip	Specifies the painting area of the background
+   background-image	Specifies one or more background images for an element
+   background-origin	Specifies where the background image(s) is/are positioned
+   background-size	Specifies the size of the background image(s)
+</xmp>
+
+
+
+
+
+    </p>
+    <h4>B4  CSS COLORS</h4>
+    <p>
+      CSS Colors <br>
+      CSS supports 140+ color names, HEX values, RGB values, RGBA values, HSL values, HSLA values, and opacity. <br>
+      
+      RGBA Colors <br>
+      RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color. <br>
+      
+      An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque). <br>
+      
+      rgba(255, 0, 0, 0.2); <br>
+      rgba(255, 0, 0, 0.4); <br>
+      rgba(255, 0, 0, 0.6); <br>
+      rgba(255, 0, 0, 0.8); <br>
+      The following example defines different RGBA colors: <br>
+      HSL Colors <br>
+HSL stands for Hue, Saturation and Lightness. <br>
+
+An HSL color value is specified with: hsl(hue, saturation, lightness). <br>
+
+Hue is a degree on the color wheel (from 0 to 360): <br>
+0 (or 360) is red <br>
+120 is green <br>
+240 is blue <br>
+Saturation is a percentage value: 100% is the full color. <br>
+Lightness is also a percentage; 0% is dark (black) and 100% is white. <br>
+hsl(0, 100%, 30%); <br>
+hsl(0, 100%, 50%); <br>
+hsl(0, 100%, 70%); <br>
+hsl(0, 100%, 90%); <br>
+The following example defines different HSL colors: <br>
+HSLA Colors <br>
+HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color. <br>
+
+An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the alpha parameter defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque). <br>
+
+hsla(0, 100%, 30%, 0.3); <br>
+hsla(0, 100%, 50%, 0.3); <br>
+hsla(0, 100%, 70%, 0.3); <br>
+hsla(0, 100%, 90%, 0.3); <br>
+The following example defines different HSLA colors: <br>
+Opacity <br>
+The CSS opacity property sets the opacity for the whole element (both background color and text will be opaque/transparent). <br>
+
+The opacity property value must be a number between 0.0 (fully transparent) and 1.0 (fully opaque). <br>
+
+rgb(255, 0, 0);opacity:0.2; <br>
+rgb(255, 0, 0);opacity:0.4; <br>
+rgb(255, 0, 0);opacity:0.6; <br>
+rgb(255, 0, 0);opacity:0.8; <br>
+Notice that the text above will also be transparent/opaque! <br>
+
+The following example shows different elements with opacity: <br>
+
+     </p>
+     <h4>B5  CSS COLOR KEYWORDS </h4>
+     <p>
+      CSS Color Keywords <br>
+      This page will explain the transparent, currentcolor, and inherit keywords. <br>
+      
+      The transparent Keyword <br>
+      The transparent keyword is used to make a color transparent. This is often used to make a transparent background color for an element. <br>
+      Note: The transparent keyword is equivalent to rgba(0,0,0,0). RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color. Read more in our CSS RGB chapter and in our CSS Colors chapter. <br>
+
+The currentcolor Keyword <br>
+The currentcolor keyword is like a variable that holds the current value of the color property of an element. <br>
+
+This keyword can be useful if you want a specific color to be consistent in an element or a page. <br>
+The inherit Keyword <br>
+The inherit keyword specifies that a property should inherit its value from its parent element. <br>
+
+The inherit keyword can be used for any CSS property, and on any HTML element. <br>
+
+     </p>
+     <h4>B6  CSS GRADIENTS </h4>
+     <h4>  B6A LINEAR GRADIENTS</h4>
+     <p>
+      CSS Gradients <br>
+      Gradient Backgrounds <br>
+      CSS gradients let you display smooth transitions between two or more specified colors. <br>
+      
+      CSS defines two types of gradients: <br>
+      
+      Linear Gradients (goes down/up/left/right/diagonally) <br>
+      Radial Gradients (defined by their center) <br>
+      CSS Linear Gradients <br>
+      To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect. <br>
+      
+      Syntax <br>
+      background-image: linear-gradient(direction, color-stop1, color-stop2, ...); <br>
+      Direction - Top to Bottom (this is default) <br>
+      
+      The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow: <br>
+      Direction - Left to Right <br>
+
+The following example shows a linear gradient that starts from the left. It starts red, transitioning to yellow: <br>
+Direction - Diagonal <br>
+
+You can make a gradient diagonally by specifying both the horizontal and vertical starting positions. <br>
+
+The following example shows a linear gradient that starts at top left (and goes to bottom right). It starts red, transitioning to yellow: <br>
+Using Angles <br>
+If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom". <br>
+
+Syntax <br>
+background-image: linear-gradient(angle, color-stop1, color-stop2); <br>
+The following example shows how to use angles on linear gradients: <br>
+Using Multiple Color Stops <br>
+The following example shows a linear gradient (from top to bottom) with multiple color stops: <br>
+The following example shows how to create a linear gradient (from left to right) with the color of the rainbow and some text: <br>
+Using Transparency <br>
+CSS gradients also support transparency, which can be used to create fading effects. <br>
+
+To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency). <br>
+
+The following example shows a linear gradient that starts from the left. It starts fully transparent, transitioning to full color red <br>
+Repeating a linear-gradient <br>
+The repeating-linear-gradient() function is used to repeat linear gradients: <br>
+
+
+     </p>
+     <h4>  B6B RADIAL GRADIENTS</h4>
+     <p>
+      CSS Radial Gradients <br>
+      CSS Radial Gradients <br>
+      A radial gradient is defined by its center. <br>
+      
+      To create a radial gradient you must also define at least two color stops. <br>
+      
+      Syntax <br>
+      background-image: radial-gradient(shape size at position, start-color, ..., last-color); <br>
+      By default, shape is ellipse, size is farthest-corner, and position is center. <br>
+      
+      Radial Gradient - Evenly Spaced Color Stops (this is default) <br>
+      
+      The following example shows a radial gradient with evenly spaced color stops: <br>
+      Radial Gradient - Differently Spaced Color Stops <br>
+
+The following example shows a radial gradient with differently spaced color stops: <br>
+Set Shape <br>
+The shape parameter defines the shape. It can take the value circle or ellipse. The default value is ellipse. <br>
+
+The following example shows a radial gradient with the shape of a circle: <br>
+Use of Different Size Keywords <br>
+The size parameter defines the size of the gradient. It can take four values: <br>
+
+closest-side <br>
+farthest-side <br>
+closest-corner <br>
+farthest-corner <br>
+Repeating a radial- gradient <br>
+The repeating-radial-gradient() function is used to repeat radial gradients: <br>
+  <xmp>
+    CSS Gradient Properties
+The following table lists the CSS gradient properties:
+
+Property	Description
+background-image	Sets one or more background images for an element
+  </xmp>
+
+      </p>
+      <h4>B7  CSS SHADOWS</h4>
+      <h4>B7A SHADOW EFFECTS </h4>
+      <p>
+        CSS Shadow Effects <br>
+        CSS Shadow Effects <br>
+With CSS you can add shadow to text and to elements. <br>
+
+In these chapters you will learn about the following properties: <br>
+
+text-shadow <br>
+box-shadow <br>
+CSS Text Shadow <br>
+The CSS text-shadow property applies shadow to text. <br>
+
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px): <br>
+
+Text shadow effect! <br>
+Next, add a color to the shadow: <br>
+
+Text shadow effect! <br>
+Then, add a blur effect to the shadow: <br>
+
+Text shadow effect! <br>
+The following example shows a white text with black shadow: <br>
+
+Text shadow effect! <br>
+The following example shows a red neon glow shadow: <br>
+
+Text shadow effect! <br>
+Multiple Shadows <br>
+To add more than one shadow to the text, you can add a comma-separated list of shadows. <br>
+
+The following example shows a red and blue neon glow shadow: <br>
+
+Text shadow effect! <br>
+The following example shows a white text with black, blue, and darkblue shadow: <br>
+
+Text shadow effect! <br>
+You can also use the text-shadow property to create a plain border around some text (without shadows): <br>
+
+Border around text! <br>
+       </p>
+      <h4> B7B BOX SHADOW</h4>
+        <p>
+          CSS Box Shadow <br>
+          CSS box-shadow Property <br>
+          The CSS box-shadow property applies shadow to elements. <br>
+          
+          In its simplest use, you only specify the horizontal shadow and the vertical shadow: <br>
+          Next, add a color to the shadow: <br>
+          Next, add a blur effect to the shadow: <br>
+          Cards <br>
+You can also use the box-shadow property to create paper-like cards: <br>
+<xmp>
+  CSS Shadow Properties
+The following table lists the CSS shadow properties:
+
+Property	Description
+box-shadow	Adds one or more shadows to an element
+text-shadow	Adds one or more shadows to a text
+</xmp>
+        </p>
+      <h4>B8  CSS TEXT EFFECTS</h4>
+      <p>
+        CSS Text Effects <br>
+        CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes <br>
+        In this chapter you will learn about the following properties: <br>
+        
+        text-overflow <br>
+        word-wrap <br>
+        word-break <br>
+        writing-mode <br>
+        CSS Text Overflow <br>
+        The CSS text-overflow property specifies how overflowed content that is not displayed should be signaled to the user. <br>
+        
+        It can be clipped: <br>
+        
+        This is some long text that will not fit in the box <br>
+        
+        or it can be rendered as an ellipsis (...): <br>
+        
+        This is some long text that will not fit in the box <br>
+        
+        The CSS code is as follows: <br>
+        The following example shows how you can display the overflowed content when hovering over the element: <br>
+        CSS Word Wrapping <br>
+The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line.  <br>
+
+If a word is too long to fit within an area, it expands outside: <br>
+
+This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line. <br>
+
+The word-wrap property allows you to force the text to wrap - even if it means splitting it in the middle of a word: <br>
+
+This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line. <br>
+
+The CSS code is as follows: <br>
+
+Example <br>
+Allow long words to be able to be broken and wrap onto the next line: <br>
+
+p { <br>
+  word-wrap: break-word; <br>
+} <br>
+CSS Word Breaking <br>
+The CSS word-break property specifies line breaking rules. <br>
+
+This paragraph contains some text. This line will-break-at-hyphens. <br>
+
+This paragraph contains some text. The lines will break at any character. <br>
+
+The CSS code is as follows: <br>
+
+Example <br>
+p.test1 { <br>
+  word-break: keep-all; <br>
+} <br>
+
+p.test2 { <br>
+  word-break: break-all; <br>
+} <br>
+CSS Writing Mode <br>
+The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically. <br>
+
+Some text with a span element with a vertical-rl writing-mode. <br>
+
+The following example shows some different writing modes: <br>
+
+Example <br>
+p.test1 { <br>
+  writing-mode: horizontal-tb; <br>
+} <br>
+
+span.test2 { <br>
+  writing-mode: vertical-rl; <br>
+} <br>
+
+p.test2 { <br>
+  writing-mode: vertical-rl; <br>
+} <br>
+<xmp>
+  CSS Text Effect Properties
+The following table lists the CSS text effect properties:
+
+Property	Description
+text-align-last	Specifies how to align the last line of a text
+text-justify	Specifies how justified text should be aligned and spaced
+text-overflow	Specifies how overflowed content that is not displayed should be signaled to the user
+word-break	Specifies line breaking rules for non-CJK scripts
+word-wrap	Allows long words to be able to be broken and wrap onto the next line
+writing-mode	Specifies whether lines of text are laid out horizontally or vertically
+</xmp>
+      </p>
+        <h4> B9 CSS WEB FONTS</h4>
+        <p>
+          CSS Web Fonts <br>
+          The CSS @font-face Rule <br>
+          Web fonts allow Web designers to use fonts that are not installed on the user's computer. <br>
+          
+          When you have found/bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed. <br>
+          
+          Your "own" fonts are defined within the CSS @font-face rule. <br>
+          
+          Different Font Formats <br>
+          TrueType Fonts (TTF) <br>
+          
+          TrueType is a font standard developed in the late 1980s, by Apple and Microsoft. TrueType is the most common font format for both the Mac OS and Microsoft Windows operating systems. <br>
+          
+          OpenType Fonts (OTF) <br>
+          
+          OpenType is a format for scalable computer fonts. It was built on TrueType, and is a registered trademark of Microsoft. OpenType fonts are used commonly today on the major computer platforms. <br>
+          
+          The Web Open Font Format (WOFF) <br>
+          
+          WOFF is a font format for use in web pages. It was developed in 2009, and is now a W3C Recommendation. WOFF is essentially OpenType or TrueType with compression and additional metadata. The goal is to support font distribution from a server to a client over a network with bandwidth constraints. <br>
+          
+          The Web Open Font Format (WOFF 2.0) <br>
+          
+          TrueType/OpenType font that provides better compression than WOFF 1.0. <br>
+          
+          SVG Fonts/Shapes <br>
+          
+          SVG fonts allow SVG to be used as glyphs when displaying text. The SVG 1.1 specification define a font module that allows the creation of fonts within an SVG document. You can also apply CSS to SVG documents, and the @font-face rule can be applied to text in SVG documents. <br>
+          
+          Embedded OpenType Fonts (EOT) <br>
+          
+          EOT fonts are a compact form of OpenType fonts designed by Microsoft for use as embedded fonts on web pages. <br>
+          
+          Browser Support for Font Formats <br>
+          The numbers in the table specifies the first browser version that fully supports the font format. <br>
+          
+          Font format		 <br>			
+          TTF/OTF	9.0*	4.0	3.5	3.1	10.0 <br>
+          WOFF	9.0	5.0	3.6	5.1	11.1 <br>
+          WOFF2	14.0	36.0	39.0	10.0	26.0 <br>
+          SVG	Not supported	Not supported	Not supported	3.2	Not supported <br>
+          EOT	6.0	Not supported	Not supported	Not supported	Not supported <br>
+          *IE: The font format only works when set to be "installable". <br>
+          
+          Using The Font You Want <br>
+          In the @font-face rule; first define a name for the font (e.g. myFirstFont) and then point to the font file. <br>
+          
+          Tip: Always use lowercase letters for the font URL. Uppercase letters can give unexpected results in IE. <br>
+          
+          To use the font for an HTML element, refer to the name of the font (myFirstFont) through the font-family property: <br>
+          
+          Example <br>
+          @font-face { <br>
+            font-family: myFirstFont; <br>
+            src: url(sansation_light.woff); <br>
+          } <br>
+          
+          div { <br>
+            font-family: myFirstFont; <br>
+          } <br>
+          Using Bold Text <br>
+          You must add another @font-face rule containing descriptors for bold text: <br>
+          
+          Example <br>
+          @font-face { <br>
+            font-family: myFirstFont; <br>
+            src: url(sansation_bold.wo ff); <br>
+            font-weight: bold; <br>
+          } <br>
+          The file "sansation_bold.woff" is another font file, that contains the bold characters for the Sansation font. <br>
+          
+          Browsers will use this whenever a piece of text with the font-family "myFirstFont" should render as bold. <br>
+          
+          This way you can have many @font-face rules for the same font. <br>
+
+          <xmp>
+            CSS Font Descriptors
+The following table lists all the font descriptors that can be defined inside the @font-face rule:
+
+Descriptor	Values	Description
+font-family	name	Required. Defines a name for the font
+src	URL	Required. Defines the URL of the font file
+font-stretch	normal
+condensed
+ultra-condensed
+extra-condensed
+semi-condensed
+expanded
+semi-expanded
+extra-expanded
+ultra-expanded	Optional. Defines how the font should be stretched. Default is "normal"
+font-style	normal
+italic
+oblique	Optional. Defines how the font should be styled. Default is "normal"
+font-weight	normal
+bold
+100
+200
+300
+400
+500
+600
+700
+800
+900	Optional. Defines the boldness of the font. Default is "normal"
+unicode-range	unicode-range	Optional. Defines the range of UNICODE characters the font supports. Default is "U+0-10FFFF"
+          </xmp>
+        </p>
+          <h4> B10 CSS 2D TRANSFORMS</h4>
+          <p>
+            CSS 2D Transforms <br>
+            CSS 2D Transforms <br>
+            CSS transforms allow you to move, rotate, scale, and skew elements. <br>
+            
+            Mouse over the element below to see a 2D transformation: <br>
+            
+            2D rotate <br>
+            In this chapter you will learn about the following CSS property: <br>
+            
+            transform <br>
+            Browser Support <br>
+            The numbers in the table specify the first browser version that fully supports the property. <br>
+            
+            Property	 <br>				
+            transform	36.0 <br>
+            10.0 <br>
+            16.0 <br>
+            9.0 <br>
+            23.0 <br>
+            CSS 2D Transforms Methods <br>
+            With the CSS transform property you can use the following 2D transformation methods: <br>
+            
+            translate() <br>
+            rotate() <br>
+            scaleX() <br>
+            scaleY() <br>
+            scale() <br>
+            skewX() <br>
+            skewY() <br>
+            skew() <br>
+            matrix() <br>
+            Tip: You will learn about 3D transformations in the next chapter. <br>
+            
+            The translate() Method <br>
+            Translate <br>
+            
+            The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). <br>
+            
+            The following example moves the div element 50 pixels to the right, and 100 pixels down from its current position: <br>
+            
+            Example <br>
+            div { <br>
+              transform: translate(50px, 100px); <br>
+            } <br>
+            The rotate() Method <br>
+            Rotate <br>
+            The rotate() method rotates an element clockwise or counter-clockwise according to a given degree. <br>
+            
+            The following example rotates the div element clockwise with 20 degrees: <br>
+            
+            Example <br>
+            div { <br>
+              transform: rotate(20deg); <br>
+            } <br>
+            Using negative values will rotate the element counter-clockwise. <br>
+            
+            The following example rotates the div element counter-clockwise with 20 degrees: <br>
+            
+            Example <br>
+            div { <br>
+              transform: rotate(-20deg); <br>
+            } <br>
+            The  scale() Method <br>
+Scale <br>
+
+The scale() method increases or decreases the size of an element (according to the parameters given for the width and height). <br>
+
+The following example increases the div element to be two times of its original width, and three times of its original height:  <br>
+
+Example <br>
+div { <br>
+  transform: scale(2, 3); <br>
+} <br>
+The following example decreases the div element to be half of its original width and height:  <br>
+
+Example <br>
+div { <br>
+  transform: scale(0.5, 0.5); <br>
+} <br>
+The scaleX() Method <br>
+The scaleX() method increases or decreases the width of an element. <br>
+
+The following example increases the div element to be two times of its original width:  <br>
+
+Example <br>
+div { <br>
+  transform: scaleX(2); <br>
+} <br>
+The following example decreases the div element to be half of its original width:  <br>
+
+Example <br>
+div { <br>
+  transform: scaleX(0.5); <br>
+} <br>
+The scaleY() Method <br>
+The scaleY() method increases or decreases the height of an element. <br>
+
+The following example increases the div element to be three times of its original height:  <br>
+
+Example <br>
+div { <br>
+  transform: scaleY(3); <br>
+} <br>
+The following example decreases the div element to be half of its original height:  <br>
+
+Example <br>
+div { <br>
+  transform: scaleY(0.5); <br>
+} <br>
+The skewX() Method <br>
+The skewX() method skews an element along the X-axis by the given angle. <br>
+
+The following example skews the div element 20 degrees along the X-axis: <br>
+
+Example <br>
+div { <br>
+  transform: skewX(20deg); <br>
+} <br>
+The skewY() Method <br>
+The skewY() method skews an element along the Y-axis by the given angle. <br>
+
+The following example skews the div element 20 degrees along the Y-axis: <br>
+
+Example <br>
+div { <br>
+  transform: skewY(20deg); <br>
+} <br>
+The skew() Method <br>
+The skew() method skews an element along the X and Y-axis by the given angles. <br>
+
+The following example skews the div element 20 degrees along the X-axis, and 10 degrees along the Y-axis: <br>
+
+Example <br>
+div { <br>
+  transform: skew(20deg, 10deg); <br>
+} <br>
+If the second parameter is not specified, it has a zero value. So, the following example skews the div element 20 degrees along the X-axis: <br>
+
+Example <br>
+div { <br>
+  transform: skew(20deg); <br>
+} <br>
+The matrix() Method <br>
+Rotate <br>
+The matrix() method combines all the 2D transform methods into one. <br>
+
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements. <br>
+
+The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) <br>
+Example <br>
+div { <br>
+  transform: matrix(1, -0.3, 0, 1, 0, 0); <br>
+} <br>
+<xmp>
+  CSS Transform Properties
+The following table lists all the 2D transform properties:
+
+Property	Description
+transform	Applies a 2D or 3D transformation to an element
+transform-origin	Allows you to change the position on transformed elements
+CSS 2D Transform Methods
+Function	Description
+matrix(n,n,n,n,n,n)	Defines a 2D transformation, using a matrix of six values
+translate(x,y)	Defines a 2D translation, moving the element along the X- and the Y-axis
+translateX(n)	Defines a 2D translation, moving the element along the X-axis
+translateY(n)	Defines a 2D translation, moving the element along the Y-axis
+scale(x,y)	Defines a 2D scale transformation, changing the elements width and height
+scaleX(n)	Defines a 2D scale transformation, changing the element's width
+scaleY(n)	Defines a 2D scale transformation, changing the element's height
+rotate(angle)	Defines a 2D rotation, the angle is specified in the parameter
+skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis
+skewX(angle)	Defines a 2D skew transformation along the X-axis
+skewY(angle)	Defines a 2D skew transformation along the Y-axis
+</xmp>
+          </p>
+          <h4>B11  CSS 3D TRANSFORMS</h4>
+          <p>
+            CSS 3D Transforms <br>
+            CSS 3D Transforms <br>
+            CSS also supports 3D transformations. <br>
+            
+            Mouse over the elements below to see the difference between a 2D and a 3D transformation: <br>
+            
+            2D rotate3D rotate <br>
+            In this chapter you will learn about the following CSS property: <br>
+            
+            transform <br>
+            Browser Support <br>
+            The numbers in the table specify the first browser version that fully supports the property. <br>
+            
+            Property	 <br>				
+            transform	36.0 <br>
+            10.0 <br>
+            16.0 <br>
+            9.0 <br>
+            23.0 <br>
+            CSS 3D Transforms Methods <br>
+            With the CSS transform property you can use the following 3D transformation methods: <br>
+            
+            rotateX() <br>
+            rotateY() <br>
+            rotateZ() <br>
+            The rotateX() Method <br>
+            Rotate X <br>
+            
+            The rotateX() method rotates an element around its X-axis at a given degree: <br>
+            
+            Example <br>
+            #myDiv { <br>
+              transform: rotateX(150deg); <br>
+            } <br>
+            The rotateY() Method <br>
+            Rotate Y <br>
+            
+            The rotateY() method rotates an element around its Y-axis at a given degree: <br>
+            
+            Example <br>
+            #myDiv { <br>
+              transform: rotateY(150deg); <br>
+            } <br>
+            The rotateZ() Method <br>
+            The rotateZ() method rotates an element around its Z-axis at a given degree: <br>
+            Example <br>
+            #myDiv { <br>
+              transform: rotateZ(90deg); <br>
+            } <br>
+            <xmp>
+              CSS Transform Properties
+The following table lists all the 3D transform properties:
+
+Property	Description
+transform	Applies a 2D or 3D transformation to an element
+transform-origin	Allows you to change the position on transformed elements
+transform-style	Specifies how nested elements are rendered in 3D space
+perspective	Specifies the perspective on how 3D elements are viewed
+perspective-origin	Specifies the bottom position of 3D elements
+backface-visibility	Defines whether or not an element should be visible when not facing the screen
+CSS 3D Transform Methods
+Function	Description
+matrix3d
+(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	Defines a 3D transformation, using a 4x4 matrix of 16 values
+translate3d(x,y,z)	Defines a 3D translation
+translateX(x)	Defines a 3D translation, using only the value for the X-axis
+translateY(y)	Defines a 3D translation, using only the value for the Y-axis
+translateZ(z)	Defines a 3D translation, using only the value for the Z-axis
+scale3d(x,y,z)	Defines a 3D scale transformation
+scaleX(x)	Defines a 3D scale transformation by giving a value for the X-axis
+scaleY(y)	Defines a 3D scale transformation by giving a value for the Y-axis
+scaleZ(z)	Defines a 3D scale transformation by giving a value for the Z-axis
+rotate3d(x,y,z,angle)	Defines a 3D rotation
+rotateX(angle)	Defines a 3D rotation along the X-axis
+rotateY(angle)	Defines a 3D rotation along the Y-axis
+rotateZ(angle)	Defines a 3D rotation along the Z-axis
+perspective(n)	Defines a perspective view for a 3D transformed element
+            </xmp>
+           </p>
+      <h4>B12  CSS TRANSITIONS</h4>
+      <p>
+        CSS Transitions <br>
+        CSS Transitions <br>
+        CSS transitions allows you to change property values smoothly, over a given duration. <br>
+        
+         Mouse over the element below to see a CSS transition effect: <br>
+        
+        CSS <br>
+        In this chapter you will learn about the following properties: <br>
+        
+        transition <br>
+        transition-delay <br>
+        transition-duration <br>
+        transition-property <br>
+        transition-timing-function <br>
+        Browser Support for Transitions <br>
+        The numbers in the table specify the fi rst browser version that fully supports the property. <br>
+        
+        Property	 <br>				
+        transition	26.0	10.0	16.0	6.1	12.1 <br>
+        transition-delay	26.0	10.0	16.0	6.1	12.1 <br>
+        transition-duration	26.0	10.0	16.0	6.1	12.1 <br>
+        transition-property	26.0	10.0	16.0	6.1	12.1 <br>
+        transition-timing-function	26.0	10.0	16.0	6.1	12.1 <br>
+        How to Use CSS Transitions? <br>
+        To create a transition effect, you must specify two things: <br>
+        
+        the CSS property you want to add an effect to <br>
+        the duration of the effect <br>
+        Note: If the duration part is not specified, the transition will have no effect, because the default value is 0. <br>
+        
+        The following example shows a 100px * 100px red div element. The div element has also specified a transition effect for the width property, with a duration of 2 seconds: <br>
+        
+        Example <br>
+        div { <br>
+          width: 100px; <br>
+          height: 100px; <br>
+          background: red; <br>
+          transition: width 2s; <br>
+        } <br>
+        
+        The transition effect will start when the specified CSS property (width) changes value. <br>
+        
+        Now, let us specify a new value for the width property when a user mouses over the div element: <br>
+        
+        Example <br>
+        div:hover { <br>
+          width: 300px; <br>
+        } <br>
+        Notice that when the cursor mouses out of the element, it will gradually change back to its original style. <br>
+        
+        Change Several Property Values <br>
+        The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the width and 4 seconds for the height: <br>
+        
+        Example <br>
+        div { <br>
+          transition: width 2s, height 4s; <br>
+        } <br>
+        Specify the Speed Curve of the Transition <br>
+The transition-timing-function property specifies the speed curve of the transition effect. <br>
+
+The transition-timing-function property can have the following values: <br>
+
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default) <br>
+linear - specifies a transition effect with the same speed from start to end <br>
+ease-in - specifies a transition effect with a slow start <br>
+ease-out - specifies a transition effect with a slow end <br>
+ease-in-out - specifies a transition effect with a slow start and end <br>
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function <br>
+The following example shows some of the different speed curves that can be used: <br>
+
+Example <br>
+#div1 {transition-timing-function: linear;} <br>
+#div2 {transition-timing-function: ease;} <br>
+#div3 {transition-timing-function: ease-in;} <br>
+#div4 {transition-timing-function: ease-out;} <br>
+#div5 {transition-timing-function: ease-in-out;} <br>
+Delay the Transition Effect <br>
+The transition-delay property specifies a delay (in seconds) for the transition effect. <br>
+
+The following example has a 1 second delay before starting: <br>
+
+Example <br>
+div { <br>
+  transition-delay: 1s; <br>
+} <br>
+Transition + Transformation <br>
+The following example adds a transition effect to the transformation: <br>
+
+Example <br>
+div { <br>
+  transition: width 2s, height 2s, transform 2s; <br>
+} <br>
+More Transition Examples <br>
+The CSS transition properties can be specified one by one, like this: <br>
+
+Example <br>
+div { <br>
+  transition-property: width; <br>
+  transition-duration: 2s; <br>
+  transition-timing-function: linear; <br>
+  transition-delay: 1s; <br>
+} <br>
+or by using the shorthand property transition: <br>
+
+Example <br>
+div { <br>
+  transition: width 2s linear 1s; <br>
+} <br>
+<xmp>
+  CSS Transition Properties
+The following table lists all the CSS transition properties:
+
+Property	Description
+transition	A shorthand property for setting the four transition properties into a single property
+transition-delay	Specifies a delay (in seconds) for the transition effect
+transition-duration	Specifies how many seconds or milliseconds a transition effect takes to complete
+transition-property	Specifies the name of the CSS property the transition effect is for
+transition-timing-function	Specifies the speed curve of the transition effect
+</xmp>
+      </p>
+        <h4>B13 CSS ANIMATIONS</h4>
+        <p>
+          CSS Animations <br>
+          CSS Animations <br>
+          CSS allows animation of HTML elements without using JavaScript or Flash! <br>
+          
+          CSS <br>
+          In this chapter you will learn about the following properties: <br>
+          
+          @keyframes <br>
+          animation-name <br>
+          animation-duration <br>
+          animation-delay <br>
+          animation-iteration-count <br>
+          animation-direction <br>
+          animation-timing-function <br>
+          animation-fill-mode <br>
+          animation <br>
+          Browser Support for Animations <br>
+          The numbers in the table specify the first browser version that fully supports the property. <br>
+          
+          Property		 <br>			
+          @keyframes	43.0	10.0	16.0	9.0	30.0 <br>
+          animation-name	43.0	10.0	16.0	9.0	30.0 <br>
+          animation-duration	43.0	10.0	16.0	9.0	30.0 <br>
+          animation-delay	43.0	10.0	16.0	9.0	30.0 <br>
+          animation-iteration-count	43.0	10.0	16.0	9.0	30.0 <br>
+          animation-direction	43.0	10.0	16.0	9.0	30.0 <br>
+          animation-timing-function	43.0	10.0	16.0	9.0	30.0 <br>
+          animation-fill-mode	43.0	10.0	16.0	9.0	30.0 <br>
+          animation	43.0	10.0	16.0	9.0	30.0 <br>
+          What are CSS Animations? <br>
+          An animation lets an element gradually change from one style to another. <br>
+          
+          You can change as many CSS properties you want, as many times as you want. <br>
+          
+          To use CSS animation, you must first specify some keyframes for the animation. <br>
+          
+          Keyframes hold what styles the element will have at certain times. <br>
+          
+          The @keyframes Rule <br>
+          When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times. <br>
+          
+          To get an animation to work, you must bind the animation to an element. <br>
+          
+          The following example binds the "example" animation to the div element. The animation will last for 4 seconds, and it will gradually change the background-color of the div element from "red" to "yellow": <br>
+          
+          Example <br>
+          /* The animation code */ <br>
+          @keyframes example { <br>
+            from {background-color: red;} <br>
+            to {background-color: yellow;} <br>
+          } <br>
+          
+          /* The element to apply the animation to */ <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+          } <br>
+          Note: The animation-duration property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds).  <br>
+          
+          In the example above we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)). <br>
+          
+          It is also possible to use percent. By using percent, you can add as many style changes as you like.
+          
+          The following example will change the background-color of the div element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete: <br>
+          
+          Example <br>
+          /* The animation code */ <br>
+          @keyframes example { <br>
+            0%   {background-color: red;} <br>
+            25%  {background-color: yellow;} <br>
+            50%  {background-color: blue;} <br>
+            100% {background-color: green;} <br>
+          } <br>
+          
+          /* The element to apply the animation to */ <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+          } <br>
+          The following example will change both the background-color and the position of the div element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete: <br>
+          
+          Example <br>
+          /* The animation code */ <br>
+          @keyframes example { <br>
+            0%   {background-color:red; left:0px; top:0px;} <br>
+            25%  {background-color:yellow; left:200px; top:0px;} <br>
+            50%  {background-color:blue; left:200px; top:200px;} <br>
+            75%  {background-color:green; left:0px; top:200px;} <br>
+            100% {background-color:red; left:0px; top:0px;} <br>
+          } <br>
+          
+          /* The element to apply the animation to */ <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            position: relative; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+          } <br>
+          ADVERTISEMENT <br>
+          
+          Delay an Animation <br>
+          The animation-delay property specifies a delay for the start of an animation. <br>
+          
+          The following example has a 2 seconds delay before starting the animation: <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            position: relative; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+            animation-delay: 2s; <br>
+          } <br>
+          Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for N seconds. <br>
+          
+          In the following example, the animation will start as if it had already been playing for 2 seconds: <br>
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            position: relative; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+            animation-delay: -2s; <br>
+          } <br>
+          Set How Many Times an Animation Should Run <br>
+          The animation-iteration-count property specifies the number of times an animation should run. <br>
+          
+          The following example will run the animation 3 times before it stops: <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            position: relative; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+            animation-iteration-count: 3; <br>
+          } <br>
+          The following example uses the value "infinite" to make the animation continue for ever: <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            position: relative; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+            animation-iteration-count: infinite; <br>
+          } <br>
+          Run Animation in Reverse Direction or Alternate Cycles <br>
+          The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. <br>
+          
+          The animation-direction property can have the following values: <br>
+          
+          normal - The animation is played as normal (forwards). This is default <br>
+          reverse - The animation is played in reverse direction (backwards) <br>
+          alternate - The animation is played forwards first, then backwards <br>
+          alternate-reverse - The animation is played backwards first, then forwards <br>
+          The following example will run the animation in reverse direction (backwards): <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            position: relative; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+            animation-direction: reverse; <br>
+          } <br>
+          The following example uses the value "alternate" to make the animation run forwards first, then backwards: <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            position: relative; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+            animation-iteration-count: 2; <br>
+            animation-direction: alternate; <br>
+          } <br>
+          The following example uses the value "alternate-reverse" to make the animation run backwards first, then forwards: <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            position: relative; <br>
+            background-color: red; <br>
+            animation-name: example; <br>
+            animation-duration: 4s; <br>
+            animation-iteration-count: 2; <br>
+            animation-direction: alternate-reverse; <br>
+          } <br>
+          Specify the Speed Curve of the Animation <br>
+          The animation-timing-function property specifies the speed curve of the animation. <br>
+          
+          The animation-timing-function property can have the following values: <br>
+          
+          ease - Specifies an animation with a slow start, then fast, then end slowly (this is default) <br>
+          linear - Specifies an animation with the same speed from start to end <br>
+          ease-in - Specifies an animation with a slow start <br>
+          ease-out - Specifies an animation with a slow end <br>
+          ease-in-out - Specifies an animation with a slow start and end <br>
+          cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function <br>
+          The following example shows some of the different speed curves that can be used: <br>
+          
+          Example <br>
+          #div1 {animation-timing-function: linear;} <br>
+          #div2 {animation-timing-function: ease;} <br>
+          #div3 {animation-timing-function: ease-in;} <br>
+          #div4 {animation-timing-function: ease-out;} <br>
+          #div5 {animation-timing-function: ease-in-out;} <br>
+          Specify the fill-mode For an Animation <br>
+          CSS animations do not affect an element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior. <br>
+          
+          The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both). <br>
+          
+          The animation-fill-mode property can have the following values: <br>
+          
+          none - Default value. Animation will not apply any styles to the element before or after it is executing <br>
+          forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count) <br>
+          backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period <br>
+          both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions <br>
+          The following example lets the div element retain the style values from the last keyframe when the animation ends: <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            background: red; <br>
+            position: relative; <br>
+            animation-name: example; <br>
+            animation-duration: 3s; <br>
+            animation-fill-mode: forwards; <br>
+          } <br>
+          The following example lets the div element get the style values set by the first keyframe before the animation starts (during the animation-delay period): <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            background: red; <br>
+            position: relative; <br>
+            animation-name: example; <br>
+            animation-duration: 3s; <br>
+            animation-delay: 2s; <br>
+            animation-fill-mode: backwards; <br>
+          } <br>
+          The following example lets the div element get the style values set by the first keyframe before the animation starts, and retain the style values from the last keyframe when the animation ends: <br>
+          
+          Example <br>
+          div { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            background: red; <br>
+            position: relative; <br>
+            animation-name: example; <br>
+            animation-duration: 3s; <br>
+            animation-delay: 2s; <br>
+            animation-fill-mode: both; <br>
+          } <br>
+          Animation Shorthand Property <br>
+          The example below uses six of the animation properties: <br>
+          
+          Example <br>
+          div { <br>
+            animation-name: example; <br>
+            animation-duration: 5s; <br>
+            animation-timing-function: linear; <br>
+            animation-delay: 2s; <br>
+            animation-iteration-count: infinite; <br>
+            animation-direction: alternate; <br>
+          } <br>
+          The same animation effect as above can be achieved by using the shorthand animation property: <br>
+          
+          Example <br>
+          div { <br>
+            animation: example 5s linear 2s infinite alternate; <br>
+          } <br>
+          <xmp>
+            CSS Animation Properties
+The following table lists the @keyframes rule and all the CSS animation properties:
+
+Property	Description
+@keyframes	Specifies the animation code
+animation	A shorthand property for setting all the animation properties
+animation-delay	Specifies a delay for the start of an animation
+animation-direction	Specifies whether an animation should be played forwards, backwards or in alternate cycles
+animation-duration	Specifies how long time an animation should take to complete one cycle
+animation-fill-mode	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+animation-iteration-count	Specifies the number of times an animation should be played
+animation-name	Specifies the name of the @keyframes animation
+animation-play-state	Specifies whether the animation is running or paused
+animation-timing-function	Specifies the speed curve of the animation
+          </xmp>
+        </p>
+       <h4>B14  CSS TOOLTIPS</h4>
+       <p>
+        CSS Tooltip <br>
+        Create tooltips with CSS. <br>
+        
+        Demo: Tooltip Examples <br>
+        A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element: <br>
+        
+        TopRightBottomLeft <br>
+        Basic Tooltip <br>
+        Create a tooltip that appears when the user moves the mouse over an element: <br>
+        
+        Example <br>
+        style <br>
+        /* Tooltip container */ <br>
+        .tooltip { <br>
+          position: relative; <br>
+          display: inline-block; <br>
+          border-bottom: 1px dotted black; /* If you want dots under the hoverable text */ <br>
+        } <br>
+        
+        /* Tooltip text */ <br>
+        .tooltip .tooltiptext { <br>
+          visibility: hidden; <br>
+          width: 120px; <br>
+          background-color: black; <br>
+          color: #fff; <br>
+          text-align: center; <br>
+          padding: 5px 0; <br>
+          border-radius: 6px; <br>
+         
+          /* Position the tooltip text - see examples below! */ <br>
+          position: absolute; <br>
+          z-index: 1; <br>
+        } <br>
+        
+        /* Show the tooltip text when you mouse over the tooltip container */ <br>
+        .tooltip:hover .tooltiptext { <br>
+          visibility: visible; <br>
+        } <br>
+        /style <br>
+        
+        div class="tooltip">Hover over me <br>
+          span class="tooltiptext">Tooltip text span <br>
+        div <br>
+        Example Explained <br>
+        HTML: Use a container element (like div) and add the "tooltip" class to it. When the user mouse over this div, it will show the tooltip text. <br>
+        
+        The tooltip text is placed inside an inline element (like span) with class="tooltiptext". <br>
+        
+        CSS: The tooltip class use position:relative, which is needed to position the tooltip text (position:absolute). Note: See examples below on how to position the tooltip. <br>
+        
+        The tooltiptext class holds the actual tooltip text. It is hidden by default, and will be visible on hover (see below). We have also added some basic styles to it: 120px width, black background color, white text color, centered text, and 5px top and bottom padding. <br>
+        
+        The CSS border-radius property is used to add rounded corners to the tooltip text. <br>
+        
+        The :hover selector is used to show the tooltip text when the user moves the mouse over the div with class="tooltip". <br>
+        
+        Positioning Tooltips <br>
+        In this example, the tooltip is placed to the right (left:105%) of the "hoverable" text (div). Also note that top:-5px is used to place it in the middle of its container element. We use the number 5 because the tooltip text has a top and bottom padding of 5px. If you increase its padding, also increase the value of the top property to ensure that it stays in the middle (if this is something you want). The same applies if you want the tooltip placed to the left. <br>
+        
+        Right Tooltip <br>
+        .tooltip .tooltiptext { <br>
+          top: -5px; <br>
+          left: 105%; <br>
+        } <br>
+        Result: <br>
+        
+        Hover over me <br>
+        Left Tooltip <br>
+        .tooltip .tooltiptext { <br>
+          top: -5px; <br>
+          right: 105%; <br>
+        } <br>
+        Result: <br>
+        
+        Hover over me <br>
+        If you want the tooltip to appear on top or on the bottom, see examples below. Note that we use the margin-left property with a value of minus 60 pixels. This is to center the tooltip above/below the hoverable text. It is set to the half of the tooltip's width (120/2 = 60). <br>
+        
+        Top Tooltip <br>
+        .tooltip .tooltiptext { <br>
+          width: 120px; <br>
+          bottom: 100%; <br>
+          left: 50%; <br>
+          margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */ <br>
+        } <br>
+        Result: <br>
+        
+        Hover over me <br>
+        Bottom Tooltip <br>
+        .tooltip .tooltiptext { <br>
+          width: 120px; <br>
+          top: 100%; <br>
+          left: 50%; <br>
+          margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */ <br>
+        } <br>
+        Result: <br>
+        
+        Hover over me <br>
+        Tooltip Arrows <br>
+        To create an arrow that should appear from a specific side of the tooltip, add "empty" content after tooltip, with the pseudo-element class ::after together with the content property. The arrow itself is created using borders. This will make the tooltip look like a speech bubble. <br>
+        
+        This example demonstrates how to add an arrow to the bottom of the tooltip: <br>
+        
+        Bottom Arrow <br>
+        .tooltip .tooltiptext::after { <br>
+          content: " "; <br>
+          position: absolute; <br>
+          top: 100%; /* At the bottom of the tooltip */ <br>
+          left: 50%; <br> 
+          margin-left: -5px; <br>
+          border-width: 5px; <br>
+          border-style: solid; <br>
+          border-color: black transparent transparent transparent; <br>
+        } <br>
+        Result: <br>
+        
+        Hover over me <br>
+        Example Explained <br>
+        Position the arrow inside the tooltip: top: 100% will place the arrow at the bottom of the tooltip. left: 50% will center the arrow. <br>
+        
+        Note: The border-width property specifies the size of the arrow. If you change this, also change the margin-left value to the same. This will keep the arrow centered. <br>
+        
+        The border-color is used to transform the content into an arrow. We set the top border to black, and the rest to transparent. If all sides were black, you would end up with a black square box. <br>
+        
+        This example demonstrates how to add an arrow to the top of the tooltip. Notice that we set the bottom border color this time: <br>
+        
+        Top Arrow <br>
+        .tooltip .tooltiptext::after { <br>
+          content: " "; <br>
+          position: absolute; <br>
+          bottom: 100%;  /* At the top of the tooltip */ <br>
+          left: 50%; <br>
+          margin-left: -5px; <br>
+          border-width: 5px; <br>
+          border-style: solid; <br>
+          border-color: transparent transparent black transparent; <br>
+        } <br>
+        Result: <br>
+        
+        Hover over me <br>
+        This example demonstrates how to add an arrow to the left of the tooltip: <br>
+        
+        Left Arrow <br>
+        .tooltip .tooltiptext::after { <br>
+          content: " "; <br>
+          position: absolute; <br>
+          top: 50%; <br>
+          right: 100%; /* To the left of the tooltip */ <br>
+          margin-top: -5px; <br>
+          border-width: 5px; <br>
+          border-style: solid; <br>
+          border-color: transparent black transparent transparent; <br>
+        } <br>
+        Result: <br>
+        
+        Hover over me <br>
+        This example demonstrates how to add an arrow to the right of the tooltip: <br>
+        
+        Right Arrow <br>
+        .tooltip .tooltiptext::after { <br>
+          content: " "; <br>
+          position: absolute; <br>
+          top: 50%; <br>
+          left: 100%; /* To the right of the tooltip */ <br>
+          margin-top: -5px; <br>
+          border-width: 5px; <br>
+          border-style: solid; <br>
+          border-color: transparent transparent transparent black; <br>
+        } <br>
+        Result: <br>
+        Hover over me <br>
+        Fade In Tooltips (Animation) <br>
+        If you want to fade in the tooltip text when it is about to be visible, you can use the CSS transition property together with the opacity property, and go from being completely invisible to 100% visible, in a number of specified seconds (1 second in our example): <br>
+        
+        Example <br>
+        .tooltip .tooltiptext { <br>
+          opacity: 0; <br>
+          transit ion: opacity 1s; <br>
+        } <br>
+        
+        .tooltip:hover .tooltiptext { <br>
+          opacity: 1; <br>
+        } <br>
+       </p>
+       <h4>B15 CSS STYLE IMAGES</h4>
+       <p>
+        CSS Styling Images <br>
+        Learn how to style images using CSS. <br>
+        
+        Rounded Images <br>
+        Use the border-radius property to create rounded images: <br>
+        
+        Paris <br>
+        Example <br>
+        Rounded Image: <br>
+        
+        img { <br>
+          border-radius: 8px; <br>
+        } <br>
+        Paris <br>
+        Example <br>
+        Circled Image: <br>
+        
+        img { <br>
+          border-radius: 50%; <br>
+        } <br>
+        Thumbnail Images <br>
+        Use the border property to create thumbnail images. <br>
+        
+        Thumbnail Image: <br>
+        Paris <br>
+        Example <br>
+        img { <br>
+          border: 1px solid #ddd; <br>
+          border-radius: 4px; <br>
+          padding: 5px; <br>
+          width: 150px; <br>
+        } <br>
+        
+        img src="paris.jpg" alt="Paris" <br>
+        Thumbnail Image as Link: <br>
+        
+        
+        Example <br>
+        img { <br>
+          border: 1px solid #ddd; <br>
+          border-radius: 4px; <br>
+          padding: 5px; <br>
+          width: 150px; <br>
+        } <br>
+        
+        img:hover { <br>
+          box-shadow: 0 0 2px 1px rgba( 0, 140, 186, 0.5); <br>
+        } <br>
+        
+        a href="paris.jpg" <br>
+          img src="paris.jpg" alt="Paris" <br>
+        a <br>
+        ADVERTISEMENT <br>
+        
+        Responsive Images <br>
+        Responsive images will automatically adjust to fit the size of the screen. <br>
+        
+        Resize the browser window to see the effect: <br>
+        
+        Cinque Terre <br>
+        If you want an image to scale down if it has to, but never scale up to be larger than its original size, add the following: <br>
+        
+        Example <br>
+        img { <br>
+          max-width: 100%; <br>
+          height: auto; <br>
+        } <br>
+        Tip: Read more about Responsive Web Design in our CSS RWD Tutorial. <br>
+        
+        Center an Image <br>
+        To center an image, set left and right margin to auto and make it into a block element: <br>
+        
+        Paris <br>
+        Example <br>
+        img { <br>
+          display: block; <br>
+          margin-left: auto; <br>
+          margin-right: auto; <br>
+          width: 50%; <br>
+        } <br>
+        Polaroid Images / Cards <br>
+        Cinque Terre <br>
+        Cinque Terre <br>
+        
+        Norway <br>
+        Northern Lights <br>
+        
+        Example <br>
+        div.polaroid { <br>
+          width: 80%; <br>
+          background-color: white; <br>
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); <br>
+        } <br>
+        
+        img {width: 100%} <br>
+        
+        div.container { <br>
+          text-align: center; <br>
+          padding: 10px 20px; <br>
+        } <br>
+        Transparent Image <br>
+        The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent: <br>
+        Forest <br>
+        opacity 0.2 <br>
+        Forest <br>
+        opacity 0.5 <br>
+        
+        Forest <br>
+        opacity 1 <br>
+        (default) <br>
+        
+        Example <br>
+        img { <br>
+          opacity: 0.5; <br>
+        } <br>
+        Image Text <br>
+        How to position text in an image: <br>
+        
+        Example <br>
+        Cingue TerreBottom LeftTop LeftTop RightBottom RightCentered <br>
+        Try it Yourself: <br>
+        
+            
+        Image Filters <br>
+        The CSS filter property adds visual effects (like blur and saturation) to an element. <br>
+        
+        Note: The filter property is not supported in Internet Explorer or Edge 12. <br>
+        
+        Example <br>
+        Change the color of all images to black and white (100% gray): <br>
+        
+        img { <br>
+          filter: grayscale(100%); <br>
+        } <br>
+        
+        Tip: Go to our CSS filter Reference to learn more about CSS filters. <br>
+        
+        Image Hover Overlay <br>
+        Create an overlay effect on hover: <br>
+        
+        Example <br>
+        Fade in text: <br>
+        
+        AvatarHello Worl d <br>
+        Example <br>
+        Fade in a box: <br>
+        
+        Avatar <br>
+        John <br>
+        Example <br>
+        Slide in (top): <br>
+        
+        AvatarHello World <br>
+        Example <br>
+        Slide in (bottom): <br>
+        
+        AvatarHello World <br>
+        Example <br>
+        Slide in (left): <br>
+        
+        AvatarHello World <br>
+        Example <br>
+        Slide in (right): <br>
+        
+        AvatarHello World <br>
+        Flip an Image <br>
+        Move your mouse over the image: <br>
+        
+        Paris <br>
+        Example <br>
+        img:hover { <br>
+          transform: scaleX(-1); <br>
+        } <br>
+        Responsive Image Gallery <br>
+        CSS can be used to create image galleries. This example use media queries to re-arrange the images on different screen sizes. Resize the browser window to see the effect: <br>
+        
+        Cinque Terre <br>
+        Add a description of the image here <br>
+        Forest <br>
+        Add a description of the image here <br>
+        Northern Lights <br>
+        Add a description of the image here <br>
+        Mountains <br>
+        Add a description of the image here <br>
+        Example <br> 
+        .responsive { <br>
+          padding: 0 6px; <br>
+          float: left; <br>
+          width: 24.99999%; <br>
+        } <br>
+        
+        @media only screen and (max-width: 700px){ <br>
+          .responsive { <br>
+            width: 49.99999%; <br>
+            margin: 6px 0; <br>
+          } <br>
+        } <br>
+        @media only screen and (max-width: 500px){ <br>
+          .responsive { <br>
+            width: 100%; <br>
+          } <br>
+        } <br>
+        Tip: Read more about Responsive Web Design in our CSS RWD Tutorial. <br>
+        
+        Image Modal (Advanced) <br>
+        This is an example to demonstrate how CSS and JavaScript can work together. <br>
+        
+        First, use CSS to create a modal window (dialog box), and hide it by default. <br>
+        
+        Then, use a JavaScript to show the modal window and to display the image inside the modal, when a user clicks on the image: <br>
+        
+        Northern Lights, Norway <br>
+        Example <br>
+        // Get the modal <br>
+        var modal = document.getElementById('myModal'); <br>
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption <br>
+        var img = document.getElementById('myImg'); <br>
+        var modalImg = document.getElementById("img01"); <br>
+        var captionText = document.getElementById("c aption"); <br>
+        img.onclick = function(){ <br>
+          modal.style.display = "block"; <br>
+          modalImg.src = this.src; <br>
+          captionText.innerHTML = this.alt; <br>
+        } <br>
+        
+        // Get the span element that closes the modal <br>
+        var span = document.getElementsByClassName("close")[0]; <br>
+        
+        // When the user clicks on span (x), close the modal <br>
+        span.onclick = function() { <br>
+          modal.style.display = "none"; <br>
+        }
+       </p>
+       <h4>B16  CSS IMAGE REFLECTION</h4>
+       <p>
+        CSS Image Reflection <br>
+        In this chapter you will learn how to reflect an image. <br>
+        
+        
+        CSS Image Reflections <br>
+        The box-reflect property is used to create an image reflection. <br>
+        
+        The value of the box-reflect property can be: below, above, left , or right. <br>
+        
+        Browser Support <br>
+        The numbers in the table specify the first browser version that fully supports the property. <br>
+        
+        Numbers followed by -webkit- specify the first version that worked with a prefix. <br>
+        
+        Property	 <br>	
+        box-reflect	4.0 -webkit-	79.0 -webkit-	Not supported	4.0 -webkit-	15.0 -webkit- <br>
+        Examples <br> 
+        Example <br>
+        Here we want the reflection below the image: <br>
+        
+        img { <br>
+          -webkit-box-reflect: below; <br>
+        } <br>
+        Example <br>
+        Here we want the reflection to the right of the image: <br>
+        
+        img { <br>
+          -webkit-box-reflect: right; <br>
+        } <br>
+        CSS Reflection Offset <br>
+        To specify the gap between the image and the reflection, add the size of the gap to the box-reflect property. <br>
+        
+        Example <br>
+        Here we want the reflection below the image, with a 20px offset: <br>
+        
+        img { <br>
+          -webkit-box-reflect: below 20px; <br>
+        } <br>
+        CSS Reflection With Gradient <br>
+        We can also create a fade-out effect on the reflection. <br>
+        
+        Example <br>
+        Create a fade-out effect on the reflection: <br>
+        
+        img { <br>
+          -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); <br>
+        }  <br>
+        
+       </p>
+        <h4>B17  CSS OBJECT-FIT</h4>
+        <p>
+          CSS The object-fit Property <br>
+          The CSS object-fit property is used to specify how an img or video should be resized to fit its container. <br>
+          
+          The CSS object-fit Property <br>
+          The CSS object-fit property is used to specify how an img or video should be resized to fit its container. <br>
+          
+          This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible". <br>
+          
+          Look at the following image from Paris. This image is 400 pixels wide and 300 pixels high: <br>
+          
+          Paris <br>
+          However, if we style the image above to be half its width (200 pixels) and same height (300 pixels), it will look like this: <br>
+          
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+          } <br>
+          We see that the image is being squished to fit the container of 200x300 pixels (its original aspect ratio is destroyed). <br>
+          
+          Here is where the object-fit property comes in. The object-fit property can take one of the following values: <br>
+          
+          fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit <br>
+          contain - The image keeps its aspect ratio, but is resized to fit within the given dimension <br>
+          cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit <br>
+          none - The image is not resized <br>
+          scale-down - the image is scaled down to the smallest version of none or contain <br>
+          Using object-fit: cover; <br>
+          If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit: <br>
+          
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+            object-fit: cover; <br>
+          } <br>
+          Using object-fit: contain; <br>
+          If we use object-fit: contain; the image keeps its aspect ratio, but is resized to fit within the given dimension: <br>
+          
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+            object-fit: contain; <br>
+          } <br>
+          Using object-fit: fill; <br>
+          If we use object-fit: fill; the image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit: <br>
+          
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+            object-fit: fill; <br>
+          } <br>
+          Using object-fit: none; <br>
+          If we use object-fit: none; the image is not resized: <br>
+          
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+            object-fit: none; <br>
+          } <br>
+          Using object-fit: scale-down; <br>
+          If we use object-fit: scale-down; the image is scaled down to the smallest version of none or contain: <br>
+          
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+            object-fit: scale-down; <br>
+          } <br>
+          Another Example <br>
+          Here we have two images and we want them to fill the width of 50% of the browser window and 100% of the height. <br>
+          
+          In the following example we do NOT use object-fit, so when we resize the browser window, the aspect ratio of the images will be destroyed: <br>
+          
+          Example <br>
+          NorwayParis <br>
+          In the next example, we use object-fit: cover;, so when we resize the browser window, the aspect ratio of the images is preserved: <br>
+          
+          Example <br>
+          NorwayParis <br>
+           CSS object-fit More Examples <br>
+          The following example demonstrates all the possible values of the object-fit property in one example: <br>
+          
+          Example <br>
+          .fill {object-fit: fill;} <br>
+          .contain {object-fit: contain;} <br>
+          .cover {object-fit: cover;} <br>
+          .scale-down {object-fit: scale-down;} <br>
+          .none {object-fit: none;} <br>
+          <xmp>
+            CSS Object-* Properties
+The following table lists the CSS object-* properties:
+
+Property	Description
+object-fit	Specifies how an <img> or <video> should be resized to fit its container
+object-position	Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box"
+
+          </xmp>
+        </p>
+         <h4>B18  CSS OBJECT-POSITION</h4>
+         <p>
+          CSS The object-position Property <br>
+          The CSS object-position property is used to specify how an img or video should be positioned within its container. <br>
+          
+          The Image <br>
+          Look at the following image from Paris, which is 400x300 pixels: <br>
+          
+          Paris <br>
+          Next, we use object-fit: cover; to keep the aspect ratio and to fill the given dimension. However, the image will be clipped to fit, like this: <br>
+          
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+            object-fit: cover; <br>
+          } <br>
+          Using the object-position Property <br>
+          Let's say that the part of the image that is shown, is not positioned as we want. To position the image, we will use the object-position property. <br>
+          
+          Here we will use the object-position property to position the image so that the great old building is in center <br>
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+            object-fit: cover; <br>
+            object-position: 80% 100%; <br>
+          } <br>
+          Here we will use the object-position property to position the image so that the famous Eiffel Tower is in center: <br>
+          
+          Paris <br>
+          Example <br>
+          img { <br>
+            width: 200px; <br>
+            height: 300px; <br>
+            object-fit: cover; <br>
+            object-position: 15% 100%; <br>
+          } <br>
+          <xmp>
+            CSS Object-* Properties
+The following table lists the CSS object-* properties:
+
+Property	Description
+object-fit	Specifies how an <img> or <video> should be resized to fit its container
+object-posititon	Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box"
+          </xmp>
+         </p>
+         <h4>B19 CSS BUTTONS </h4>
+         <p>
+          CSS Buttons <br>
+          Learn how to style buttons using CSS. <br>
+          
+          Basic Button Styling <br>
+          Default Button CSS Button <br>
+          
+          Example <br>
+          .button { <br>
+            background-color: #4CAF50; /* Green */ <br>
+            border: none; <br>
+            color: white; <br>
+            padding: 15px 32px; <br>
+            text-align: center; <br>
+            text-decoration: none; <br>
+            display: inline-block; <br>
+            font-size: 16px; <br>
+          } <br>
+          Button Colors <br>
+          Green Blue Red Gray Black <br>
+          Use the background-color property  to change the background color of a button: <br>
+          
+          Example <br>
+          .button1 {background-color: #4CAF50;} /* Green */ <br>
+          .button2 {background-color: #008CBA;} /* Blue */ <br>
+          .button3 {background-color: #f44336;} /* Red */ <br>
+          .button4 {background-color: #e7e7e7; color: black;} /* Gray */ <br>
+          .button5 {background-color: #555555;} /* Black */ <br>
+          Button Sizes <br>
+          10px 12px 16px 20px 24px <br>
+          Use the font-size property to change the font size of a button: <br>
+          
+          Example <br>
+          .button1 {font-size: 10px;} <br>
+          .button2 {font-size: 12px;} <br>
+          .button3 {font-size: 16px;} <br>
+          .button4 {font-size: 20px;} <br>
+          .button5 {font-size: 24px;} <br>
+          Use the padding property to change the padding of a button: <br>
+          10px 24px 12px 28px 14px 40px 32px 16px 16px <br>
+          Example <br>
+          .button1 {padding: 10px 24px;} <br>
+          .button2 {padding: 12px 28px;} <br>
+          .button3 {padding: 14px 40px;} <br>
+          .button4 {padding: 32px 16px;} <br>
+          .button5 {padding: 16px;} <br>
+          Rounded Buttons <br>
+          2px 4px 8px 12px 50% <br>
+          Use the border-radius property to add rounded corners to a button: <br>
+          
+          Example <br>
+          .button1 {border-radius: 2px;} <br>
+          .button2 {border-radius: 4px;} <br>
+          .button3 {border-radius: 8px;} <br>
+          .button4 {border-radius: 12px;} <br>
+          .button5 {border-radius: 50%;} <br>
+          Colored Button Borders <br>
+          Green Blue Red Gray Black <br>
+          Use the border property to add a colored border to a button: <br>
+          
+          Example <br>
+          .button1 { <br>
+            background-color: white; <br>
+            color: black; <br>
+            border: 2px solid #4CAF50; /* Green */ <br>
+          } <br>
+          ... <br>
+          Hoverable Buttons <br>
+          Green Blue Red Grey Black <br>
+          Green Blue Red Grey Black <br>
+          Use the :hover selector to change the style of a button when you move the mouse over it. <br>
+          
+          Tip: Use the transition-duration property to determine the speed of the "hover" effect: <br>
+          
+          Example <br>
+          .button { <br>
+            transition-duration: 0.4s; <br>
+          } <br>
+          
+          .button:hover { <br>
+            background-color: #4CAF50; /* Green */ <br>
+            color: white; <br>
+          } <br>
+          ... <br>
+          Shadow Buttons <br>
+          Shadow Button Shadow on hover <br>
+          Use the box-shadow property to add shadows to a button: <br>
+          
+          Example <br>
+          .button1 { <br>
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); <br>
+          } <br>
+          
+          .button2:hover { <br>
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); <br>
+          } <br>
+          Disabled Buttons <br>
+          Normal Button Disabled Button <br>
+          Use the opacity property to add transparency to a button (creates a "disabled" look). <br>
+          
+          Tip: You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button: <br>
+          
+          Example <br>
+          .disabled { <br>
+            opacity: 0.6; <br>
+            cursor: not-allowed; <br>
+          } <br>
+          Button Width <br>
+          250px <br>
+          50% 100% <br>
+          By default, the size of the button is determined by its text content (as wide as its content). Use the width property to change the width of a button: <br>
+          
+          Example <br>
+          .button1 {width: 250px;} <br>
+          .button2 {width: 50%;} <br>
+          .button3 {width: 100%;} <br>
+          Button Groups <br>
+          ButtonButtonButtonButton <br>
+          
+          Remove margins and add float:left to each button to create a button group <br>
+          Example <br>
+          .button { <br>
+            float: left; <br>
+          } <br>
+          Bordered Button Group <br>
+          ButtonButtonButtonButton <br>
+          
+          Use the border property to create a bordered button group: <br>
+          
+          Example <br>
+          .button { <br>
+            float: left; <br>
+            border: 1px solid green; <br>
+          } <br>
+          Vertical Button Group <br>
+          Button <br>
+          Button <br>
+          Button <br>
+          Button <br>
+          
+          Use display:block instead of float:left to group the buttons below each other, instead of side by side: <br>
+          
+          Example <br>
+          .button { <br>
+            display: block; <br>
+          } <br>
+          Button on Image <br>
+          Snow <br>
+          Animated Buttons <br>
+          Example <br>
+          Add an arrow on hover: <br>
+          
+          Hover <br>
+          Example <br>
+          Add a "pressed" effect on click: <br>
+          
+          Click <br>
+          Example <br>
+          Fade in on hover: <br>
+          
+          Fade In <br>
+          Example <br>
+          Add a "ripple" effect on click: <br>
+         </p>
+          <h4>B20  CSS PAGINATION</h4>
+          <p>
+            CSS Pagination Examples <br>
+            Learn how to create a responsive pagination using CSS. <br>
+            
+            Simple Pagination <br>
+            If you have a website with lots of pages, you may wish to add some sort of pagination to each page: <br>
+            
+            «123456»❮    ❯ <br>
+            Example <br>
+            .pagination { <br>
+              display: inline-block; <br>
+            } <br>
+            
+            .pagination a { <br>
+              color: black; <br>
+              float: left; <br>
+              padding: 8px 16px; <br>
+              text-decoration: none; <br>
+            } <br>
+            Active and Hoverable Pagination <br>
+            «1234567» <br>
+            Highlight the current page with an .active class, and use the :hover selector to change the color of each page link when moving the mouse over them: <br>
+            
+            Example <br>
+            .pagination a.active { <br>
+              background-color: #4CAF50; <br>
+              color: white; <br>
+            } <br>
+            
+            .pagination a:hover:not(.active) {background-color: #ddd;} <br>
+            Rounded Active and Hoverable Buttons <br>
+            «1234567» <br>
+            Add the border-radius property if you want a rounded "active" and "hover" button: <br>
+            
+            Example <br>
+            .pagination a { <br>
+              border-radius: 5px; <br>
+            } <br>
+            
+            .pagination a.active { <br>
+              border-radius: 5px; <br>
+            } <br>
+            Hoverable Transition Effect <br>
+            «1234567» <br>
+            Add the transition property to the page links to create a transition effect on hover: <br>
+            
+            Example <br>
+            .pagination a { <br>
+              transition: background-color .3s; <br>
+            } <br>
+            Bordered Pagination <br>
+            «1234567» <br>
+            Use the border property to add borders to the pagination: <br>
+            Example <br>
+            .pagination a { <br>
+              border: 1px solid #ddd; /* Gray */ <br>
+            } <br>
+            Rounded Borders <br>
+            Tip: Add rounded borders to your first and last link in the pagination: <br>
+            
+            «1234567» <br>
+            Example <br>
+            .pagination a:first-child { <br>
+              border-top-left-radius: 5px; <br>
+              border-bottom-left-radius: 5px; <br>
+            } <br>
+            
+            .pagination a:last-child { <br>
+              border-top-right-radius: 5px; <br>
+              border-bottom-right-radius: 5px; <br>
+            } <br>
+            Space Between Links <br>
+            Tip: Add the margin property if you do not want to group the page links: <br>
+            
+            «1234567» <br>
+            Example <br>
+            .pagination a { <br>
+              margin: 0 4px; /* 0 is for top and bottom. Feel free to change it */ <br>
+            } <br>
+            Pagination Size <br>
+            «1234567» <br>
+            Change the size of the pagination with the font-size property: <br>
+            Example <br>
+            .pagination a { <br>
+              font-size: 22px; <br>
+            } <br>
+            Centered Pagination <br>
+            «1234567» <br>
+            To center the pagination, wrap a container element (like div) around it with text-align:center <br>
+            
+            Example <br>
+            .center { <br>
+              text-align: center; <br>
+            } <br>
+            More Examples <br>
+            Example <br>
+            
+            Breadcrumbs <br>
+            Home Pictures Summer 15 Italy <br>
+            Another variation of pagination is s o-called "breadcrumbs": <br>
+            
+            Example <br>
+            ul.breadcrumb { <br>
+              padding: 8px 16px; <br>
+              list-style: none; <br>
+              background-color: #eee; <br>
+            } <br>
+            
+            ul.breadcrumb li {display: inline;} <br>
+            
+            ul.breadcrumb li+li:before { <br>
+              padding: 8px; <br>
+              color: black; <br>
+              content: "/\00a0"; <br>
+            }
+          </p>
+          <h4>B21  CSS MULTIPLE COLOMNS</h4>
+          <P>
+            CSS Multiple Columns <br>
+            CSS Multi-column Layout <br>
+            The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers: <br>
+            
+            Daily Ping <br>
+            Lorem ipsum <br>
+            dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. <br>
+            
+            CSS Multi-column Properties <br>
+            In this chapter you will learn about the following multi-column properties: <br>
+            
+            column-count <br>
+            column-gap <br>
+            column-rule-style <br>
+            column-rule-width <br>
+            column-rule-color <br>
+            column-rule <br>
+            column-span <br>
+            column-width <br>
+            Browser Support <br>
+            The numbers in the table specify the first browser version that fully supports the property. <br>
+            
+            Property	 <br>				
+            column-count	50.0	10.0	52.0	9.0	37.0 <br>
+            column-gap	50.0	10.0	52.0	9.0	37.0 <br>
+            column-rule	50.0	10.0	52.0	9.0	37.0 <br>
+            column-rule-color	50.0	10.0	52.0	9.0	37.0 <br>
+            column-rule-style	50.0	10.0	52.0	9.0	37.0 <br>
+            column-rule-width	50.0	10.0	52.0	9.0	37.0 <br>
+            column-span	50.0	10.0	71.0	9.0	37.0 <br>
+            column-width	50.0	10.0	52.0	9.0	37.0 <br>
+            CSS Create Multiple Columns <br>
+            The column-count property specifies the number of columns an element should be divided into. <br>
+            The following example will divide the text in the div element into 3 columns:  <br>
+            
+            Example <br>
+            div { <br>
+              column-count: 3; <br>
+            } <br>
+            CSS Specify the Gap Between Columns <br>
+            The column-gap property specifies the gap between the columns. <br>
+            
+            The following example specifies a 40 pixels gap between the columns: <br>
+            
+            Example <br>
+            div { <br>
+              column-gap: 40px; <br>
+            } <br>
+            CSS Column Rules <br>
+            The column-rule-style property specifies the style of the rule between columns: <br>
+            
+            Example <br>
+            div { <br>
+              column-rule-style: solid; <br>
+            } <br>
+            The column-rule-width property specifies the width of the rule between columns: <br>
+            
+            Example <br>
+            div { <br>
+              column-rule-width: 1px; <br>
+            } <br>
+            The column-rule-color property specifies the color of the rule between columns: <br>
+            
+            Example <br>
+            div { <br>
+              column-rule-color: lightblue; <br>
+            } <br>
+            The column-rule property is a shorthand property for setting all the column-rule-* properties above. <br>
+            
+            The following example sets the width, style, and color of the rule between columns: <br>
+            
+            Example <br>
+            div { <br>
+              column-rule: 1px solid lightblue; <br>
+            } <br>
+            Specify How Many Columns an Element Should Span
+            The column-span property specifies how many columns an element should span across. <br>
+            
+            The following example specifies that the h2 element should span across all columns: <br>
+            
+            Example <br>
+            h2 { <br>
+              column-span: all; <br>
+            } <br>
+            Specify The Column Width <br>
+            The column-width property specifies a suggested, optimal width for the columns. <br>
+            
+            The following example specifies that the suggested, optimal width for the columns should be 100px: <br>
+            
+            Example <br>
+            div { <br>
+              column-width: 100px; <br>
+            } <br>
+            <xmp>
+              CSS Multi-columns Properties
+The following table lists all the multi-columns properties: 
+
+Property	Description
+column-count	Specifies the number of columns an element should be divided into
+column-fill	Specifies how to fill columns
+column-gap	Specifies the gap between the columns
+column-rule	A shorthand property for setting all the column-rule-* properties
+column-rule-color	Specifies the color of the rule between columns
+column-rule-style	Specifies the style of the rule between columns
+column-rule-width	Specifies the width of the rule between columns
+column-span	Specifies how many columns an element should span across
+column-width	Specifies a suggested, optimal width for the columns
+columns	A shorthand property for setting column-width and column-count
+
+            </xmp>
+          </P>
+        <h4>B22  CSS USER INTERFACE</h4>
+        <P>
+          CSS User Interface <br>
+          CSS User Interface <br>
+          In this chapter you will learn about the following CSS user interface properties: <br>
+          
+          resize <br>
+          outline-offset <br>
+          Browser Support <br>
+          The numbers in the table specify the first browser version that fully supports the property. <br>
+          
+          Property					 <br>
+          resize	4.0	79.0	5.0	4.0	15.0 <br>
+          outline-offset	4.0	15.0	5.0	4.0	9.5 <br>
+          CSS Resizing <br>
+          The resize property specifies if (and how) an element should be resizable by the user. <br>
+          
+          This div element is resizable by the user! <br>
+          
+          To resize: Click and drag the bottom right corner of this div element. <br>
+          
+          The following example lets the user resize only the width of a div element: <br>
+          Example <br>
+          div { <br>
+            resize: horizontal; <br>
+            overflow: auto; <br>
+          } <br>
+          The following example lets the user resize only the height of a div element: <br>
+          
+          Example <br>
+          div { <br>
+            resize: vertical; <br>
+            overflow: auto; <br>
+          } <br>
+          The following example lets the user resize both the height and width of a div element: <br>
+          
+          Example <br>
+          div { <br>
+            resize: both; <br>
+            overflow: auto; <br>
+          } <br>
+          In many browsers, textarea is resizable by default. Here, we have used the resize property to disable the resizability: <br>
+          
+          Example <br>
+          textarea { <br>
+            resize: none; <br>
+          } <br>
+          CSS Outline Offset <br>
+          The outline-offset property adds space between an outline and the edge or border of an element. <br>
+          
+          This div has an outline 15px outside the border edge. <br>
+          Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. <br>
+          
+          The following example uses the outline-offset property to add space between the border and the outline: <br>
+          
+          Example <br>
+          div.ex1 { <br>
+            margin: 20px; <br>
+            border: 1px solid black; <br>
+            outline: 4px solid red; <br>
+            outline-offset: 15px; <br>
+          } <br>
+          
+          div.ex2 { <br>
+            margin: 10px; <br>
+            border: 1px solid black; <br>
+            outline: 5px dashed blue; <br>
+            outline-offset: 5px; <br>
+          } <br>
+          CSS User Interface Properties <br>
+          The following table lists all the user interface properties: <br>
+          
+          Property	Description <br>
+          outline-offset	Adds space between an outline and the edge or border of an element <br>
+          resize	Specifies whether or not an element is resizable by the user <br>
+
+        </P>
+        <h4>B23  CSS VARIABLES</h4>
+      <h4> B23A THE VAR() FUNCTION</h4>
+      <p>
+        CSS Variables - The var() Function <br>
+        CSS Variables <br>
+        The var() function is used to insert the value of a CSS variable. <br>
+        
+        CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries. <br>
+        
+        A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables. <br>
+        The Traditional Way <br>
+        The following example shows the traditional way of defining some colors in a style sheet (by defining the colors to use, for each specific element): <br>
+        
+        Example <br>
+        body { background-color: #1e90ff; } <br>
+        
+        h2 { border-bottom: 2px solid #1e90ff; } <br>
+        
+        .container { <br>
+          color: #1e90ff; <br>
+          background-color: #ffffff; <br>
+          padding: 15px; <br>
+        } <br>
+        
+        button { <br>
+          background-color: #ffffff; <br>
+          color: #1e90ff; <br>
+          border: 1px solid #1e90ff; <br>
+          padding: 5px; <br>
+        } <br>
+        
+        Syntax of the var() Function <br>
+        The var() function is used to insert the value of a CSS variable. <br>
+        
+        The syntax of the var() function is as follows: <br>
+        
+        var(--name, value) <br>
+        Value	Description <br>
+        name	Required. The variable name (must start with two dashes) <br>
+        value	Optional. The fallback value (used if the variable is not found) <br>
+        Note: The variable name must begin with two dashes (--) and it is case sensitive! <br>
+        
+        How var() Works <br>
+        First of all: CSS variables can have a global or local scope. <br>
+        
+        Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared. <br>
+        
+        To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element. <br>
+        
+        To create a variable with local scope, declare it inside the selector that is going to use it. <br>
+        
+        The following example is equal to the example above, but here we use the var() function. <br>
+        
+        First, we declare two global variables (--blue and --white). Then, we use the var() function to insert the value of the variables later in the style sheet: <br>
+        
+        Example <br>
+        :root { <br>
+          --blue: #1e90ff; <br>
+          --white: #ffffff; <br>
+        } <br>
+        
+        body { background-color: var(--blue); } <br>
+        h2 { border-bottom: 2px solid var(--blue); } <br>
+        
+        .container { <br>
+          color: var(--blue); <br>
+          background-color: var(--white); <br>
+          padding: 15px; <br>
+        } <br>
+        
+        button { <br>
+          background-color: var(--white); <br>
+          color: var(--blue); <br>
+          border: 1px solid var(--blue); <br>
+          padding: 5px; <br>
+        } <br>
+        
+        Advantages of using var() are: <br>
+        
+        makes the code easier to read (more understandable) <br>
+        makes it much easier to change the color values <br>
+        To change the blue and white color to a softer blue and white, you just need to change the two variable values: <br>
+        
+        Example <br>
+        :root { <br>
+          --blue: #6495ed; <br>
+          --white: #faf0e6; <br>
+        } <br>
+        
+        body { background-color: var(--blue); } <br>
+        
+        h2 { border-bottom: 2px solid var(--blue); } <br>
+        
+        .container { <br>
+          color: var(--blue); <br>
+          background-color: var(--white); <br>
+          padding: 15px; <br>
+        } <br>
+        
+        button { <br>
+          background-color: var(--white); <br>
+          color: var(--blue); <br>
+          border: 1px solid var(--blue); <br>
+          padding: 5px; <br>
+        } <br>
+        
+        Browser Support <br>
+        The numbers in the table specify the first browser version that fully supports the var() function. <br>
+        
+        Function				 <br>	
+        var()	49.0	15.0	31.0	9.1	36.0 <br>
+        <xmp>
+          CSS var() Function
+Property	Description
+var()	Inserts the value of a CSS variable
+        </xmp>
+      </p>
+      <h4>B23B  OVERRIDING VARIABLES</h4>
+      <p>
+        CSS Overriding Variables <br>
+        Overriding Global Variables With Local Variables <br>
+        From the previous page we have learned that global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared. <br>
+        
+        Look at the example from the previous page: <br>
+        
+        Example <br>
+        :root { <br>
+          --blue: #1e90ff; <br>
+          --white: #ffffff; <br>
+        } <br>
+        
+        body { <br>
+          background-color: var(--blue); <br>
+        } <br>
+        
+        h2 { <br>
+          border-bottom: 2px solid var(--blue); <br>
+        } <br>
+        
+        .container { <br>
+          color: var(--blue); <br>
+          background-color: var(--white); <br>
+          padding: 15px; <br>
+        } <br>
+        
+        button { <br>
+          background-co lor: var(--white); <br>
+          color: var(--blue); <br>
+          border: 1px solid var(--blue); <br>
+          padding: 5px; <br>
+        } <br>
+        
+        Sometimes we want the variables to change only in a specific section of the page. <br>
+        
+        Assume we want a different color of blue for button elements. Then, we can re-declare the --blue variable inside the button selector. When we use var(--blue) inside this selector, it will use the local --blue variable value declared here. <br>
+        
+        We see that the local --blue variable will override the global --blue variable for the button elements: <br>
+        
+        Example <br>
+        :root { <br>
+          --blue: #1e90ff; <br>
+          --white: #ffffff; <br>
+        } <br>
+        
+        body { <br>
+          background-color: var(--blue); <br>
+        } <br>
+        
+        h2 { <br>
+          border-bottom: 2px solid var(--blue); <br>
+        } <br>
+        
+        .container { <br>
+          color: var(--blue); <br>
+          background-color: var(--white); <br>
+          padding: 15px; <br>
+        } <br>
+        
+        button { <br>
+          --blue: #0000ff; <br>
+          background-color: var(--white); <br>
+          color: var(--blue); <br>
+          border: 1px solid var(--blue); <br>
+          padding: 5px; <br>
+        } <br>
+        
+        Add a New Local Variable <br>
+        If a variable is to be used only one single place, we could also have declared a new local variable, like this: <br>
+        
+        Example <br>
+        :root { <br>
+          --blue: #1e90ff; <br>
+          --white: #ff ffff; <br>
+        } <br>
+        
+        body { <br>
+          background-color: var(--blue); <br>
+        } <br>
+        
+        h2 { <br>
+          border-bottom: 2px solid var(--blue); <br>
+        } <br>
+        
+        .container { <br>
+          color: var(--blue); <br>
+          background-color: var(--white); <br>
+          padding: 15px; <br>
+        } <br>
+        
+        button { <br>
+          --button-blue: #0000ff; <br>
+          background-color: var(--white); <br>
+          color: var(--button-blue); <br>
+          border: 1px solid var(--button-blue); <br>
+          padding: 5px; <br>
+        } <br>
+        
+        Browser Support <br>
+        The numbers in the table specify the first browser version that fully supports the var() function. <br>
+        
+        Function	 <br>				
+        var()	49.0	15.0	31.0	9.1	36.0 <br>
+        <xmp>
+          CSS var() Function
+Property	Description
+var()	Inserts the value of a CSS variable
+        </xmp>
+      </p>
+      <h4>B23C VARIABLES AND JavaScript</h4>
+      <P>
+        CSS Change Variables With JavaScript <br>
+        Change Variables With JavaScript <br>
+        CSS variables have access to the DOM, which means that you can change them with JavaScript. <br>
+        
+        Here is an example of how you can create a script to display and change the --blue variable from the example used in the previous pages. For now, do not worry if you are not familiar with JavaScript. You can learn more about JavaScript in our JavaScript Tutorial: <br>
+        
+        Example <br>
+        script <br>
+        // Get the root element <br>
+        var r = document.querySelector(':root'); <br>
+        
+        // Create a function for getting a variable value <br>
+        function myFunction_get() { <br>
+          // Get the styles (properties and values) for the root <br>
+          var rs = getComputedStyle(r); <br>
+          // Alert the value of the --blue variable <br>
+          alert("The value of --blue is: " + rs.getPropertyValue('--blue')); <br>
+        } <br>
+        
+        // Create a function for setting a variable value <br>
+        function myFunction_set() { <br>
+          // Set the value of variable --blue to another value (in this case "lightblue") <br>
+          r.style.setProperty('--blue', 'lightblue'); <br>
+        } <br>
+        script <br>
+        
+        Browser Support <br>
+        The numbers in the table specify the first browser version that fully supports the var() function. <br>
+        
+        Function				 <br>	
+        var()	49.0	15.0	31.0	9.1	36.0 <br>
+        <xmp>
+          CSS var() Function
+Property	Description
+var()	Inserts the value of a CSS variable
+        </xmp>
+      </P>
+     <h4> B23D  VARIABLES IN MEDIA QUEIES </h4>
+     <p>
+      CSS Using Variables in Media Queries <br>
+      Using Variables in Media Queries <br>
+      Now we want to change a variable value inside a media query. <br>
+      
+      Tip: Media Queries are about defining different style rules for different devices (screens, tablets, mobile phones, etc.). You can learn more Media Queries in our Media Queries Chapter. <br>
+      
+      Here, we first declare a new local variable named --fontsize for the .container class. We set its value to 25 pixels. Then we use it in the .container class further down. Then, we create a @media rule that says "When the browser's width is 450px or wider, change the --fontsize variable value of the .container class to 50px." <br>
+      
+      Here is the complete example: <br>
+      
+      Example <br>
+      /* Variable declarations */ <br>
+      :root { <br>
+        --blue: #1e90ff; <br>
+        --white: #ffffff; <br>
+      } <br>
+      
+      .container { <br>
+        --fontsize: 25px; <br>
+      } <br>
+      
+      /* Styles */ <br>
+      body { <br>
+        background-color: var(--blue); <br>
+      } <br>
+      
+      h2 { <br>
+        border-bottom: 2px solid var(--blue); <br>
+      } <br>
+      
+      .container { <br>
+        color: var(--blue); <br>
+        background-color: var(--white); <br>
+        padding: 15px; <br>
+        font-size: var(--fontsize); <br>
+      } <br>
+      
+      @media screen and (min-width: 450px) { <br>
+        .container { <br>
+          --fontsize: 50px; <br>
+        } <br>
+      } <br>
+      
+      Here is another example where we also change the value of the --blue variable in the @media rule: <br>
+      
+      Example <br>
+      /* Variable declarations */ <br>
+      :root { <br>
+        --blue: #1e90ff; <br>
+        --white: #ffffff; <br>
+      } <br>
+      
+      .container { <br>
+        --fontsize: 25px; <br>
+      } <br>
+      
+      /* Styles */ <br>
+      body { <br>
+        background-color: var(--blue); <br>
+      } <br>
+      
+      h2 { <br>
+        border-bottom: 2px solid  var(--blue); <br>
+      } <br>
+      
+      .container { <br>
+        color: var(--blue); <br>
+        background-color: var(--white); <br>
+        padding: 15px; <br>
+        font-size: var(--fontsize); <br>
+      } <br>
+      
+      @media screen and (min-width: 450px) { <br>
+        .container { <br>
+          --fontsize: 50px; <br>
+        } <br>
+         :root { <br>
+          --blue: lightblue; <br>
+        } <br>
+      } <br>
+      
+      Browser Support <br>
+      The numbers in the table specify the first browser version that fully supports the var() function. <br>
+      
+      Function					 <br>
+      var()	49.0	15.0	31.0	9.1	36.0 <br>
+      <xmp>
+        CSS var() Function
+Property	Description
+var()	Inserts the value of a CSS variable
+      </xmp>
+     </p>
+    <h4>B24 CSS BOX SIZING</h4>
+    <p>
+      CSS Box Sizing <br>
+      CSS Box Sizing <br>
+      The CSS box-sizing property allows us to include the padding and border in an element's total width and height. <br>
+      
+      Without the CSS box-sizing Property <br>
+      By default, the width and height of an element is calculated like this: <br>
+      
+      width + padding + border = actual width of an element <br>
+      height + padding + border = actual height of an element <br>
+      
+      This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height). <br>
+      
+      The following illustration shows two div elements with the same specified width and height: <br>
+      
+      This div is smaller (width is 300px and height is 100px). <br>
+      
+      This div is bigger (width is also 300px and height is 100px). <br>
+      
+      The two div elements above end up with different sizes in the result (because div2 has a padding specified): <br>
+      
+      Example <br>
+      .div1 { <br>
+        width: 300px; <br>
+        height: 100px; <br>
+        border: 1px solid blue; <br>
+      } <br>
+      
+      .div2 { <br>
+        width: 300px; <br>
+        height: 100px; <br>
+        padding: 50px; <br>
+        border: 1px solid red; <br>
+      } <br>
+      The box-sizing property solves this problem. <br>
+      
+      ADVERTISEMENT <br>
+      
+      With the CSS box-sizing Property <br>
+      The box-sizing property allows us to include the padding and border in an element's total width and height. <br>
+      
+      If you set box-sizing: border-box; on an element, padding and border are included in the width and height: <br>
+      
+      Both divs are the same size now! <br>
+      
+      Hooray! <br>
+      
+      Here is the same example as above, with box-sizing: border-box; added to both div elements: <br>
+      
+      Example <br>
+      .div1 { <br>
+        width: 300px; <br>
+        height: 100px; <br>
+        border: 1px solid blue; <br>
+        box-sizing: border-box; <br>
+      } <br>
+      
+      .div2 { <br>
+        width: 300px; <br>
+        height: 100px; <br>
+        padding: 50px; <br>
+        border: 1px solid red; <br>
+        box-sizing: border-box; <br>
+      } <br>
+      Since the result of using the box-sizing: border-box; is so much better, many developers want all elements on their pages to work this way. <br>
+      
+      The code below ensures that all elements are sized in this more intuitive way. Many browsers already use box-sizing: border-box; for many form elements (but not all - which is why inputs and text areas look different at width: 100%;). <br>
+      
+      Applying this to all elements is safe and wise: <br>
+      
+      Example <br>
+      * { <br>
+        box-sizing: border-box; <br>
+      } <br>
+      <xmp>
+        CSS Box Sizing Property
+Property	Description
+box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not
+
+      </xmp>
+    </p>
+      <h4>B25  CSS MEDIA QUERIES</h4>
+      <p>
+        CSS Media Queries <br>
+        CSS2 Introduced Media Types <br>
+        The @media rule, introduced in CSS2, made it possible to define different style rules for different media types. <br>
+        
+        Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on. <br>
+        
+        Unfortunately these media types never got a lot of support by devices, other than the print media type. <br>
+        
+        CSS3 Introduced Media Queries <br>
+        Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device. <br>
+        
+        Media queries can be used to check many things, such as: <br>
+        
+        width and height of the viewport <br>
+        width and height of the device <br>
+        orientation (is the tablet/phone in landscape or portrait mode?) <br>
+        resolution <br>
+        Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones). <br>
+        
+        Browser Support <br>
+        The numbers in the table specifies the first browser version that fully supports the @media rule. <br>
+        
+        Property					 <br>
+        @media	21.0	9.0	3.5	4.0	9.0 <br>
+        Media Query Syntax <br>
+        A media query consists of a media type and can contain one or more expressions, which resolve to either true or false. <br>
+        
+        @media not|only mediatype and (expressions) { <br>
+          CSS-Code; <br>
+        } <br>
+        The result of the query is true if the specified media type matches the type of device the document is being displayed on and all expressions in the media query are true. When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules. <br>
+        
+        Unless you use the not or only operators, the media type is optional and the all type will be implied. <br>
+        
+        You can also have different stylesheets for different media: <br>
+        
+        link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css" <br>
+        ADVERTISEMENT <br>
+        
+        CSS3 Media Types <br>
+        Value	Description <br>
+        all	Used for all media type devices <br>
+        print	Used for printers <br>
+        screen	Used for computer screens, tablets, smart-phones etc. <br>
+        speech	Used for screenreaders that "reads" the page out loud <br>
+        Media Queries Simple Examples <br>
+        One way to use media queries is to have an alternate CSS section right inside your style sheet. <br>
+        
+        The following example changes the background-color to lightgreen if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels, the background-color will be pink): <br>
+        
+        Example <br>
+        @media screen and (min-width: 480px) { <br>
+          body { <br>
+            background-color: lightgreen; <br>
+          } <br>
+        } <br>
+        The following example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels, the menu will be on top of the content): <br>
+        
+        Example <br>
+        @media screen and (min-width: 480px) { <br>
+          #leftsidebar {width: 200px; float: left;} <br>
+          #main {margin-left: 216px;} <br>
+        } <br>
+        More Media  Query Examples <br>
+        For much more examples on media queries, go to the next page: CSS MQ Examples. <br>
+        
+        CSS @media Reference <br>
+        For a full overview of all the media types and features/expressions, please look at the @media rule in our CSS reference. <br>
+      </p>
+      <h4>B26  CSS MQ EXAMPLES</h4>
+      <p>
+        CSS Media Queries - Examples <br>
+        CSS Media Queries - More Examples <br>
+        Let us look at some more examples of using media queries. <br>
+        
+        Media queries are a popular technique for delivering a tailored style sheet to different devices. To demonstrate a simple example, we can change the background color for different devices: <br>
+        
+        
+        Example <br>
+        /* Set the background color of body to tan */ <br>
+        body { <br>
+          background-color: tan; <br>
+        } <br>
+        
+        /* On screens that are 992px or less, set the background color to blue */ <br>
+        @media screen and (max-width: 992px) { <br>
+          body { <br>
+            background-color: blue; <br>
+          } <br>
+        } <br>
+        
+        /* On screens that are 600px or less, set the background color to olive */ <br>
+        @media screen and (max-width: 600px) { <br>
+          body { <br>
+            background-color: olive; <br>
+          } <br>
+        } <br>
+        Do you wonder why we use exactly 992px and 600px? They are what we call "typical breakpoints" for devices. You can read more about typical breakpoints in our Responsive Web Design Tutorial. <br>
+        
+        Media Queries For Menus <br>
+        In this example, we use media queries to create a responsive navigation menu, that varies in design on different screen sizes. <br>
+        
+        Large screens: <br>
+        
+        Small screens: <br>
+        
+        Example <br>
+        /* The navbar container */ <br>
+        .topnav { <br>
+          overflow: hidden; <br>
+          background-color: #333; <br>
+        } <br>
+        
+        /* Navbar links */ <br>
+        .topnav a { <br>
+          float: left; <br>
+          display: block; <br>
+          color: white; <br>
+          text-align: center; <br>
+          padding: 14px 16px; <br>
+          text-decoration: none; <br>
+        } <br>
+        
+        /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */ <br>
+        @media screen and (max-width: 600px) { <br>
+          .topnav a { <br>
+            float: none; <br>
+            width: 100%; <br>
+          } <br>
+        } <br>
+        ADVERTISEMENT <br>
+        
+        Media Queries For Columns <br>
+        A common use of media queries, is to create a flexible layout. In this example, we create a layout that varies between four, two and full-width columns, depending on different screen sizes: <br>
+        
+        Large screens: <br>
+        
+        Medium screens: <br>
+        
+        
+        Small screens: <br>
+        
+        
+        Example <br>
+        /* Create four equal columns that floats next to each other */ <br>
+        .column { <br>
+          float: left; <br>
+          width: 25%; <br>
+        } <br>
+        
+        /* On screens that are 992px wide or less, go from four columns to two columns */ <br>
+        @media screen and (max-width: 992px) { <br>
+          .column { <br>
+            width: 50%; <br>
+          } <br>
+        } <br>
+        
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */ <br>
+        @media screen and (max-width: 600px) { <br>
+          .column { <br>
+            width: 100%; <br>
+          } <br>
+        } <br>
+        Tip: A more modern way of creating column layouts, is to use CSS Flexbox (see example below). However, it is not supported in Internet Explorer 10 and earlier versions. If you require IE6-10 support, use floats (as shown above). <br>
+        
+        To learn more about the Flexible Box Layout Module, read our CSS Flexbox chapter. <br>
+        
+        To learn more about Responsive Web Design, read our Responsive Web Design Tutorial. <br>
+        
+        Example <br>
+        /* Container for flexboxes */ <br>
+        .row { <br>
+          display: flex; <br>
+          flex-wrap: wrap; <br>
+        } <br>
+        
+        /* Create four equal columns */ <br>
+        .column { <br>
+          flex: 25%; <br>
+          padding: 20px; <br>
+        } <br>
+        
+        /* On screens that are 992px wide or less, go from four columns to two columns */ <br>
+        @media screen and (max-width: 992px) { <br>
+          .column { <br>
+            flex: 50%; <br>
+          } <br>
+        } <br>
+        
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */ <br>
+        @media screen and (max-width: 600px) { <br>
+          .row { <br>
+            flex-direction: column; <br>
+          } <br>
+        } <br>
+        Hide Elements With Media Queries <br>
+        Another common use of media queries, is to hide elements on different screen sizes: <br>
+        
+        I will be hidden on small screens. <br>
+        Example <br>
+        /* If the screen size is 600px wide or less, hide the element */ <br>
+        @media screen and (max-width: 600px) { <br>
+          div.example { <br>
+            display: none; <br>
+          } <br>
+        } <br>
+        Change Font Size With Media Queries <br>
+        You can also use media queries to change the font size of an element on different screen sizes: <br>
+        
+        Variable Font Size. <br>
+        Example <br>
+        /* If screen size is more than 600px wide, set the font-size of div to 80px */ <br>
+        @media screen and (min-width: 600px) { <br>
+          div.example { <br>
+            font-size: 80px; <br>
+          } <br>
+        } <br>
+        
+        /* If screen size is 600px wide, or less, set the font-size of div to 30px */ <br>
+        @media screen and (max-width: 600px) { <br>
+          div.example { <br>
+            font-size: 30px; <br>
+          } <br>
+        } <br>
+        Flexible Image Gallery <br>
+        In this example, we use media queries together with flexbox to create a responsive image gallery: <br>
+        
+        Example <br>
+        
+        Flexible Website <br>
+        In this example, we use media queries together with flexbox to create a responsive website, containing a flexible navigation bar and flexible content. <br>
+        
+        Example <br>
+        
+        Orientation: Portrait / Landscape <br>
+        Media queries can also be used to change layout of a page depending on the orientation of the browser. <br>
+        
+        You can have a set of CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation: <br>
+        
+        Example <br>
+        Use a lightblue background color if the orientation is in landscape mode <br>
+        @media only screen and (orientation: landscape) { <br>
+          body { <br>
+            background-color: lightblue; <br>
+          } <br>
+        } <br>
+        Min Width to Max Width <br>
+        You can also use the (max-width: ..) and (min-width: ..) values to set a minimum width and a maximum width. <br>
+        
+        For example, when the browser's width is between 600 and 900px, change the appearance of a div element: <br>
+        
+        Example <br>
+        @media screen and (max-width: 900px) and (min-width: 600px) { <br>
+          div.example { <br>
+            font-size: 50px; <br>
+            padding: 50px; <br>
+            border: 8px solid black; <br>
+            background: yellow; <br>
+          } <br>
+        } <br>
+        Using an additional value: In the example below, we add an additional media query to our already existing one using a comma (this will behave like an OR operator): <br>
+        
+        Example <br>
+        /* When the width is between 600px and 900px OR above 1100px - change the appearance of div */ <br>
+        @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) { <br>
+          div.example { <br>
+            font-size: 50px; <br>
+            padding: 50px; <br>
+            border: 8px solid black; <br>
+            background: yellow; <br>
+          } <br>
+        } <br>
+        CSS @media Reference <br>
+        For a full overview of all the media types and features/expressions, please look at the @media rule in our CSS reference. <br>
+        
+        Tip: To learn more about responsive web design (how to target different devices and screens), using media query breakpoints, read our Responsive Web Design Tutorial. <br>
+
+      </p>
+      <h4>B27  CSS FLEXBOX</h4>
+        <h4>B27A CSS FLEXBOX</h4>
+        <p>
+          CSS Flexbox <br>
+          1 <br>
+          2 <br>
+          3 <br>
+          4 <br>
+          5 <br>
+          6 <br>
+          7 <br>
+          8 <br>
+          
+          CSS Flexbox Layout Module <br>
+          Before the Flexbox Layout module, there were four layout modes: <br>
+          
+          Block, for sections in a webpage <br>
+          Inline, for text <br>
+          Table, for two-dimensional table data <br>
+          Positioned, for explicit position of an element <br>
+          The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. <br>
+          
+          Browser Support <br>
+          The flexbox properties are supported in all modern browsers. <br>
+          
+          29.0	11.0	22.0	10	48 <br>
+          Flexbox Elements <br>
+          To start using the Flexbox model, you need to first define a flex container. <br>
+          
+          1 <br>
+          2 <br>
+          3 <br>
+          The element above represents a flex container (the blue area) with three flex items. <br>
+          
+          Example <br>
+          A flex contai ner with three flex items: <br>
+          
+          div class="flex-container" <br>
+            div>1 div <br>
+            div>2 div <br>
+            div>3 div <br>
+            div <br>
+          
+          You will learn more about flex containers and flex items in the next chapters. <br>
+
+        </p>
+     <h4> B27B CSS FLEX CONTAINER</h4> 
+     <p>
+CSS Flex Container <br>
+Parent Element (Container) <br>
+Like we specified in the previous chapter, this is a flex container (the blue area) with three flex items: <br>
+1 <br>
+2 <br>
+3 <br>
+The flex container becomes flexible by setting the display property to flex: <br>
+
+Example <br>
+.flex-container { <br>
+  display: flex; <br>
+} <br>
+The flex container properties are: <br>
+
+flex-direction <br>
+flex-wrap <br>
+flex-flow <br>
+justify-content <br>
+align-items <br>
+align-content <br>
+The flex-direction Property <br>
+The flex-direction property defines in which direction the container wants to stack the flex items. <br>
+
+1 <br>
+2 <br>
+3 <br>
+Example <br>
+The column value stacks the flex items vertically (from top to bottom): <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  flex-direction: column; <br>
+} <br>
+
+Example <br>
+The column-reverse value stacks the flex items vertically (but from bottom to top): <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  flex-direction: column-reverse; <br>
+} <br>
+
+Example <br>
+The row value stacks the flex items horizontally (from left to right): <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  flex-direction: row; <br>
+} <br>
+
+Example <br>
+The row-reverse value stacks the flex items horizontally (but from right to left): <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  flex-direction: row-reverse; <br>
+} <br>
+
+The flex-wrap Property <br>
+The flex-wrap property specifies whether the flex items should wrap or not. <br>
+
+The examples below have 12 flex items, to better demonstrate the flex-wrap property. <br>
+
+1 <br>
+2 <br>
+3 <br>
+4 <br>
+5 <br>
+6 <br>
+7 <br>
+8 <br>
+9 <br>
+10 <br>
+11 <br>
+12 <br>
+Example <br>
+The wrap value specifies that the flex items will wrap if necessary: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  flex-wrap: wrap; <br>
+} <br>
+Example <br>
+The nowrap value specifies that the flex items will not wrap (this is default): <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  flex-wrap: nowrap; <br>
+} <br>
+
+Example <br>
+The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order: <br>
+.flex-container { <br>
+  display: flex; <br>
+  flex-wrap: wrap-reverse; <br>
+} <br>
+
+The flex-flow Property <br>
+The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties. <br>
+
+Example <br>
+.flex-container { <br>
+  display: flex; <br>
+  flex-flow: row wrap; <br>
+} <br>
+
+The justify-content Property <br>
+The justify-content property is used to align the flex items: <br>
+
+1 <br>
+2 <br>
+3 <br>
+Example <br>
+The center value aligns the flex items at the center of the container: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  justify-content: center; <br>
+} <br>
+
+Example <br>
+The flex-start value aligns the flex items at the beginning of the container (this is default): <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  justify-content: fl ex-start; <br>
+} <br>
+
+Example <br>
+The flex-end value aligns the flex items at the end of the container: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  justify-content: flex-end; <br>
+} <br>
+
+Example <br>
+The space-around value displays the flex items with space before, between, and after the lines: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  justify-content: space-around; <br>
+} <br>
+
+Example <br>
+The space-between value displays the flex items with space between the lines: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  justify-content: space-between; <br>
+} <br>
+
+The align-items Property <br>
+The align-items property is used to align the flex items. <br>
+
+1 <br>
+2 <br>
+3 <br>
+In these examples we use a 200 pixels high container, to better demonstrate the align-items property. <br>
+
+Example <br>
+The center value aligns the flex items in the middle of the container: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 200px; <br>
+  align-items: c enter; <br>
+} <br>
+
+Example <br>
+The flex-start value aligns the flex items at the top of the container: <br>
+
+.flex-container { <br>
+  display: flex; <br> 
+  height: 200px; <br>
+  align-items: flex-start; <br>
+} <br>
+
+Example <br>
+The flex-end value aligns the flex items at the bottom of the container: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 200px; <br>
+  align-items: flex-end; <br>
+} <br>
+
+Example <br>
+The stretch value stretches the flex items to fill the container (this is default): <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 200px; <br>
+  align-items: stretch; <br>
+} <br>
+
+Example <br>
+The baseline value aligns the flex items such as their baselines aligns: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 200px; <br>
+  align-items: baseline; <br>
+} <br>
+Note: the example uses different font-size to demonstrate that the items gets aligned by the text baseline: <br>
+
+1 <br>
+2 <br>
+3 <br>
+4 <br>
+
+The align-content Property <br>
+The align-content property is used to align the flex lines. <br>
+
+1 <br>
+2 <br>
+3 <br>
+4 <br>
+5 <br>
+6 <br>
+7 <br>
+8 <br>
+9 <br>
+10 <br>
+11 <br>
+12 <br>
+In these examples we use a 600 pixels high container, with the flex-wrap property set to wrap, to better demonstrate the align-content property. <br>
+
+Example <br>
+The space-between value displays the flex lines with equal space between them: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 600px; <br>
+  flex-wrap: wrap; <br>
+  align-content: space-between; <br>
+} <br>
+
+Example <br>
+The space-around value displays the flex lines with space before, between, and after them: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 600px; <br>
+  flex-wrap: wrap; <br>
+  align-content: space-around; <br>
+} <br>
+
+Example <br>
+The stretch value stretches the flex lines to take up the remaining space (this is default): <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 600px; <br>
+  flex-wrap: wrap; <br>
+  align-content: stretch; <br>
+} <br>
+
+Example <br>
+The center  value displays display the flex lines in the middle of the container: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 600px; <br>
+  flex-wrap: wrap; <br>
+  align-content: center; <br>
+} <br>
+
+Example <br>
+The flex-start value displays the flex lines at the start of the container: <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 600px; <br>
+  flex-wrap: wrap; <br>
+  align-content: flex-start; <br>
+} <br>
+
+Example <br>
+The flex-end value displays the flex lines at the end of the container:  <br>
+
+.flex-container { <br>
+  display: flex; <br>
+  height: 600px; <br>
+  flex-wrap: wrap; <br>
+  align-content: flex-end; <br>
+} <br>
+
+Perfect Centering <br>
+In the following example we will solve a very common style problem: perfect centering. <br>
+
+SOLUTION: Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered: <br>
+
+Example <br>
+.flex-container { <br>
+  display: flex; <br>
+  height: 300px; <br>
+  justify-content: center; <br>
+  align-items: center; <br>
+} <br>
+<xmp>
+The CSS Flexbox Container Properties
+The following table lists all the CSS Flexbox Container properties:
+
+Property	Description
+align-content	Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+align-items	Vertically aligns the flex items when the items do not use all available space on the cross-axis
+display	Specifies the type of box used for an HTML element
+flex-direction	Specifies the direction of the flexible items inside a flex container
+flex-flow	A shorthand property for flex-direction and flex-wrap
+flex-wrap	Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+justify-content	Horizontally aligns the flex items when the items do not use all available space on the main-axis
+</xmp>
+     </p>
+     <h4> B27C CSS FLEX ITEMS </h4>
+     <p>
+      CSS Flex Items <br>
+      Child Elements (Items) <br>
+      The direct child elements of a flex container automatically becomes flexible (flex) items. <br>
+      
+      1 <br>
+      2 <br>
+      3 <br>
+      4 <br>
+      The element above represents four blue flex items inside a grey flex container. <br>
+      
+      Example <br>
+      div class="flex-container" <br>
+        div 1 div <br>
+        div 2 div <br>
+        div 3 div <br>
+        div 4 div <br>
+        div <br>
+      
+      The flex item properties are: <br>
+      
+      order <br>
+      flex-grow <br>
+      flex-shrink <br>
+      flex-basis <br>
+      flex <br>
+      align-self <br>
+      The order Property <br>
+      The order property specifies the order of the flex items. <br>
+      
+      1 <br>
+      2 <br>
+      3 <br>
+      4 <br>
+      The first flex item in the code does not have to appear as the first item in the layout. <br>
+      
+      The order value must be a number, default value is 0. <br>
+      
+      Example <br>
+      The order property can change the order of the flex items: <br>
+      
+      div class="flex-container" <br>
+        div style="order: 3">1 div <br>
+        div style="order: 2">2 div <br>
+        div style="order: 4">3 div <br>
+        div style="order: 1">4  div <br>
+      div <br>
+      
+      The flex-grow Property <br>
+      The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items. <br>
+      
+      1 <br>
+      2 <br>
+      3 <br>
+      The value must be a number, default value is 0. <br>
+      
+      Example <br>
+      Make the third flex item grow eight times faster than the other flex items: <br>
+      
+      div class="flex-container" <br>
+        div style="flex-grow: 1">1 div <br>
+        div style="flex-grow: 1">2 div <br>
+        div style="flex-grow: 8">3 div <br>
+      div <br>
+      
+      The flex-shrink Property <br>
+      The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items. <br>
+      
+      1 <br>
+      2 <br>
+      3 <br>
+      4 <br>
+      5 <br>
+      6 <br>
+      7 <br>
+      8 <br>
+      9 <br>
+      10 <br>
+      The value must be a number, default value is 1. <br>
+      
+      Example <br>
+      Do not let the third flex item shrink as much as the other flex items: <br>
+      
+      iv class="flex-container" <br>
+        div>1/div <br>
+        div>2/div <br>
+        div style="flex-shrink: 0">3/div <br>
+        div>4/div <br>
+        div>5/div <br>
+        div>6/div <br>
+        div>7/div <br>
+        div>8/div <br>
+        div>9/div <br>
+        div>10/div <br>
+      /div <br>
+      
+      The flex-basis Property <br>
+      The flex-basis property specifies the initial length of a flex item. <br>
+      
+      1 <br>
+      2 <br>
+      3 <br>
+      4 <br>
+      Example <br>
+      Set the initial length of the third flex item to 200 pixels: <br>
+      
+      div class="flex-container" <br>
+        div>1/div <br>
+        div>2/div <br>
+        div style="flex-basis: 200px">3/div <br>
+        div>4/div <br>
+      /div <br>
+      
+      The flex Property <br>
+      The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties. <br>
+      
+      Example <br>
+      Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels: <br>
+      
+      div class="flex-container" <br>
+        div>1/div <br>
+        div>2/div <br>
+        div style="flex: 0 0 200px">3/div <br>
+        div>4/div <br>
+      /div <br>
+      
+      The align-self Property <br>
+      The align-self property specifies the alignment for the selected item inside the flexible container. <br>
+      
+      The align-self property overrides the default alignment set by the container's align-items property. <br>
+      
+      1 <br>
+      2 <br>
+      3 <br>
+      4 <br>
+      In these examples we use a 200 pixels high container, to better demonstrate the align-self property: <br>
+      
+      Example <br>
+      Align the third flex item in the middle of the container: <br>
+      
+      div class="flex-container" <br>
+        div>1/div <br>
+        div>2/div <br>
+        div style="align-self: center">3/div <br>
+        div>4/div <br>
+      /div <br>
+      
+      Example <br>
+      Align the second flex item at the top of the container, and the third flex item at the bottom of the container: <br>
+      
+      div class="flex-container" <br>
+      div>1/div <br>
+        div style="align-self: flex-start">2/div <br>
+        div style="align-self: flex-end">3/div <br>
+        div>4/div <br>
+      /div <br>
+      <xmp>
+
+      The CSS Flexbox Items Properties
+      The following table lists all the CSS Flexbox Items properties:
+      
+      Property	Description
+      align-self	Specifies the alignment for a flex item (overrides the flex container's align-items property)
+      flex	A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
+      flex-basis	Specifies the initial length of a flex item
+      flex-grow	Specifies how much a flex item will grow relative to the rest of the flex items inside the same container
+      flex-shrink	Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container
+      order	Specifies the order of the flex items inside the same container
+      </xmp>
+     </p>
+    <h4> B27D CSS FLEX RESPONSIVE </h4>
+    <p>
+      CSS Flex Responsive <br>
+      Responsive Flexbox <br>
+      You learned from the CSS Media Queries chapter that you can use media queries to create different layouts for different screen sizes and devices. <br>
+      
+      Laptop and Desktops: <br>
+      
+      1 <br>
+      2 <br>
+      3 <br>
+      Mobile phones and Tablets: <br>
+      
+      1 <br>
+      2 <br>
+      3 <br>
+      
+      For example, if you want to create a two-column layout for most screen sizes, and a one-column layout for small screen sizes (such as phones and tablets), you can change the flex-direction from row to column at a specific breakpoint (800px in the example below): <br>
+      
+      Example <br>
+      .flex-container { <br>
+        display: flex; <br>
+        flex-direction: row; <br>
+      } <br>
+      
+      /* Responsive layout - makes a one column layout instead of a two-column layout */ <br>
+      @media (max-width: 800px) { <br>
+        .flex-container { <br>
+          flex-direction: column; <br>
+        } <br>
+      } <br>
+      
+      Another way is to change the percentage of the flex property of the flex items to create different layouts for different screen sizes. Note that we also have to include flex-wrap: wrap; on the flex container for this example to work: <br>
+      
+      Example <br>
+      .flex-container { <br>
+        display: flex; <br>
+        flex-wrap: wrap; <br>
+      } <br>
+      
+      .flex-item-left { <br>
+        flex: 50%; <br>
+      } <br>
+      
+      .flex-item-right { <br>
+        flex: 50%; <br>
+      } <br>
+      
+      /* Responsive layout - makes a one column layout instead of a two-column layout */ <br>
+      @media (max-width: 800px) { <br>
+        .flex-item-right, .flex-item-left { <br>
+          flex: 100%; <br>
+        } <br>
+      } <br>
+      
+      Responsive Image Gallery using Flexbox <br>
+      Use flexbox to create a responsive image gallery that varies between four, two or full-width images, depending on screen size: <br>
+      
+       
+      Responsive Website using Flexbox <br>
+      Use flexbox to create a responsive website, containing a flexible navigation bar and flexible content: <br>
+      
+      
+    </p>
+</body>
+
+</html>

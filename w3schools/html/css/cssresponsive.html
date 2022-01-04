@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h4>C CSS RESPONSIVE</h4>
+    <h4>C1 RWD INTRO</h4>
+    <p>
+      Responsive Web Design - Introduction <br>
+      What is Responsive Web Design? <br>
+      Responsive web design makes your web page look good on all devices. <br>
+      
+      Responsive web design uses only HTML and CSS. <br>
+      
+      Responsive web design is not a program or a JavaScript. <br>
+      
+      Designing For The Best Experience For All Users <br>
+      Web pages can be viewed using many different devices: desktops, tablets, and phones. Your web page should look good, and be easy to use, regardless of the device. <br>
+      
+      Web pages should not leave out information to fit smaller devices, but rather adapt its content to fit any device: <br>
+      
+      
+      
+      Desktop <br>
+      Tablet <br>
+      Phone <br>
+      It is called responsive web design when you use CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen. <br>
+      
+      Don't worry if you don't understand the example below, we will break down the code, step-by-step, in the next chapters: <br>
+      
+      
+      
+    </p>
+    <h4>C2 RWD VIEWPORT</h4>
+    <p>
+      Responsive Web Design - The Viewport <br>
+      What is The Viewport? <br>
+      The viewport is the user's visible area of a web page. <br>
+      
+      The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen. <br>
+      
+      Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size. <br>
+      
+      Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen. <br>
+      
+      This was not perfect!! But a quick fix. <br>
+      
+      Setting The Viewport <br>
+      HTML5 introduced a method to let web designers take control over the viewport, through the meta tag. <br>
+      
+      You should include the following meta viewport element in all your web pages: <br>
+      meta name="viewport" content="width=device-width, initial-scale=1.0" <br>
+      This gives the browser instructions on how to control the page's dimensions and scaling. <br>
+      
+      The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). <br>
+      
+      The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. <br>
+      
+      Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag: <br>
+      
+      
+      
+      
+      Without the viewport meta tag <br>
+      
+      
+      
+      With the viewport meta tag <br>
+      
+      Tip: If you are browsing this page with a phone or a tablet, you can click on the two links above to see the difference. <br>
+      
+      Size Content to The Viewport <br>
+      Users are used to scroll websites vertically on both desktop and mobile devices - but not horizontally! <br>
+      
+      So, if the user is forced to scroll horizontally, or zoom out, to see the whole web page it results in a poor user experience. <br>
+      
+      Some additional rules to follow: <br>
+      
+      1. Do NOT use large fixed width elements - For example, if an image is displayed at a width wider than the viewport it can cause the viewport to scroll horizontally. Remember to adjust this content to fit within the width of the viewport. <br>
+      
+      2. Do NOT let the content rely on a particular viewport width to render well - Since screen dimensions and width in CSS pixels vary widely between devices, content should not rely on a particular viewport width to render well. <br>
+      
+      3. Use CSS media queries to apply different styling for small and large screens - Setting large absolute CSS widths for page elements will cause the element to be too wide for the viewport on a smaller device. Instead, consider using relative width values, such as width: 100%. Also, be careful of using large absolute positioning values. It may cause the element to fall outside the viewport on small devices. <br>
+      
+      
+    </p>
+    <h4>C3 RWD GRID VIEW</h4>
+    <p>
+      Responsive Web Design - Grid-View <br>
+      What is a Grid-View? <br>
+      Many web pages are based on a grid-view, which means that the page is divided into columns: <br>
+      
+      
+      Using a grid-view is very helpful when designing web pages. It makes it easier to place elements on the page. <br>
+      
+      
+      A responsive grid-view often has 12 columns, and has a total width of 100%, and will shrink and expand as you resize the browser window. <br>
+      
+      
+      Building a Responsive Grid-View <br>
+      Lets start building a responsive grid-view. <br>
+      
+      First ensure that all HTML elements have the box-sizing property set to border-box. This makes sure that the padding and border are included in the total width and height of the elements. <br>
+      
+      Add the following code in your CSS: <br>
+      * { <br>
+        box-sizing: border-box; <br>
+      } <br>
+      Read more about the box-sizing property in our CSS Box Sizing chapter. <br>
+      
+      The following example shows a simple responsive web page, with two columns: <br>
+      
+      25%75% <br>
+      Example <br>
+      .menu { <br>
+        width: 25%; <br>
+        float: left; <br>
+      } <br>
+      .main { <br>
+        width: 75%; <br>
+        float: left; <br>
+      } <br>
+      The example above is fine if the web page only contains two columns. <br>
+      
+      However, we want to use a responsive grid-view with 12 columns, to have more control over the web page. <br>
+      
+      First we must calculate the percentage for one column: 100% / 12 columns = 8.33%. <br>
+      
+      Then we make one class for each of the 12 columns, class="col-" and a number defining how many columns the section should span: <br>
+      
+      CSS: <br>
+      .col-1 {width: 8.33%;} <br>
+      .col-2 {width: 16.66%;} <br>
+      .col-3 {width: 25%;} <br>
+      .col-4 {width: 33.33%;} <br>
+      .col-5 {width: 41.66%;} <br>
+      .col-6 {width: 50%;} <br>
+      .col-7 {width: 58.33%;} <br>
+      .col-8 {width: 66.66%;} <br>
+      .col-9 {width: 75%;} <br>
+      .col-10 {width: 83.33%;} <br>
+      .col-11 {width: 91.66%;} <br>
+      .col-12 {width: 100%;} <br>
+       All these columns should be floating to the left, and have a padding of 15px: <br>
+      
+      CSS: <br>
+      [class*="col-"] { <br>
+        float: left; <br>
+        padding: 15px; <br>
+        border: 1px solid red; <br>
+      } <br>
+      Each row should be wrapped in a div. The number of columns inside a row should always add up to 12: <br>
+      
+      HTML: <br>
+      div class="row" <br>
+        div class="col-3">.../div> !-- 25% -- <br>
+        div class="col-9">.../div> !-- 75% -- <br>
+      /div <br>
+      The columns inside a row are all floating to the left, and are therefore taken out of the flow of the page, and other elements will be placed as if the columns do not exist. To prevent this, we will add a style that clears the flow: <br>
+      
+      CSS: <br>
+      .row::after { <br>
+        content: ""; <br>
+        clear: both; <br>
+        display: table; <br>
+      } <br>
+      We also want to add some styles and colors to make it look better: <br>
+      
+      Example <br>
+      html { <br>
+        font-family: "Lucida Sans", sans-serif; <br>
+      } <br>
+      
+      .header { <br>
+        background-color: #9933cc; <br>
+        color: #ffffff; <br>
+        padding: 15px; <br>
+      } <br>
+      
+      .menu ul { <br>
+        list-style-type: none; <br>
+        margin: 0; <br>
+        padding: 0; <br>
+      } <br>
+      
+      .menu li { <br>
+        padding: 8px; <br>
+        margin-bottom: 7px; <br>
+        background-color :#33b5e5; <br>
+        color: #ffffff; <br>
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); <br>
+      } <br>
+      
+      .menu li:hover { <br>
+        background-color: #0099cc; <br>
+      } <br>
+      Notice that the webpage in the example does not look good when you resize the browser window to a very small width. In the next chapter you will learn how to fix that. <br>
+    </p>
+    <h4>C4 RWD MEDIA QUERIES</h4>
+    <p>
+      Responsive Web Design - Media Queries <br>
+      What is a Media Query? <br>
+      Media query is a CSS technique introduced in CSS3. <br>
+      
+      It uses the @media rule to include a block of CSS properties only if a certain condition is true. <br>
+      
+      Example <br>
+      If the browser window is 600px or smaller, the background color will be lightblue: <br>
+      
+      @media only screen and (max-width: 600px) { <br>
+        body { <br>
+          background-color: lightblue; <br>
+        } <br>
+      } <br>
+      Add a Breakpoint <br>
+      Earlier in this tutorial we made a web page with rows and columns, and it was responsive, but it did not look good on a small screen. <br>
+      
+      Media queries can help with that. We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint. <br>
+      
+      
+      Desktop <br>
+      Phone <br>
+      Use a media query to add a breakpoint at 768px: <br>
+      
+      Example <br>
+      When the screen (browser window) gets smaller than 768px, each column should have a width of 100%: <br>
+      
+      /* For desktop: */ <br>
+      .col-1 {width: 8.33%;} <br>
+      .col-2 {width: 16.66%;} <br>
+      .col-3 {width: 25%;} <br>
+      .col-4 {width: 33.33%;} <br>
+      .col-5 {width: 41.66%;} <br>
+      .col-6 {width: 50%;} <br>
+      .col-7 {width: 58.33%;} <br>
+      .col-8 {width: 66.66%;} <br>
+      .col-9 {width: 75%;} <br>
+      .col-10 {width: 83.33%;} <br>
+      .col-11 {width: 91.66%;} <br>
+      .col-12 {width: 100%;} <br>
+      
+      @media only screen and (max-width: 768px) { <br>
+        /* For mobile phones: */ <br>
+        [class*="col-"] { <br>
+          width: 100%; <br>
+        } <br>
+      } <br>
+      Always Design for Mobile First <br>
+      Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices). <br>
+      
+      This means that we must make some changes in our CSS. <br>
+      
+      Instead of changing styles when the width gets smaller than 768px, we should change the design when the width gets larger than 768px. This will make our design Mobile First: <br>
+      
+      Example <br>
+      /* For mobile phones: */ <br>
+      [class*="col-"] { <br>
+        width: 100%; <br>
+      } <br>
+      
+      @media only screen and (min-width: 768px) { <br>
+        /* For desktop: */ <br>
+        .col-1 {width: 8.33%;} <br>
+        .col-2 {width: 16.66%;} <br>
+        .col-3 {width: 25%;} <br>
+        .col-4 {width: 33.33%;} <br>
+        .col-5 {width: 41.66%;} <br>
+        .col-6 {width: 50%;} <br>
+        .col-7 {width: 58.33%;} <br>
+        .col-8 {width: 66.66%;} <br>
+        .col-9 {width: 75%;} <br>
+        .col-10 {width: 83.33%;} <br>
+        .col-11 {width: 91.66%;} <br>
+        .col-12 {width: 100%;} <br>
+      } <br>
+      Another Breakpoint <br>
+      You can add as many breakpoints as you like. <br>
+      
+      We will also insert a breakpoint between tablets and mobile phones. <br>
+      
+      
+      Desktop <br>
+      Tablet <br>
+      Phone <br>
+      We do this by adding one more media query (at 600px), and a set of new classes for devices larger than 600px (but smaller than 768px): <br>
+      
+      Example <br>
+      Note that the two sets of classes are almost identical, the only difference is the name (col- and col-s-): <br>
+      
+      /* For mobile phones: */ <br>
+      [class*="col-"] { <br>
+        width: 100%; <br>
+      } <br>
+      
+      @media only screen and (min-width: 600px) { <br>
+        /* For tablets: */ <br>
+        .col-s-1 {width: 8.33%;} <br>
+        .col-s-2 {width: 16.66%;} <br>
+        .col-s-3 {width: 25%;} <br>
+        .col-s-4 {width: 33.33%;} <br>
+        .col-s-5 {width: 41.66%;} <br>
+        .col-s-6 {width: 50%;} <br>
+        .col-s-7 {width: 58.33%;} <br>
+        .col-s-8 {width: 66.66%;} <br>
+        .col-s-9 {width: 75%;} <br>
+        .col-s-10 {width: 83.33%;} <br>
+        .col-s-11 {width: 91.66%;} <br>
+        .col-s-12 {width: 100%;} <br>
+      } <br>
+      
+      @media only screen and (min-width: 768px) { <br>
+        /* For desktop: */ <br>
+        .col-1 {width: 8.33%;} <br>
+        .col-2 {width: 16.66%;} <br>
+        .col-3 {width: 25%;} <br>
+        .col-4 {width: 33.33%;} <br>
+        .col-5 {width: 41.66%;} <br>
+        .col-6 {width: 50%;} <br>
+        .col-7 {width: 58.33%;} <br>
+        .col-8 {width: 66.66%;} <br>
+        .col-9 {width: 75%;} <br>
+        .col-10 {width: 83.33%;} <br>
+        .col-11 {width: 91.66%;} <br>
+        .col-12 {width: 100%;} <br>
+      } <br>
+      It might seem odd that we have two sets of identical classes, but it gives us the opportunity in HTML, to decide what will happen with the columns at each breakpoint: <br>
+      
+      HTML Example <br>
+      For desktop: <br>
+      
+      The first and the third section will both span 3 columns each. The middle section will span 6 columns. <br>
+      
+      For tablets: <br>
+      
+      The first section will span 3 columns, the second will span 9, and the third section will be displayed below the first two sections, and it will span 12 columns: <br>
+      
+      div class="row" <br>
+        div class="col-3 col-s-3".../div <br>
+        div class="col-6 col-s-9".../div <br>
+        div class="col-3 col-s-12".../div <br>
+      /div <br>
+      Typical Device Breakpoints <br>
+      There are tons of screens and devices with different heights and widths, so it is hard to create an exact breakpoint for each device. To keep things simple you could target five groups: <br>
+      
+      Example <br>
+      /* Extra small devices (phones, 600px and down) */ <br>
+      @media only screen and (max-width: 600px) {...} <br>
+      
+      /* Small devices (portrait tablets and large phones, 600px and up) */ <br>
+      @media only screen and (min-width: 600px) {...} <br>
+      
+      /* Medium devices (landscape tablets, 768px and up) */ <br>
+      @media only screen and (min-width: 768px) {...} <br>
+      
+      /* Large devices (laptops/desktops, 992px and up) */ <br>
+      @media only screen and (min-width: 992px) {...} <br>
+      
+      /* Extra large devices (large laptops and desktops, 1200px and up) */ <br>
+      @media only screen and (min-width: 1200px) {...} <br>
+      Orientation: Portrait / Landscape <br>
+      Media queries can also be used to change layout of a page depending on the orientation of the browser. <br>
+      
+      You can have a set of CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation: <br>
+      
+      Example <br>
+      The web page will have a lightblue background if the orientation is in landscape mode: <br>
+      
+      @media only screen and (orientation: landscape) { <br>
+        body { <br>
+          background-color: lightblue; <br>
+        } <br>
+      } <br>
+      Hide Elements With Media Queries <br>
+      Another common use of media queries, is to hide elements on different screen sizes: <br>
+      
+      I will be hidden on small screens. <br>
+      Example <br>
+      /* If the screen size is 600px wide or less, hide the element */ <br>
+      @media only screen and (max-width: 600px) { <br>
+        div.example { <br>
+          display: none; <br>
+        } <br>
+      } <br>
+      Change Font Size With Media Queries <br>
+      You can also use media queries to change the font size of an element on different screen sizes: <br>
+      
+      Variable Font Size. <br>
+      Example <br>
+      /* If the screen size is 601px or more, set the font-size of div to 80px */ <br>
+      @media only screen and (min-width: 601px) { <br>
+        div.example { <br>
+          font-size: 80px; <br>
+        } <br>
+      } <br>
+      
+      /* If the screen size is 600px or less, set the font-size of div to 30px */ <br>
+      @media only screen and (max-width: 600px) { <br>
+        div.example { <br>
+          font-size: 30px; <br>
+        } <br>
+      } <br>
+      CSS @media  Reference <br>
+      For a full overview of all the media types and features/expressions, please look at the @media rule in our CSS reference. <br>
+    </p>
+    <h4>C5  RWD IMAGES</h4>
+    <p>
+      Responsive Web Design - Images <br>
+
+      Resize the browser window to see how the image scales to fit the page. <br>
+      
+      Using The width Property <br>
+      If the width property is set to a percentage and the height property is set to "auto", the image will be responsive and scale up and down: <br>
+      
+      Example <br>
+      img { <br>
+        width: 100%; <br>
+        height: auto; <br>
+      } <br>
+      Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead. <br>
+      
+      Using The max-width Property <br>
+      If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size: <br>
+      
+      Example <br>
+      img { <br>
+        max-width: 100% ; <br>
+        height: auto; <br>
+      } <br>
+      Add an Image to The Example Web Page<br>
+      Example<br>
+      img {<br>
+        width: 100%;<br>
+        height: auto;<br>
+      }<br>
+      Background Images<br>
+      Background images can also respond to resizing and scaling.<br>
+      
+      Here we will show three different methods:<br>
+      
+      1. If the background-size property is set to "contain", the background image will scale, and try to fit the content area. However, the image will keep its aspect ratio (the proportional relationship between the image's width and height):<br>
+      
+      
+      Here is the CSS code:<br>
+      
+      Example<br>
+      div {<br>
+        width: 100%;<br>
+        height: 400px;<br>
+        background-image: url('img_flowers.jpg');<br>
+        background-repeat: no-repeat;<br>
+        background-size: contain;<br>
+        border: 1px solid red;<br>
+      }<br>
+      2. If the background-size property is set to "100% 100%", the background image will stretch to cover the entire content area:<br>
+      
+      
+      Here is the CSS code:<br>
+      
+      Example<br>
+      div {<br>
+        width: 100%;<br>
+        height: 400px;<br>
+        background-image: url('img_flowers.jpg');<br>
+        background-size: 100% 100%;<br>
+        border: 1px solid red;<br>
+      }<br>
+      3. If the background-size property is set to "cover", the background image will scale to cover the entire content area. Notice that the "cover" value keeps the aspect ratio, and some part of the background image may be clipped:<br>
+      
+      
+      Here is the CSS code:<br>
+      
+      Example<br>
+      div {<br>
+        width: 100%;<br>
+        height: 400px;<br>
+        background-image: url('img_flowers.jpg');<br>
+        background-size: cover;<br>
+        border: 1px solid red;<br>
+      }<br>
+      Different Images for Different Devices<br>
+      A large image can be perfect on a big computer screen, but useless on a small device. Why load a large image when you have to scale it down anyway? To reduce the load, or for any other reasons, you can use media queries to display different images on different devices.<br>
+      
+      Here is one large image and one smaller image that will be displayed on different devices:<br>
+      
+      
+      
+      Example<br>
+      /* For width smaller than 400px: */<br>
+      body {<br>
+        background-image: url('img_smallflower.jpg');<br>
+      }<br>
+      /* For width 400px and larger: */<br>
+      @media only screen and (min-width: 400px) {<br>
+        body {<br>
+          background-image: url('img_flowers.jpg');<br>
+        }<br>
+      }<br>
+      You can use the media query min-device-width, instead of min-width, which checks the device width, instead of the browser width. Then the image will not change when you resize the browser window:<br>
+      
+      Example<br>
+      /* For devices smaller than 400px: */<br>
+      body {<br>
+        background-image: url('img_smallflower.jpg');<br>
+      }<br>
+      
+      /* For devices 400px and larger: */<br>
+      @media only screen and (min-device-width: 400px) {<br>
+        body {<br>
+          background-image: url('img_flowers.jpg');<br>
+        }<br>
+      }<br>
+      The HTML picture Element<br>
+      The HTML picture element gives web developers more flexibility in specifying image resources.<br>
+      The most common use of the picture element will be for images used in responsive designs. Instead of having one image that is scaled up or down based on the viewport width, multiple images can be designed to more nicely fill the browser viewport.<br>
+      
+      The picture element works similar to the video and audio elements. You set up different sources, and the first source that fits the preferences is the one being used:<br>
+      
+      Example<br>
+      picture<br>
+        source srcset="img_smallflower.jpg" media="(max-width: 400px)"<br>
+        source srcset="img_flowers.jpg"<br>
+        img src="img_flowers.jpg" alt="Flowers"<br>
+      /picture<br>
+      The srcset attribute is required, and defines the source of the image.<br>
+      
+      The media attribute is optional, and accepts the media queries you find in CSS @media rule.<br>
+      
+      You should also define an img element for browsers that do not support the picture element.<br>
+
+    </p>
+    <h4>C6  RWD VIDEO</h4>
+    <p>
+Responsive Web Design - Videos<br>
+Using The width Property<br>
+If the width property is set to 100%, the video player will be responsive and scale up and down:<br>
+
+Example<br>
+video {<br>
+width: 100%;<br>
+height: auto;<br>
+}<br>
+Notice that in the example above, the video player can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.<br>
+
+Using The max-width Property<br>
+If the max-width property is set to 100%, the video player will scale down if it has to, but never scale up to be larger than its original size:<br>
+
+Example<br>
+video {<br>
+max-width: 100%;<br>
+height: auto;v
+}<br>
+Add a Video to the Example Web Page<br>
+We want to add a video in our example web page. The video will be resized to always take up all the available space:<br>
+
+Example<br>
+video {<br>
+width: 100%;<br>
+height: auto;<br>
+}<br>
+    </p>
+    <h4>C7  RWD FRAMEWORKS</h4>
+    <p>
+      Responsive Web Design - Frameworks<br>
+      There are many free CSS Frameworks that offer Responsive Design.<br>
+      
+      Using W3.CSS<br>
+      A great way to create a responsive design, is to use a responsive style sheet, like W3.CSS<br>
+      
+      W3.CSS makes it easy to develop sites that look nice at any size!<br>
+      
+      W3.CSS Demo<br>
+      Resize the page to see the responsiveness!<br>
+      
+      London<br>
+      London is the capital city of England.<br>
+      
+      It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.<br>
+      
+      Paris<br>
+      Paris is the capital of France.<br>
+      
+      The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.<br>
+      
+      Tokyo<br>
+      Tokyo is the capital of Japan.<br>
+      
+      It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.<br>
+      
+      Example<br>
+      !DOCTYPE html<br>
+      html<br>
+      meta name="viewport" content="width=device-width, initial-scale=1"<br>
+      link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"<br>
+      body<br>
+      
+      div class="w3-container w3-green"<br>
+        h1>W3Schools Demo /h1<br>
+        p>Resize this responsive page! /p<br>
+      /div><br>
+      
+      div class="w3-row-padding"<br>
+        div class="w3-third"<br>
+          h2>London /h2<br>
+          p London is the capital city of England. /p<br>
+          p It is the most populous city in the United Kingdom,<br>
+          with a metropolitan area of over 13 million inhabitants./p<br>
+        /div<br>
+      
+        div class="w3-third"<br>
+          h2>Paris /h2<br>
+          p>Paris is the capital of France./p<br>
+          p>The Paris area is one of the largest population centers in Europe,<br>
+          with more than 12 million inhabitants./p<br>
+        /div<br>
+      
+        div class="w3-third"<br>
+          h2>Tokyo/h2<br>
+          pTokyo is the capital of Japan./p<br>
+          p>It is the center of the Greater Tokyo Area,<br>
+          and the most populous metropolitan area in the world. /p<br>
+        /div<br>
+      /div<br>
+      
+      /body<br>
+      /html<br>
+      To learn more about W3.CSS, read our W3.CSS Tutorial.<br>
+      
+      Bootstrap<br>
+      Another popular framework is Bootstrap, it uses HTML, CSS and jQuery to make responsive web pages.<br>
+      
+      Example<br>
+      !DOCTYPE html<br>
+      html lang="en"<br>
+      head<br>
+      title>Bootstrap Example /title<br>
+      meta charset="utf-8"<br>
+      meta name="viewport" content="width=device-width, initial-scale=1"><br>
+      link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><br>
+      script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">/script<br>
+      script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"/scrip<br>
+      /head<br>
+      body<br>
+      
+      div class="container"<br>
+        div class="jumbotron"<br>
+          h1>My First Bootstrap Page/h1<br>
+        /div<br>
+        div class="row"<br>
+          div class="col-sm-4"<br>
+            ...<br>
+          /div><br>
+          div class="col-sm-4"<br>
+            ...<br>
+          /div<br>
+          div class="col-sm-4"><br>
+          ...<br>
+          /div<br>
+        /div<br>
+      /div<br>
+      
+      /body<br>
+      /html<br>
+      To learn more about Bootstrap, go to our Bootstrap Tutorial.<br>
+    </p>
+    <h4>C8  RWD TEMPLATES</h4>
+    <p>
+      Responsive Web Design - Templates<br>
+      W3.CSS Web Site Templates<br>
+      We have created some responsive templates with the W3.CSS framework.<br>
+      
+      You are free to modify, save, share, and use them in all your projects.<br>
+      
+      Band Template<br>
+      Start Page Template<br>
+      Art Template<br>
+      Streert Art Template<br>
+      Architect Template<br>
+      Architect Template<br>
+      Coming Soon Template<br>
+      Coming Soon Template<br>
+      ADVERTISEMENT<br>
+
+      Blog Template<br>
+      Blog Template<br>
+      Food Blog Template<br>
+      Food Blog Template<br>
+      Fashion Blog Template<br>
+      Fashion Blog Template<br>
+      Gourmet Catering Template<br>
+      Gourmet Catering Template<br>
+      CV Template<br>
+      CV Template<br>
+      Wedding Invitation Template<br>
+      Wedding Invitation Template<br>
+      Photo Template<br>
+      Photo Template<br>
+      Black & White Photo Template<br>
+      Black and White Photo Template<br>
+      Photo III Template<br>
+      Photo Template<br>
+      Nature Portfolio Template<br>
+      Nature Portfolio Template<br>
+      People Portfolio Template<br>
+      People Portfolio Template<br>
+      People Portfolio II Template<br>
+      People Portfolio II Template<br>
+      Dark Portfolio Template<br>
+      Dark Icon Bar Template<br>
+      Black & White Portfolio Template<br>
+      Black and White Portfolio Template<br>
+      Parallax Template<br>
+      Portfolio Template<br>
+      Clothing Store Template<br>
+      Clothing/Fashion StoreTemplate<br>
+      Interior Design Template<br>
+      Interior Design Template<br>
+      Cafe Template<br>
+      Cafe Template<br>
+      Pizza Restaurant Template<br>
+      Pizza Restaurant Template<br>
+      Modal Restaurant Template<br>
+      Modal Restaurant Template<br>
+      Start Page Template<br>
+      Start Page Template<br>
+      Startup Template<br>
+      Startup Template<br>
+      App Launch Template<br>
+      App Launch Template<br>
+      Marketing Template<br>
+      Marketing Template<br>
+      Marketing / Website Template<br>
+      Web Page Template<br>
+      Web Page Template<br>
+      Web Page Template<br>
+      Social Media Template<br>
+      Social Media Template<br>
+      Analytics Template<br>
+      Analytics Template<br>
+      Apartment Rental Template<br>
+      Apartment Rental Template<br>
+      Hotel Template<br>
+      Hotel Template<br>
+      Travel Template<br>
+      Travel Template<br>
+      Travel Agency Template<br>
+      Start Page Template<br>
+      House Design Template<br>
+      Start Page Template<br>
+      Screen 50/50 Template<br>
+      Start Page Template<br>
+      Mail Template<br>
+      Start Page Template<br>
+      Kitchen Sink/Demo Template<br>
+    </p>
+</body>
+
+</html>

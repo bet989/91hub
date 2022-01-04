@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h4> B HTML FORMS</h4>
+
+
+            <h4> B1 HTML FORMS</h4>
+            <p>
+                HTML Forms<br>
+                An HTML form is used to collect user input. The user input is most often sent to a server for processing.<br>
+                The form Element<br>
+                    The HTML form element is used to create an HTML form for user input:<br>
+                    The form element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.<br>
+                    The input Element<br>
+                    The HTML input element is the most used form element.<br>
+                    
+                    An input element can be displayed in many ways, depending on the type attribute.<br>
+<xmp>
+    Here are some examples:
+
+Type	Description
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+</xmp>
+Text Fields<br>
+The input type="text" defines a single-line input field for text input.<br>
+This is how the HTML code above will be displayed in a browser:<br>
+Note: The form itself is not visible. Also note that the default width of an input field is 20 characters.<br>
+
+The label Element<br>
+Notice the use of the label element in the example above.<br>
+
+The label tag defines a label for many form elements.<br>
+
+The label element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.<br>
+
+The label element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the label element, it toggles the radio button/checkbox.<br>
+
+The for attribute of the label tag should be equal to the id attribute of the input element to bind them together.<br>
+
+Radio Buttons<br>
+The input type="radio" defines a radio button.<br>
+
+Radio buttons let a user select ONE of a limited number of choices.<br>
+Checkboxes<br>
+The input type="checkbox" defines a checkbox.<br>
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.<br>
+The Submit Button<br>
+The input type="submit" defines a button for submitting the form data to a form-handler.<br>
+
+The form-handler is typically a file on the server with a script for processing input data.<br>
+
+The form-handler is specified in the form's action attribute.<br>
+The Name Attribute for input<br>
+Notice that each input field must have a name attribute to be submitted.<br>
+
+If the name attribute is omitted, the value of the input field will not be sent at all.<br>
+
+
+            </p>
+     <h4> B2 HTML FORM ATTRIBUTES</h4>
+     <p>
+        HTML Form Attributes<br>
+        This chapter describes the different attributes for the HTML form element.<br>
+        
+        The Action Attribute<br>
+        The action attribute defines the action to be performed when the form is submitted.<br>
+        
+        Usually, the form data is sent to a file on the server when the user clicks on the submit button.<br>
+        In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:<br>
+        Tip: If the action attribute is omitted, the action is set to the current page.<br>
+
+        The Target Attribute<br>
+        The target attribute specifies where to display the response that is received after submitting the form.<br>
+        
+        The target attribute can have one of the following values:<br>
+        
+        Value	Description
+        _blank	The response is displayed in a new window or tab<br>
+        _self	The response is displayed in the current window<br>
+        _parent	The response is displayed in the parent frame<br>
+        _top	The response is displayed in the full body of the window<br>
+        framename	The response is displayed in a named iframe<br>
+        The default value is _self which means that the response will open in the current window.<br>
+        The Method Attribute<br>
+The method attribute specifies the HTTP method to be used when submitting the form data.<br>
+
+The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").<br>
+
+The default HTTP method when submitting form data is GET. <br>
+Notes on GET:<br>
+
+Appends the form data to the URL, in name/value pairs<br>
+NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)<br>
+The length of a URL is limited (2048 characters)<br>
+Useful for form submissions where a user wants to bookmark the result<br>
+GET is good for non-secure data, like query strings in Google<br>
+Notes on POST:<br>
+
+Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)<br>
+POST has no size limitations, and can be used to send large amounts of data.<br>
+Form submissions with POST cannot be bookmarked<br>
+Tip: Always use POST if the form data contains sensitive or personal information!<br>
+
+The Autocomplete Attribute<br>
+The autocomplete attribute specifies whether a form should have autocomplete on or off.<br>
+
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before.<br>
+The Novalidate Attribute<br>
+The novalidate attribute is a boolean attribute.<br>
+
+When present, it specifies that the form-data (input) should not be validated when submitted.<br>
+<xmp>
+    List of All <form> Attributes
+        Attribute	Description
+        accept-charset	Specifies the character encodings used for form submission
+        action	Specifies where to send the form-data when a form is submitted
+        autocomplete	Specifies whether a form should have autocomplete on or off
+        enctype	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+        method	Specifies the HTTP method to use when sending form-data
+        name	Specifies the name of the form
+        novalidate	Specifies that the form should not be validated when submitted
+        rel	Specifies the relationship between a linked resource and the current document
+        target	Specifies where to display the response that is received after submitting the form
+</xmp>
+     </p>
+    <h4>B3 HTML FORM ELEMENTS</h4>
+    <p>
+        HTML Form Elements
+        This chapter describes all the different HTML form elements.
+        <xmp>
+            The HTML <form> element can contain one or more of the following form elements:
+
+                <input>
+                <label>
+                <select>
+                <textarea>
+                <button>
+                <fieldset>
+                <legend>
+                <datalist>
+                <output>
+                <option>
+                <optgroup>
+        </xmp>
+        The input Element<br>
+One of the most used form element is the input element.<br>
+
+The input element can be displayed in several ways, depending on the type attribute.<br>
+The label Element<br>
+    The label element defines a label for several form elements.<br>
+    
+    The label element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.<br>
+    
+    The label element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the label element, it toggles the radio button/checkbox.<br>
+    The for attribute of the label tag should be equal to the id attribute of the input element to bind them together.<br>
+    
+    The select Element<br>
+    The select element defines a drop-down list<br>
+    The option elements defines an option that can be selected.<br>
+
+        By default, the first item in the drop-down list is selected.<br>
+        
+        To define a pre-selected option, add the selected attribute to the option:<br>
+        Visible Values:<br>
+Use the size attribute to specify the number of visible values:<br>
+Allow Multiple Selections:<br>
+Use the multiple attribute to allow the user to select more than one value:<br>
+The textarea Element<br>
+    The textarea element defines a multi-line input field (a text area):<br>
+    The rows attribute specifies the visible number of lines in a text area.<br>
+
+    The cols attribute specifies the visible width of a text area.<br>
+    
+    This is how the HTML code above will be displayed in a browser:<br>
+    You can also define the size of the text area by using CSS:<br>
+    The button Element<br>
+        The button element defines a clickable button:<br>
+        Note: Always specify the type attribute for the button element. Different browsers may use different default types for the button element.<br>
+
+The fieldset and legend Elements<br>
+The fieldset element is used to group related data in a form.<br>
+
+The legend element defines a caption for the fieldset element.<br>
+The datalist Element<br>
+    The datalist element specifies a list of pre-defined options for an input element.<br>
+    
+    Users will see a drop-down list of the pre-defined options as they input data.<br>
+    
+    The list attribute of the input element, must refer to the id attribute of the datalist element.<br>
+    The output Element<br>
+        The output element represents the result of a calculation (like one performed by a script).<br>
+        <xmp>
+            HTML Form Elements
+Tag	Description
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation
+        </xmp>
+
+    </p>
+     <h4>B4 HTML INPUT TYPES</h4>
+     <p>
+        HTML Input Types<br>
+        This chapter describes the different types for the HTML input element.<br>
+        <xmp>
+            HTML Input Types
+Here are the different input types you can use in HTML:
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+Tip: The default value of the type attribute is "text".
+        </xmp>
+        Input Type Text<br>
+        input type="text" defines a single-line text input field:<br>
+        Input Type Password<br>
+input type="password" defines a password field:<br>
+The characters in a password field are masked (shown as asterisks or circles).<br>
+Input Type Submit<br>
+input type="submit" defines a button for submitting form data to a form-handler.<br>
+
+The form-handler is typically a server page with a script for processing input data.<br>
+
+The form-handler is specified in the form's action attribute:<br>
+If you omit the submit button's value attribute, the button will get a default text:<br>
+Input Type Reset<br>
+input type="reset" defines a reset button that will reset all form values to their default values:<br>
+If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.<br>
+Input Type Radio<br>
+input type="radio" defines a radio button.<br>
+
+Radio buttons let a user select ONLY ONE of a limited number of choices:<br>
+Input Type Checkbox<br>
+input type="checkbox" defines a checkbox.<br>
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.<br>
+Input Type Button<br>
+ input type="button" defines a button:<br>
+ Input Type Color<br>
+ The input type="color" is used for input fields that should contain a color.<br>
+ 
+ Depending on browser support, a color picker can show up in the input field.<br>
+ Input Type Date<br>
+ The input type="date" is used for input fields that should contain a date.<br>
+ 
+ Depending on browser support, a date picker can show up in the input field.<br>
+ You can also use the min and max attributes to add restrictions to dates:<br>
+ Input Type Datetime-local<br>
+The input type="datetime-local" specifies a date and time input field, with no time zone.<br>
+
+Depending on browser support, a date picker can show up in the input field.<br>
+Input Type Email<br>
+The input type="email" is used for input fields that should contain an e-mail address.<br>
+
+Depending on browser support, the e-mail address can be automatically validated when submitted.<br>
+
+Some smartphones recognize the email type, and add ".com" to the keyboard to match email input<br>
+Input Type File<br>
+The input type="file" defines a file-select field and a "Browse" button for file uploads.<br>
+Input Type Hidden<br>
+The input type="hidden" defines a hidden input field (not visible to a user).<br>
+
+A hidden field let web developers include data that cannot be seen or modified by users when a form is submitted.<br>
+
+A hidden field often stores what database record that needs to be updated when the form is submitted.<br>
+
+Note: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!<br>
+Input Type Month<br>
+The input type="month" allows the user to select a month and year.<br>
+
+Depending on browser support, a date picker can show up in the input field.<br>
+Input Type Number<br>
+The input type="number" defines a numeric input field.<br>
+
+You can also set restrictions on what numbers are accepted.<br>
+
+The following example displays a numeric input field, where you can enter a value from 1 to 5:<br>
+Input Restrictions<br>
+Here is a list of some common input restrictions:<br>
+
+Attribute	Description<br>
+checked	Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")<br>
+disabled	Specifies that an input field should be disabled<br>
+max	Specifies the maximum value for an input field<br>
+maxlength	Specifies the maximum number of character for an input field<br>
+min	Specifies the minimum value for an input field<br>
+pattern	Specifies a regular expression to check the input value against<br>
+readonly	Specifies that an input field is read only (cannot be changed)<br>
+required	Specifies that an input field is required (must be filled out)<br>
+size	Specifies the width (in characters) of an input field<br>
+step	Specifies the legal number intervals for an input field<br>
+value	Specifies the default value for an input field<br>
+Input Type Range<br>
+The input type="range" defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes:<br>
+Input Type Search<br>
+The input type="search" is used for search fields (a search field behaves like a regular text field).<br>
+Input Type Tel<br>
+The input type="tel" is used for input fields that should contain a telephone number.<br>
+Input Type Time<br>
+The input type="time" allows the user to select a time (no time zone).<br>
+
+Depending on browser support, a time picker can show up in the input field.<br>
+Input Type Url<br>
+The input type="url" is used for input fields that should contain a URL address.<br>
+
+Depending on browser support, the url field can be automatically validated when submitted.<br>
+
+Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.<br>
+Input Type Week<br>
+The input type="week" allows the user to select a week and year.<br>
+
+Depending on browser support, a date picker can show up in the input field.<br>
+<xmp>
+    HTML Input Type Attribute
+Tag	Description
+<input type="">	Specifies the input type to display
+</xmp>
+     </p>
+         <h4> B5 HTML INPUT ATTRIBUTES</h4>
+         <p>
+            HTML Input Attributes<br>
+            This chapter describes the different attributes for the HTML input element.<br>
+            
+            The value Attribute<br>
+            The input value attribute specifies an initial value for an input field:<br>
+            The readonly Attribute<br>
+The input readonly attribute specifies that an input field is read-only.<br>
+
+A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).<br>
+
+The value of a read-only input field will be sent when submitting the form!<br>
+The disabled Attribute<br>
+The input disabled attribute specifies that an input field should be disabled.<br>
+
+A disabled input field is unusable and un-clickable.<br>
+
+The value of a disabled input field will not be sent when submitting the form!<br>
+The size Attribute<br>
+The input size attribute specifies the visible width, in characters, of an input field.<br>
+
+The default value for size is 20.<br>
+
+Note: The size attribute works with the following input types: text, search, tel, url, email, and password.<br>
+The maxlength Attribute<br>
+The input maxlength attribute specifies the maximum number of characters allowed in an input field.<br>
+
+Note: When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code.<br>
+The min and max Attributes<br>
+The input min and max attributes specify the minimum and maximum values for an input field.<br>
+
+The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.<br>
+
+Tip: Use the max and min attributes together to create a range of legal values.<br>
+The multiple Attribute<br>
+The input multiple attribute specifies that the user is allowed to enter more than one value in an input field.<br>
+
+The multiple attribute works with the following input types: email, and file.<br>
+The pattern Attribute<br>
+The input pattern attribute specifies a regular expression that the input field's value is checked against, when the form is submitted.<br>
+
+The pattern attribute works with the following input types: text, date, search, url, tel, email, and password.<br>
+
+Tip: Use the global title attribute to describe the pattern to help the user.<br>
+The placeholder Attribute<br>
+The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).<br>
+
+The short hint is displayed in the input field before the user enters a value.<br>
+
+The placeholder attribute works with the following input types: text, search, url, tel, email, and password.<br>
+The required Attribute<br>
+The input required attribute specifies that an input field must be filled out before submitting the form.<br>
+
+The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.<br>
+The step Attribute<br>
+The input step attribute specifies the legal number intervals for an input field.<br>
+
+Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.<br>
+
+Tip: This attribute can be used together with the max and min attributes to create a range of legal values.<br>
+
+The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.<br>
+Note: Input restrictions are not foolproof, and JavaScript provides many ways to add illegal input. To safely restrict input, it must also be checked by the receiver (the server)!<br>
+The autofocus Attribute<br>
+The input autofocus attribute specifies that an input field should automatically get focus when the page loads.<br>
+The height and width Attributes<br>
+The input height and width attributes specify the height and width of an input type="image" element.<br>
+
+Tip: Always specify both the height and width attributes for images. If height and width are set, the space required for the image is reserved when the page is loaded. Without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout will change during loading (while the images load).<br>
+The list Attribute<br>
+The input list attribute refers to a datalist element that contains pre-defined options for an input element.<br>
+The autocomplete Attribute<br>
+The input autocomplete attribute specifies whether a form or an input field should have autocomplete on or off.<br>
+
+Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.<br>
+
+The autocomplete attribute works with form and the following input types: text, search, url, tel, email, password, datepickers, range, and color.<br>
+Tip: In some browsers you may need to activate an autocomplete function for this to work (Look under "Preferences" in the browser's menu).<br>
+<xmp>
+    HTML Form and Input Elements
+Tag	Description
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+</xmp>
+         </p>
+        <h4>B6 HTML INPUT FORM ATTRIBUTES</h4>
+        <p>
+            HTML Input form* Attributes<br>
+            This chapter describes the different form* attributes for the HTML input element.<br>
+            
+            The form Attribute<br>
+            The input form attribute specifies the form the input element belongs to.<br>
+            
+            The value of this attribute must be equal to the id attribute of the form element it belongs to.<br>
+            The formaction Attribute<br>
+            The input formaction attribute specifies the URL of the file that will process the input when the form is submitted.<br>
+            
+            Note: This attribute overrides the action attribute of the form element.<br>
+            
+            The formaction attribute works with the following input types: submit and image.<br>
+            The formenctype Attribute<br>
+            The input formenctype attribute specifies how the form-data should be encoded when submitted (only for forms with method="post").<br>
+            
+            Note: This attribute overrides the enctype attribute of the form element.<br>
+            
+            The formenctype attribute works with the following input types: submit and image.<br>
+            The formmethod Attribute<br>
+The input formmethod attribute defines the HTTP method for sending form-data to the action URL.<br>
+
+Note: This attribute overrides the method attribute of the form element.<br>
+
+The formmethod attribute works with the following input types: submit and image.<br>
+
+The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (method="post").<br>
+Notes on the "get" method:<br>
+
+This method appends the form-data to the URL in name/value pairs<br>
+This method is useful for form submissions where a user want to bookmark the result<br>
+There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred<br>
+Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)<br>
+Notes on the "post" method:<br>
+
+This method sends the form-data as an HTTP post transaction<br>
+Form submissions with the "post" method cannot be bookmarked<br>
+The "post" method is more robust and secure than "get", and "post" does not have size limitations<br>
+The formtarget Attribute<br>
+The input formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.<br>
+
+Note: This attribute overrides the target attribute of the form element.<br>
+
+The formtarget attribute works with the following input types: submit and image.<br>
+The formnovalidate Attribute<br>
+The input formnovalidate attribute specifies that an input element should not be validated when submitted.<br>
+
+Note: This attribute overrides the novalidate attribute of the form element.<br>
+
+The formnovalidate attribute works with the following input types: submit.<br>
+The novalidate Attribute<br>
+The novalidate attribute is a form attribute.<br>
+
+When present, novalidate specifies that all of the form-data should not be validated when submitted.<br>
+<xmp>
+    HTML Form and Input Elements
+Tag	Description
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+</xmp>
+
+        </p>
+
+</body>
+
+</html>

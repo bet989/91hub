@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h4> A1  CSS HOME  <h4> 
+        <P>CSS is the language we use to style an HTML document.<br>
+
+        CSS describes how HTML elements should be displayed.<br></p>
+     <h4> A2  CSS INTRODUCTION <h4>
+        <p>
+        css isthe language we use to style a Web page.<br>
+             
+      CSS stands for Cascading Style Sheets<br>
+      CSS describes how HTML elements are to be displayed on screen, paper, or in other media<br>
+     CSS saves a lot of work. It can control the layout of multiple web pages all at once <br>
+    External stylesheets are stored in CSS files<br></p>
+
+
+     <h4> A3  CSS SYNTAX <h4>
+        <p> A CSS rule consists of a selector and a declaration block.<br>
+         The selector points to the HTML element you want to style.<br>
+
+          The declaration block contains one or more declarations separated by semicolons.<br>
+
+      Each declaration includes a CSS property name and a value, separated by a colon.<br>
+
+     Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.<br></p>
+     
+
+     <h4> A4  CSS SELECTOR <h4> 
+       <p>
+        A CSS selector selects the HTML element(s) you want to style.<br>
+         We can divide CSS selectors into five categories:.<br>
+
+          1 Simple selectors (select elements based on name, id, class).<br>
+         
+           2 Combinator selectors (select elements based on a specific relationship between them).<br>
+              
+           3 Pseudo-class selectors (select elements based on a certain state).<br>
+          4  pseud-element  selectors (select and style a part of an element).<br>
+           5  Attribute selectors (select elements based on an attribute or attribute value).<br>
+             The CSS element Selector.<br>
+
+               The element selector selects HTML elements based on the element name..<br>
+               The CSS id Selector.<br>
+
+            The id selector uses the id attribute of an HTML element to select a specific element. .<br>
+
+            The id of an element is unique within a page, so the id selector is used to select one unique element!.<br>
+
+             To select an element with a specific id, write a hash (#) character, followed by the id of the element..<br>
+             The CSS class Selector
+
+The class selector selects HTML elements with a specific class attribute..<br>
+
+To select elements with a specific class, write a period (.) character, followed by the class name..<br>
+The CSS Universal Selector
+
+The universal selector (*) selects all HTML elements on the page..<br>
+The CSS Grouping Selector .<br>
+
+The grouping selector selects all the HTML elements with the same style definitions..<br>
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions):.<br>
+It will be better to group the selectors, to minimize the codE..<br></p>
+
+To group selectors, separate each selector with a comma..<br>
+<xmp>  All CSS Simple Selectors
+Selector           	Example       	Example description
+#id 	              #firstname   	Selects the element with id="firstname"
+.class            	.intro            	Selects all elements with class="intro"
+element.class      	p.intro   	Selects only p elements with class="intro"
+*                    *        Selects all elements 
+element             	p         	Selects all p elements
+element,element,.. 	div, p  	Selects all div elements and all p elements</xmp> 
+     
+
+    <h4>A5  CSS HOW TO <h> 
+     <p>
+       How To Add CSS.<br>
+    When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.<br>
+     Three Ways to Insert CSS.<br>
+    There are three ways of inserting a style sheet:.<br>
+     
+      1 External CSS.<br>
+      2 Internal CSS.<br>
+      3 Inline CSS.<br>
+      External CSS.<br>
+      With an external style sheet, you can change the look of an entire website by changing just one file!.<br>
+     
+     Each HTML page must include a reference to the external style sheet file inside the link element, inside the head section.<br> 
+     An external style sheet can be written in any text editor, and must be saved with a .css extension..<br>
+
+     The external .css file should not contain any HTML tags..<br>
+     Internal CSS.<br>
+An internal style sheet may be used if one single HTML page has a unique style..<br>
+
+The internal style is defined inside the style element, inside the head section..<br>
+Inline CSS .<br>
+An inline style may be used to apply a unique style for a single element..<br>
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.<br>
+Multiple Style Sheets.<br>
+If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.<br>
+Cascading Order.<br>
+What style will be used when there is more than one style specified for an HTML element?.<br>
+
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:<br>
+
+Inline style (inside an HTML element).<br>
+External and internal style sheets (in the head section).<br>
+Browser default .<br>
+So, an inline style has the highest priority, and will override external and internal styles and browser defaults.<br></p>
+
+
+
+  <h4> A6  CSS COMMENTS <h4> 
+   <p>CSS Comments.<br>
+   CSS comments are not displayed in the browser, but they can help document your source code.HTML and CSS Comments<br>
+   
+   
+   CSS Comments.<br>
+   Comments are used to explain the code, and may help when you edit the source code at a later date..<br>
+   
+   Comments are ignored by browsers..<br>
+   
+  A CSS comment is placed inside the style element, and starts with /* and ends with */:.<br>
+   HTML and CSS Comments
+From the HTML tutorial, you learned that you can add comments to your HTML source by using the  <!--...--> syntax..<br>
+
+In the following example, we use a combination of HTML and CSS comments:.<br></p>
+
+
+
+
+     <h2> A7A CSS COLORS <h2> 
+       <h2> colors </h2>
+       <p>
+       CSS Colors.<br>
+       Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values..<br>
+       
+       CSS Color Names<br>
+       In CSS, a color can be specified by using a predefined color name:.<br>
+       CSS Background Color<br>
+You can set the background color for HTML elements:.<br>
+CSS Text Color.<br>
+You can set the color of text:.<br>
+CSS Border Color.<br>
+You can set the color of borders:.<br>
+CSS Color Values.<br>
+In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:.<br>
+
+Same as color name "Tomato":.<br></p>
+
+
+
+       <h2> A7B  RGB </h2>
+       <p>
+       CSS RGB Colors.<br>
+An RGB color value represents RED, GREEN, and BLUE light sources..<br>
+
+RGB Value.<br> 
+In CSS, a color can be specified as an RGB value, using this formula:.<br>
+
+rgb(red, green, blue).<br>
+
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255..<br>
+
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.<br>
+
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0)..<br>
+
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255)..<br>
+
+Experiment by mixing the RGB values below:.<br>
+Shades of gray are often defined using equal values for all the 3 light sources:.<br>
+RGBA Value
+RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.<br>
+
+An RGBA color value is specified with:.<br>
+
+rgba(red, green, blue, alpha).<br>
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):.<br></p>
+
+
+
+
+
+       <h2> A7C HEX </h2>
+       <p>CSS HEX Colors.<br>
+       A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.<br>
+       
+       HEX Value.<br>
+       In CSS, a color can be specified using a hexadecimal value in the form:.<br>
+       
+       #rrggbb.<br>
+       
+       Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).<br>
+       
+       For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).<br>
+       
+       Experiment by mixing the HEX values below.<br>
+       Shades of gray are often defined using equal values for all the 3 light sources:.<br>
+       3 Digit HEX Value.<br>
+Sometimes you will see a 3-digit hex code in the CSS source..<br>
+
+The 3-digit hex code is a shorthand for some 6-digit hex codes..<br>
+
+The 3-digit hex code has the following form:.<br>
+
+#rgb.<br>
+
+Where r, g, and b represents the red, green, and blue components with values between 0 and f..<br>
+
+The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each components. So, if we have #ff00cc, it can be written like this: #f0c.<br></p>
+
+       <h4> A7D HSL </h4>
+       <p>CSS HSL Colors.<br>
+       HSL stands for hue, saturation, and lightness..<br>
+       
+       HSL Value.<br>
+       In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:.<br>
+       
+       hsl(hue, saturation, lightness).<br>
+       
+       Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue..<br>
+       
+       Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color..<br>
+       
+       Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white<br>
+       
+       Experiment by mixing the HSL values below:<br>
+       Saturation
+Saturation can be described as the intensity of a color.<br>
+
+100% is pure color, no shades of gray<br>
+
+50% is 50% gray, but you can still see the color.<br>
+
+0% is completely gray, you can no longer see the color.<br>
+Lightness<br>
+The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).<br>
+Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0% to 100% to get darker/lighter shades:<br>
+HSLA Value<br>
+HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.<br>
+
+An HSLA color value is specified with:<br>
+
+hsla(hue, saturation, lightness, alpha)<br>
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):<br>
+
+Experiment by mixing the HSLA values below:<br></p>
+
+
+<h4> A8 CSS BACKGROUNDS <h4> 
+  <h4> A8A  background color <H4>
+ <p>
+   CSS Backgrounds<br>
+The CSS background properties are used to add background effects for elements.<br>
+CSS background-color<br>
+The background-color property specifies the background color of an element.<br>
+With CSS, a color is most often specified by:<br>
+
+a valid color name - like "red"<br>
+a HEX value - like "#ff0000"<br>
+an RGB value - like "rgb(255,0,0)"<br>
+Other Elements<br>
+You can set the background color for any HTML elements:<br>
+Opacity / Transparency<br>
+The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:<br>
+Transparency using RGBA<br>
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:<br>
+An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).<br></p>
+
+  <h4> A8B background image </h4>
+ <p> 
+CSS background-image<br>
+The background-image property specifies an image to use as the background of an element.<br>
+
+By default, the image is repeated so it covers the entire element.<br>
+Note: When using a background image, use an image that does not disturb the text.<br>
+
+The background image can also be set for specific elements, like the p element:<br></p>
+  <h4> A8C background repeat </h4>
+ <p> 
+   CSS Background Repeat<br>
+CSS background-repeat<br>
+By default, the background-image property repeats an image both horizontally and vertically.<br>
+
+Some images should be repeated only horizontally or vertically, or they will look strange, like this:<br>
+Tip: To repeat an image vertically, set background-repeat: repeat-y;<br>
+
+CSS background-repeat: no-repeat<br>
+Showing the background image only once is also specified by the background-repeat property:<br>
+CSS background-position<br>
+The background-position property is used to specify the position of the background image<br></p>
+  <h4> A8D  background attachment </h4>
+ <p> 
+   CSS Background Attachment<br>
+CSS background-attachment<br>
+The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):<br></p>
+
+  <h4>  A8E background shorthand</h4>
+  <p>
+    CSS Background Shorthand<br>
+CSS background - Shorthand property<br>
+To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.<br>
+You can use the shorthand property background:<br>
+When using the shorthand property the order of the property values is:<br>
+
+background-color<br>
+background-image<br>
+background-repeat<br>
+background-attachment<br>
+background-position<br>
+It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value.<br></p>
+<xmp> <p>All CSS Background Properties
+Property	Description
+background	Sets all the background properties in one declaration
+<p>background-attachment	Sets whether a background image is fixed or scrolls with the rest of the page
+<p>background-clip	Specifies the painting area of the background
+<p>background-color	Sets the background color of an element
+<p>background-image	Sets the background image for an element
+<p>background-origin	Specifies where the background image(s) is/are positioned
+<p>background-position	Sets the starting position of a background image
+<p>background-repeat	Sets how a background image will be repeated
+<p>background-size	Specifies the size of the background image(s)</xmp>
+
+
+                         
+      <h4> A9 CSS BORDERS <h4>
+        <h4>A9A borders</h4>
+        <p>
+        The CSS border properties allow you to specify the style, width, and color of an element's border.<br>
+        CSS Border Style<br>
+
+        The border-style property specifies what kind of border to display.<br>
+        
+        The following values are allowed:<br>
+        
+           dotted - Defines a dotted border<br>
+            dashed - Defines a dashed border<br>
+            solid - Defines a solid border<br>
+            double - Defines a double border<br>
+            groove - Defines a 3D grooved border. The effect depends on the border-color value<br>
+            ridge - Defines a 3D ridged border. The effect depends on the border-color value<br>
+            inset - Defines a 3D inset border. The effect depends on the border-color value<br>
+            outset - Defines a 3D outset border. The effect depends on the border-color value<br>
+            none - Defines no border<br>
+            hidden - Defines a hidden border<br>
+        
+        The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).<br>
+        Note: None of the OTHER CSS border properties (which you will learn more about in the next chapters) will have ANY effect unless the border-style property is set!  <br> </p>  
+ <h4>A9B border WIDTH</h4>
+ <p>
+ CSS Border Width<br>
+CSS Border Width<br>
+
+The border-width property specifies the width of the four borders.<br>
+
+The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick:<br>
+Specific Side Widths<br>
+
+The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border):<br></p>
+ <h4> A9C border color  </h4>
+ <p>
+CSS Border Color<br>
+CSS Border Color<br>
+
+The border-color property is used to set the color of the four borders.<br>
+
+The color can be set by:<br>
+
+ name - specify a color name, like "red"<br>
+ HEX - specify a HEX value, like "#ff0000"<br>
+ RGB - specify a RGB value, like "rgb(255,0,0)"<br>
+ HSL - specify a HSL value, like "hsl(0, 100%, 50%)"<br>
+ transparent
+
+Note: If border-color is not set, it inherits the color of the element.<br>
+Specific Side Colors<br>
+
+The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). <br>
+HEX Values<br>
+
+The color of the border can also be specified using a hexadecimal value (HEX):<br>
+RGB Values<br>
+
+Or by using RGB values:<br>
+HSL Values<br>
+
+You can also use HSL values:<br></p>
+ <h2> border side </h2>
+ <p>
+ CSS Border Sides<br>
+CSS Border - Individual Sides<br>
+
+From the examples on the previous pages, you have seen that it is possible to specify a different border for each side.<br>
+
+In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):<br>
+So, here is how it works:<br>
+
+If the border-style property has four values:<br>
+
+ border-style: dotted solid double dashed;<br>
+     top border is dotted<br>
+     right border is solid<br>
+     bottom border is double<br>
+     left border is dashed<br>
+
+If the border-style property has three values:<br>
+
+ border-style: dotted solid double;<br>
+     top border is dotted<br>
+     right and left borders are solid<br>
+     bottom border is double<br>
+
+If the border-style property has two values:<br>
+
+ border-style: dotted solid;<br>
+     top and bottom borders are dotted<br>
+     right and left borders are solid<br>
+
+If the border-style property has one value:<br>
+
+ border-style: dotted;<br>
+     all four borders are dotted<br>
+     The border-style property is used in the example above. However, it also works with border-width and border-color.<br></p>
+ <h4>A9D borde shorthand</h4>
+ <p>
+ CSS Shorthand Border Property<br>
+CSS Border - Shorthand Property<br>
+
+Like you saw in the previous page, there are many properties to consider when dealing with borders.<br>
+
+To shorten the code, it is also possible to specify all the individual border properties in one property.<br>
+
+The border property is a shorthand property for the following individual border properties:<br>
+
+ border-width<br>
+ border-style (required)<br>
+ border-color<br>
+ You can also specify all the individual border properties for just one side:<br></p>
+ <h4> A9E rounded borders </h4>
+ <p>
+   CSS Rounded Borders<br>
+CSS Rounded Borders<br>
+
+<p></p>The border-radius property is used to add rounded borders to an element:<br></p>
+<xmp> 
+All CSS Border Properties
+Property 	Description
+border 	Sets all the border properties in one declaration
+border-bottom 	Sets all the bottom border properties in one declaration
+border-bottom-color 	Sets the color of the bottom border
+border-bottom-style 	Sets the style of the bottom border
+border-bottom-width 	Sets the width of the bottom border
+border-color 	Sets the color of the four borders
+border-left 	Sets all the left border properties in one declaration
+border-left-color 	Sets the color of the left border
+border-left-style 	Sets the style of the left border
+border-left-width 	Sets the width of the left border
+border-radius 	Sets all the four border-*-radius properties for rounded corners
+border-right 	Sets all the right border properties in one declaration
+border-right-color 	Sets the color of the right border
+border-right-style 	Sets the style of the right border
+border-right-width 	Sets the width of the right border
+border-style 	Sets the style of the four borders
+border-top 	Sets all the top border properties in one declaration
+border-top-color 	Sets the color of the top border
+border-top-style 	Sets the style of the top border
+border-top-width 	Sets the width of the top border
+border-width 	Sets the width of the four borders
+</xmp>
+
+<h4> A10 CSS MARGINS <h4> 
+  <h4> A10A margins </h4>
+  <p>
+    CSS Margins<br>
+
+Margins are used to create space around elements, outside of any defined borders.<br>
+CSS Margins<br>
+
+The CSS margin properties are used to create space around elements, outside of any defined borders.<br>
+
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).<br>
+Margin - Individual Sides<br>
+
+CSS has properties for specifying the margin for each side of an element:<br>
+
+   margin-top<br>
+   margin-right<br>
+      margin-bottom<br>
+       margin-left<br>
+
+         All the margin properties can have the following values:<br>
+
+             auto - the browser calculates the margin<br>
+             length - specifies a margin in px, pt, cm, etc.<br>
+                % - specifies a margin in % of the width of the containing element<br>
+                 inherit - specifies that the margin should be inherited from the parent element<br>
+
+                   Tip: Negative values are allowed.<br>
+                     Margin - Shorthand Property<br>
+
+  To shorten the code, it is possible to specify all the margin properties in one property.<br>
+
+        The margin property is a shorthand property for the following individual margin properties:<br>
+
+                            margin-top<br>
+                               margin-right<br>
+                               margin-bottom<br>
+                                 margin-left<br>
+
+So, here is how it works:<br>
+
+ If the margin property has four values:<br>
+
+    margin: 25px 50px 75px 100px;<br>
+      top margin is 25px<br>
+        right margin is 50px<br>
+         bottom margin is 75px<br>
+            left margin is 100px<br>
+               If the margin property has three values:<br>
+
+                margin: 25px 50px 75px;<br>
+                  top margin is 25px<br>
+                      right and left margins are 50px<br>
+                      bottom margin is 75px<br>
+                        If the margin property has two values:<br>
+
+                           margin: 25px 50px;<br>
+                            top and bottom margins are 25px<br>
+                             right and left margins are 50px<br>
+                                f the margin property has one value:<br>
+
+   margin: 25px;<br>
+    all four margins are 25px<br>
+      The auto Value<br>
+
+        You can set the margin property to auto to horizontally center the element within its container.<br>
+                 
+          The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.<br>
+            The inherit Value
+
+             This example lets the left margin of the p class="ex1"element be inherited from the parent element  div<br></p>
+                   
+  <h4> A10B margin collapse </h4>
+  <p>
+     CSS Margin Collapse<br>
+
+   Sometimes two margins collapse into a single margin.<br>
+     Margin Collapse<br>
+
+       Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.<br>
+
+         This does not happen on left and right margins! Only top and bottom margins!<br>
+
+           Look at the following example:<br></p>
+<xmp>
+All CSS Margin Properties
+Property 	Description
+margin 	A shorthand property for setting the margin properties in one declaration<br>
+margin-bottom 	Sets the bottom margin of an element<br>
+margin-left 	Sets the left margin of an element<br>
+margin-right 	Sets the right margin of an element<br>
+margin-top 	Sets the top margin of an element 
+</xmp>
+
+ <h4> A11 CSS PADDING <h4>  
+   <p>
+      CSS Padding<br>
+
+      Padding is used to create space around an element's content, inside of any defined borders.<br>
+        CSS Padding<br>
+
+         The CSS padding properties are used to generate space around an element's content, inside of any defined borders.<br>
+
+           With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).<br>
+             Padding - Individual Sides<br>
+
+               CSS has properties for specifying the padding for each side of an element:<br>
+
+                  padding-top<br>
+                     padding-right<br>
+                     padding-bottom<br>
+                        padding-left<br>
+
+                         All the padding properties can have the following values:<br>
+
+                            length - specifies a padding in px, pt, cm, etc.<br>
+                               % - specifies a padding in % of the width of the containing element<br>
+   inherit - specifies that the padding should be inherited from the parent element<br>
+
+   Note: Negative values are not allowed.<br>
+     Padding - Shorthand Property<br>
+
+       To shorten the code, it is possible to specify all the padding properties in one property.<br>
+
+         The padding property is a shorthand property for the following individual padding properties:<br>
+
+            padding-top<br>
+             padding-right<br>
+               padding-bottom<br>
+                 padding-left<br>
+
+                   So, here is how it works:<br>
+
+                     If the padding property has four values:<br>
+
+                       padding: 25px 50px 75px 100px;<br>
+                          top padding is 25px<br>
+                            right padding is 50px<br>
+                              bottom padding is 75px<br>
+                                left padding is 100px<br>
+     If the padding property has three values:<br>
+
+        padding: 25px 50px 75px;<br>
+         top padding is 25px<br>
+          right and left paddings are 50px<br>
+            bottom padding is 75px<br>
+               If the padding property has two values:<br>
+
+                padding: 25px 50px;<br>
+                  top and bottom paddings are 25px<br>
+            right and left paddings are 50px<br>
+            If the padding property has one value:<br>
+
+                  padding: 25px;<br>
+                all four paddings are 25px<br>
+                       Padding and Element Width<br>
+
+             The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).<br>
+                 
+    So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.<br></p>
+                 <xmp>
+                   All CSS Padding Properties
+Property 	Description
+padding 	A shorthand property for setting all the padding properties in one declaration
+padding-bottom 	Sets the bottom padding of an element
+padding-left 	Sets the left padding of an element
+padding-right 	Sets the right padding of an element
+padding-top 	Sets the top padding of an element
+                 </xmp>                     
+       <h4> A12 CSS HEIGHT/WIDTH <h4> 
+         <p>
+          CSS Height and Width<br>
+
+            The CSS height and width properties are used to set the height and width of an element.<br>
+         
+             The CSS max-width property is used to set the maximum width of an element.<br>
+               CSS Setting height and width<br>
+
+                 The height and width properties are used to set the height and width of an element.<br>
+
+                   The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.<br>
+                     CSS height and width Values<br>
+
+               The height and width properties may have the following values:<br>
+
+                         auto - This is default. The browser calculates the height and width<br>
+                           length - Defines the height/width in px, cm etc.<br>
+                              % - Defines the height/width in percent of the containing block<br>
+                               initial - Sets the height/width to its default value<br>
+                                  inherit - The height/width will be inherited from its parent value<br>
+                                   Note: Remember that the height and width properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!<br>
+                                     Setting max-width<br>
+
+                                       The max-width property is used to set the maximum width of an element.<br>
+
+   The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).<br>
+
+     The problem with the div above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.<br>
+
+       Using max-width instead, in this situation, will improve the browser's handling of small windows.<br>
+
+         Tip: Drag the browser window to smaller than 500px wide, to see the difference between the two divs!<br>
+           Note: If you for some reason use both the width property and the max-width property on the same element, and the value of the width property is larger than the max-width property; the max-width property will be used (and the width property will be ignored).<br></p>
+<xmp>
+All CSS Dimension Properties
+Property 	Description
+height 	Sets the height of an element
+max-height 	Sets the maximum height of an element
+max-width 	Sets the maximum width of an element
+min-height 	Sets the minimum height of an element
+min-width 	Sets the minimum width of an element
+width 	Sets the width of an element
+</xmp>
+
+ <h4> A13 CSS BOX MODEL <h4> 
+   <p>
+   CSS Box Model<br>
+
+   All HTML elements can be considered as boxes.<br>
+     The CSS Box Model<br>
+   
+        In CSS, the term "box model" is used when talking about design and layout.<br>
+   
+         The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:<br>
+            Explanation of the different parts:<br>
+
+             Content - The content of the box, where text and images appear<br>
+                Padding - Clears an area around the content. The padding is transparent<br>
+                  Border - A border that goes around the padding and content<br>
+                   Margin - Clears an area outside the border. The margin is transparent<br>
+
+                     The box model allows us to add a border around elements, and to define space between elements. <br>
+                        Width and Height of an Element<br>
+
+                         In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.<br>
+Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.<br>
+
+Here is the calculation:<br>
+ The total width of an element should be calculated like this:<br>
+
+   Total element width = width + left padding + right padding + left border + right border + left margin + right margin<br>
+
+     The total height of an element should be calculated like this:<br>
+
+       Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin<br></p>
+            
+<h4>A14  CSS OUTLINE <h1>
+<h4> A14A outline </h4>
+<p>
+  CSS Outline<br>
+
+ An outline is a line drawn outside the element's border.<br>
+   CSS Outline<br>
+
+     An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".<br>
+       CSS has the following outline properties:<br>
+
+         outline-style<br>
+            outline-color<br>
+              outline-width<br>
+               outline-offset<br>
+                  outline<br>
+
+                   Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.<br>
+                     CSS Outline Style<br>
+
+                       The outline-style property specifies the style of the outline, and can have one of the following values:<br>
+
+                          dotted - Defines a dotted outline<br>
+                           dashed - Defines a dashed outline<br>
+                              solid - Defines a solid outline<br>
+                                 double - Defines a double outline<br>
+                                  groove - Defines a 3D grooved outline<br>
+                                    ridge - Defines a 3D ridged outline<br>
+                 inset - Defines a 3D inset outline<br>
+                 outset - Defines a 3D outset outline<br>
+                   none - Defines no outline<br>
+                     <p> hidden - Defines a hidden outline<br>
+
+                       The following example shows the different outline-style values:<br>
+                       Note: None of the other outline properties (which you will learn more about in the next chapters) will have ANY effect unless the outline-style property is set!<br>
+
+<H4> A14B outline width </h2>
+CSS Outline Width<br>
+
+ The outline-width property specifies the width of the outline, and can have one of the following values:<br>
+
+    thin (typically 1px)<br>
+       medium (typically 3px)<br>
+       thick (typically 5px)<br>
+          A specific size (in px, pt, cm, em, etc)<br></P>
+
+<h4> A14C outline color </h4>
+<P>
+  CSS Outline Color<br>
+ CSS Outline Color<br>
+
+ The outline-color property is used to set the color of the outline.<br>
+
+     The color can be set by:<br>
+
+       name - specify a color name, like "red"<br>
+         HEX - specify a hex value, like "#ff0000"<br>
+             RGB - specify a RGB value, like "rgb(255,0,0)"<br>
+              HSL - specify a HSL value, like "hsl(0, 100%, 50%)"<br>
+                 invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)<br>
+                  HEX Values<br>
+
+                   The outline color can also be specified using a hexadecimal value (HEX):<br>
+                     RGB Values<br>
+
+                       Or by using RGB values:<br>
+                         HSL Values<br>
+
+                           You can also use HSL values:<br>
+                               Invert Color<br>
+
+                                 The following example uses outline-color: invert, which performs a color inversion. This ensures that the outline is visible, regardless of color background:<br></P>
+
+
+
+<h4> A14D outline shorthand </h4>
+<p> CSS Outline Shorthand<br>
+ CSS Outline - Shorthand property<br>
+
+   The outline property is a shorthand property for setting the following individual outline properties:<br>
+
+      outline-width<br>
+        outline-style (required)<br>
+           outline-color<br>
+
+           The outline property is specified as one, two, or three values from the list above. The order of the values does not matter.<br></P>
+<h4> A14E outline off set </h4>
+<p>CSS Outline Offset<br>
+ CSS Outline Offset<br>
+
+   The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.<br>
+
+   The following example specifies an outline 15px outside the border edge:<br>
+<xmp>
+All CSS Outline Properties
+Property 	Description
+outline 	A shorthand property for setting outline-width, outline-style, and outline-color in one declaration
+outline-color 	Sets the color of an outline
+outline-offset 	Specifies the space between an outline and the edge or border of an element
+outline-style 	Sets the style of an outline
+outline-width 	Sets the width of an outline
+</xmp>
+
+
+<h4>   CSS TEXT <h4> 
+ <h4> A15A text color </h4> 
+ <p> CSS Text<br>
+
+   CSS has a lot of properties for formatting text.<br>
+     Text Color<br>
+
+       The color property is used to set the color of the text. The color is specified by:<br>
+
+           a color name - like "red"<br>
+            a HEX value - like "#ff0000"<br>
+              an RGB value - like "rgb(255,0,0)"<br>
+
+               Look at CSS Color Values for a complete list of possible color values.<br>
+
+                 The default text color for a page is defined in the body selector.<br>
+
+
+                   Note: For W3C compliant CSS: If you define the color property, you must also define the background-color.<br>
+ Text Color and Background Color<br>
+
+     In this example, we define both the background-color property and the color property:<br></P>
+
+ <h4> A15B text alignment </h4>
+ <p> CSS Text Alignment<br>
+   Text Alignment<br>
+
+     The text-align property is used to set the horizontal alignment of a text.<br>
+
+       A text can be left or right aligned, centered, or justified.<br>
+
+         The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):<br>
+           When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):<br>
+             Text Direction<br>
+
+               The direction and unicode-bidi properties can be used to change the text direction of an element:<br>
+                 Vertical Alignment<br>
+
+                   The vertical-align property sets the vertical alignment of an element.<br></P>
+ <h4> A15C text decoration </h4>
+ <p>CSS Text Decoration<br>
+   Text Decoration<br>
+
+     The text-decoration property is used to set or remove decorations from text.<br>
+
+       The value text-decoration: none; is often used to remove underlines from links:<br>
+         The other text-decoration values are used to decorate text:
+           Note: It is not recommended to underline text that is not a link, as this often confuses the reader.<br></P>
+ <h4>  A15D text transformation </h4>
+ <p>CSS Text Transformation<br>
+   Text Transformation<br>
+
+     The text-transform property is used to specify uppercase and lowercase letters in a text.<br>
+
+       It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:<br></P>
+ <h4> A15E text spacing </h4>
+ <p>CSS Text Spacing<br>
+   Text Indentation<br>
+
+     The text-indent property is used to specify the indentation of the first line of a text:<br>
+       Letter Spacing<br>
+
+         The letter-spacing property is used to specify the space between the characters in a text.<br>
+
+           The following example demonstrates how to increase or decrease the space between characters:<br>
+             Line Height<br>
+
+               The line-height property is used to specify the space between lines:<br>
+                 Word Spacing<br>
+
+                   The word-spacing property is used to specify the space between the words in a text.<br>
+
+                     The following example demonstrates how to increase or decrease the space between words:<br>
+                       White Space<br>
+
+                         The white-space property specifies how white-space inside an element is handled.<br>
+
+                           This example demonstrates how to disable text wrapping inside an element:<br></P>
+ <h4> A15F text shdow </h4>
+ CSS Text Shadow<br>
+   Text Shadow<br>
+
+     The text-shadow property adds shadow to text.<br>
+
+       In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):<br>
+<xmp>
+All CSS Text Properties
+Property 	Description
+color 	Sets the color of text
+direction 	Specifies the text direction/writing direction
+letter-spacing 	Increases or decreases the space between characters in a text
+line-height 	Sets the line height
+text-align 	Specifies the horizontal alignment of text
+text-decoration 	Specifies the decoration added to text
+text-indent 	Specifies the indentation of the first line in a text-block
+text-shadow 	Specifies the shadow effect added to text
+text-transform 	Controls the capitalization of text
+text-overflow 	Specifies how overflowed content that is not displayed should be signaled to the user<br>
+unicode-bidi 	Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document<br>
+vertical-align 	Sets the vertical alignment of an element
+white-space 	Specifies how white-space inside an element is handled
+word-spacing 	Increases or decreases the space between words in a text
+</xmp>
+
+ <h4> A16 CSS FONTS<h4>  
+   <h4>  A16Afont family </h4>
+   <p>CSS Fonts<br>
+
+     Choosing the right font for your website is important!<br>
+       Font Selection is Important<br>
+
+         Choosing the right font has a huge impact on how the readers experience a website.<br>
+
+           The right font can create a strong identity for your brand.<br>
+
+             Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.<br>
+               Generic Font Families<br>
+
+                 In CSS there are five generic font families:<br>
+
+                   Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.<br>
+                   Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.<br>
+                        Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. <br>
+                          Cursive fonts imitate human handwriting.<br>
+                            Fantasy fonts are decorative/playful fonts.<br>
+
+                              All the different font names belong to one of the generic font families. <br>
+                               Note: On computer screens, sans-serif fonts are considered easier to read than serif fonts.<br>
+                                 The CSS font-family Property<br>
+
+                                   In CSS, we use the font-family property to specify the font of a text.<br>
+
+                                     The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma.<br>
+
+                                       Note: If the font name is more than one word, it must be in quotation marks, like: "Times New Roman"<br></p>
+
+   <h4> A16B font web safe </h4>
+   <p>CSS Web Safe Fonts<br>
+     What are Web Safe Fonts?<br>
+
+       Web safe fonts are fonts that are universally installed across all browsers and devices.<br>
+         Fallback Fonts<br>
+
+           However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is not installed properly.<br>
+
+             Therefore, it is very important to always use fallback fonts.<br>
+
+               This means that you should add a list of similar "backup fonts" in the font-family property. If the first font does not work, the browser will try the next one, and the next one, and so on. Always end the list with a generic font family name.<br>
+                 Best Web Safe Fonts for HTML and CSS<br>
+
+                   The following list are the best web safe fonts for HTML and CSS:<br>
+
+                      Arial (sans-serif)<br>
+ Verdana (sans-serif) <br>
+ Helvetica (sans-serif)<br>
+ Tahoma (sans-serif)<br>
+ Trebuchet MS (sans-serif)<br>
+ Times New Roman (serif)<br>
+ Georgia (serif)<br>
+ Garamond (serif)<br>
+ Courier New (monospace)<br>
+ Brush Script MT (cursive)<br>
+
+Note: Before you publish your website, always check how your fonts appear on different browsers and devices, and always use fallback fonts!<br>
+Arial (sans-serif)<br>
+
+Arial is the most widely used font for both online and printed media. Arial is also the default font in Google Docs.<br>
+
+Arial is one of the safest web fonts, and it is available on all major operating systems.<br>
+Verdana (sans-serif)<br>
+
+Verdana is a very popular font. Verdana is easily readable even for small font sizes.<br>
+Helvetica (sans-serif)<br>
+
+The Helvetica font is loved by designers. It is suitable for many types of business.<br>
+Tahoma (sans-serif)<br>
+
+The Tahoma font has less space between the characters.<br>
+Trebuchet MS (sans-serif)<br>
+
+Trebuchet MS was designed by Microsoft in 1996. Use this font carefully. Not supported by all mobile operating systems.<br>
+Times New Roman (serif)<br>
+
+Times New Roman is one of the most recognizable fonts in the world. It looks professional and is used in many newspapers and "news" websites. It is also the primary font for Windows devices and applications.<br>
+Georgia (serif)<br>
+
+Georgia is an elegant serif font. It is very readable at different font sizes, so it is a good candidate for mobile-responsive design.<br>
+Garamond (serif)<br>
+
+Garamond is a classical font used for many printed books. It has a timeless look and good readability.<br>
+Courier New (monospace)
+
+Courier New is the most widely used monospace serif font. Courier New is often used with coding displays, and many email providers use it as their default font. Courier New is also the standard font for movie screenplays.<br>
+Brush Script MT (cursive)<br>
+
+The Brush Script MT font was designed to mimic handwriting. It is elegant and sophisticated, but can be hard to read. Use it carefully.<br></P>
+
+   <h4> A16C font fallback </h4>
+  <p>CSS Font Fallbacks<br>
+Commonly Used Font Fallbacks<br>
+
+Below are some commonly used font fallbacks, organized by the 5 generic font families:<br>
+
+ Serif<br>
+ Sans-serif<br>
+ Monospace<br>
+ Cursive<br>
+ Fantasy<br>
+
+Serif Fonts<br>
+Sans-Serif Fonts<br>
+Monospace Fonts<br>
+Cursive Fonts<br>
+Fantasy Fonts <br></p>
+
+   <h4> A16D font style </h4>
+  <p>CSS Font Style<br>
+Font Style<br>
+
+The font-style property is mostly used to specify italic text.<br>
+
+This property has three values:<br>
+
+ normal - The text is shown normally<br>
+ italic - The text is shown in italics<br>
+ oblique - The text is "leaning" (oblique is very similar to italic, but less supported)<br>
+ Font Weight<br>
+
+ The font-weight property specifies the weight of a font:<br>
+ Font Variant<br>
+
+The font-variant property specifies whether or not a text should be displayed in a small-caps font.<br>
+
+In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text. <br></p>
+
+   <h4> 16E font size </h4>
+  <p> CSS Font Size<br>
+Font Size<br>
+
+The font-size property sets the size of the text.<br>
+
+Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+
+Always use the proper HTML tags, like h1 - h6 for headings and p for paragraphs.<br>
+
+The font-size value can be an absolute, or relative size.<br>
+
+Absolute size:<br>
+
+ Sets the text to a specified size<br>
+ Does not allow a user to change the text size in all browsers (bad for accessibility reasons)<br>
+ Absolute size is useful when the physical size of the output is known<br>
+
+Relative size:<br>
+
+ Sets the size relative to surrounding elements<br>
+ Allows a user to change the text size in browsers<br>
+
+Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).<br>
+Set Font Size With Pixels<br>
+
+Setting the text size with pixels gives you full control over the text size:<br>
+Tip: If you use pixels, you can still use the zoom tool to resize the entire page.<br>
+Set Font Size With Em<br>
+
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.<br>
+
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.<br>
+
+The size can be calculated from pixels to em using this formula: pixels/16=em<br>
+Use a Combination of Percent and Em
+
+The solution that works in all browsers, is to set a default font-size in percent for the body element:<br>
+Responsive Font Size
+
+The text size can be set with a vw unit, which means the "viewport width".
+
+That way the text size will follow the size of the browser window:<br>
+Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm. <br></p>
+   <h4> A16F  font google</h4>
+  <P> Google Fonts<br>
+
+If you do not want to use any of the standard fonts in HTML, you can use Google Fonts.<br>
+
+Google Fonts are free to use, and have more than 1000 fonts to choose from.<br>
+How To Use Google Fonts<br>
+
+Just add a special style sheet link in the head section and then refer to the font in the CSS.<br>
+Note: When specifying a font in CSS, always list at minimum one fallback font (to avoid unexpected behaviors). So, also here you should add a generic font family (like serif or sans-serif) to the end of the list.
+Use Multiple Google Fonts<br>
+
+To use multiple Google fonts, just separate the font names with a pipe character (|), like this:<br>
+Note: Requesting multiple fonts may slow down your web pages! So be careful about that.<br>
+Styling Google Fonts
+
+Of course you can style Google Fonts as you like, with CSS!<br>
+Enabling Font Effects<br>
+
+Google have also enabled different font effects that you can use.<br>
+
+First add effect=effectname to the Google API, then add a special class name to the element that is going to use the special effect. The class name always starts with font-effect- and ends with the effectname.
+To request multiple font effects, just separate the effect names with a pipe character (|), like this:</P>
+   <h4> A16G font pairings </h4>
+  <P> CSS Great Font Pairings<br>
+Great font pairings are essential to great design.<br>
+
+Font Pairing Rules<br>
+Here are some basic rules to create great font pairings:<br>
+
+1. Complement<br>
+It is always safe to find font pairings that complement one another.<br>
+
+A great font combination should harmonize, without being too similar or too different.<br>
+
+2. Use Font Superfamilies<br>
+A font superfamily is a set of fonts designed to work well together. So, using different fonts within the same superfamily is safe.
+
+For example, the Lucida superfamily contains the following fonts: Lucida Sans, Lucida Serif, Lucida Typewriter Sans, Lucida Typewriter Serif and Lucida Math.
+
+3. Contrast is King<br>
+Two fonts that are too similar will often conflict. However, contrasts, done the right way, brings out the best in each font.
+
+Example: Combining serif with sans serif is a well known combination.<br>
+
+A strong superfamily includes both serif and sans serif variations of the same font (e.g. Lucida and Lucida Sans).<br>
+
+4. Choose Only One Boss<br>
+One font should be the boss. This establishes a hierarchy for the fonts on your page. This can be achieved by varying the size, weight and color.
+Georgia and Verdana<br>
+Georgia and Verdana is a classic combination. It also sticks to the web safe font standards:<br>
+Helvetica and Garamond<br>
+Helvetica and Garamond is another classic combination that uses web safe fonts:<br>
+Popular Google Font Pairings<br>
+If you do not want to use standard fonts in HTML, you can use Google Fonts.<br>
+
+Google Fonts are free to use, and have more than 1000 fonts to choose from.<br>
+
+Below are some popular Google Web Font Pairings.<br>
+
+Merriweather and Open Sans<br>
+Ubuntu and Lora<br>
+Abril Fatface and Poppins<br>
+Cinzel and Fauna One<br>
+Fjalla One and Libre Baskerville<br>
+Space Mono and Muli<br>
+Spectral and Rubik<br>
+Oswald and Noto Sans<br></P>
+
+
+   <h4>A16H font shorthang </h4>
+  <P> The CSS Font Property<br>
+To shorten the code, it is also possible to specify all the individual font properties in one property.<br>
+
+The font property is a shorthand property for:<br>
+
+font-style<br>
+font-variant<br>
+font-weight<br>
+font-size/line-height<br>
+font-family<br>
+Note: The font-size and font-family values are required. If one of the other values is missing, their default value are used.
+<xmp>
+
+All CSS Font Properties<br>
+Property	Description<br>
+font	Sets all the font properties in one declaration<br>
+font-family	Specifies the font family for text<br>
+font-size	Specifies the font size of text<br>
+font-style	Specifies the font style for text<br>
+font-variant	Specifies whether or not a text should be displayed in a small-caps font<br>
+font-weight	Specifies the weight of a font<br>
+</xmp>
+
+                     
+<h4> A17 CSS ICONS <h4> 
+  <p>
+ CSS Icons<br>
+ Icons can easily be added to your HTML page, by using an icon library.<br>
+ How To Add Icons<br>
+ The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.<br>
+ 
+ Add the name of the specified icon class to any inline HTML element (like i or span).<br>
+ 
+ All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)<br>
+ Font Awesome Icons<br>
+ To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the head section of your HTML page:<br> </p>
+ 
+<xmp>script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"script </xmp>
+Bootstrap Icons<br>
+To use the Bootstrap glyphicons, add the following line inside the head section of your HTML page:<br>
+
+<xmp> link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" </xmp>
+
+
+Note: No downloading or installation is required!     
+Google Icons
+To use the Google icons, add the following line inside the head section of your HTML page:
+
+<xmp>link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" </xmp>
+
+Note: No downloading or installation is required!   <br>      
+   <h4> A18 CSS LINK <h4>
+    <p> CSS Links<br>
+     With CSS, links can be styled in many different ways.<br>
+     Styling Links<br>
+     Links can be styled with any CSS property (e.g. color, font-family, background, etc.).<br>
+     In addition, links can be styled differently depending on what state they are in.<br>
+
+     The four links states are:<br>
+     
+     a:link - a normal, unvisited link<br>
+     a:visited - a link the user has visited<br>
+     a:hover - a link when the user mouses over it<br>
+     a:active - a link the moment it is clicked<br>
+     When setting the style for several link states, there are some order rules:<br>
+
+     a:hover MUST come after a:link and a:visited<br>
+     a:active MUST come after a:hover<br>
+     Text Decoration<br>
+     The text-decoration property is mostly used to remove underlines from links:<br>
+     Background Color<br>
+     The background-color property can be used to specify a background color for links:<br>
+     Link Buttons<br>
+This example demonstrates a more advanced example where we combine several CSS properties to display links as boxes/buttons:<br></p>
+
+<h4> A19 CSS LISTS <h4>
+<P> CSS Lists<br>
+HTML Lists and CSS List Properties<br>
+In HTML, there are two main types of lists:<br>
+
+unordered lists (ul) - the list items are marked with bullets<br>
+ordered lists (ol) - the list items are marked with numbers or letters<br>
+The CSS list properties allow you to:<br>
+
+Set different list item markers for ordered lists<br>
+Set different list item markers for unordered lists<br>
+Set an image as the list item marker<br>
+Add background colors to lists and list items<br>
+Different List Item Markers<br>
+The list-style-type property specifies the type of list item marker.<br>
+Note: Some of the values are for unordered lists, and some for ordered lists.<br>
+An Image as The List Item Marker<br>
+
+The list-style-image property specifies an image as the list item marker:<br>
+Position The List Item Markers<br>
+The list-style-position property specifies the position of the list-item markers (bullet points).<br>
+
+"list-style-position: outside;" means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default:
+"list-style-position: inside;" means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start:
+Remove Default Settings<br>
+The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to <ul> or <ol>:
+List - Shorthand property<br>
+The list-style property is a shorthand property. It is used to set all the list properties in one declaration:<br>
+When using the shorthand property, the order of the property values are:<br>
+
+list-style-type (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)
+list-style-position (specifies whether the list-item markers should appear inside or outside the content flow)<br>
+list-style-image (specifies an image as the list item marker)<br>
+If one of the property values above are missing, the default value for the missing property will be inserted, if any.<br>
+
+Styling List With Colors
+We can also style lists with colors, to make them look a little more interesting.<br>
+
+Anything added to the ol or ul tag, affects the entire list, while properties added to the li tag will affect the individual list items:<br></p>
+<xmp>
+ All CSS List Properties
+ Property	Description
+ list-style	Sets all the properties for a list in one declaration
+ list-style-image	Specifies an image as the list-item marker
+ list-style-position	Specifies the position of the list-item markers (bullet points)
+ list-style-type	Specifies the type of list-item marker
+
+</xmp>
+
+<h4> A20  CSS TABLES  <h4>
+  <h4> A20A  table border </h4>
+<P> CSS Tables<br>
+ The look of an HTML table can be greatly improved with CSS:<br>
+ Table Borders<br>
+To specify table borders in CSS, use the border property.<br>
+
+The example below specifies a black border for table, th, and td>elements:<br>
+Full-Width Table<br>
+The table above might seem small in some cases. If you need a table that should span the entire screen (full-width), add width: 100% to the table element:
+Double Borders<br>
+Notice that the table in the examples above have double borders. This is because both the table and the th and td elements have separate borders.
+Collapse Table Borders<br>
+The border-collapse property sets whether the table borders should be collapsed into a single border:<br>
+If you only want a border around the table, only specify the border property for table:<br></p>
+<h4> A20B  table size</h4>
+<p>
+CSS Table Size<br>
+Table Width and Height<br>
+The width and height of a table are defined by the width and height properties.<br></p>
+<h4>  A20C   table alignment </h4>
+<p> CSS Table Alignment<br>
+Horizontal Alignment<br>
+The text-align property sets the horizontal alignment (like left, right, or center) of the content in th or td.<br>
+
+By default, the content of th elements are center-aligned and the content of td elements are left-aligned.<br>
+
+To center-align the content of  td elements as well, use text-align: center:<br>
+To left-align the content, force the alignment of th elements to be left-aligned, with the text-align: left property:<br>
+
+ Vertical Alignment
+ The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in th or td.<br>
+ 
+ By default, the vertical alignment of the content in a table is middle (for both th and td elements).<br>
+ 
+ The following example sets the vertical text alignment to bottom for td elements:<br>
+   Horizontal Dividers<br>
+   Add the border-bottom property to th and td for horizontal dividers: <br></p>
+     
+<h4> A20D  table style </h4>
+<p> CSS Table Style<br>
+Table Padding<br>
+To control the space between the border and the content in a table, use the padding property on td and th<br>
+
+Hoverable Table<br>
+     Use the :hover selector on tr to highlight table rows on mouse over:<br>
+       Striped Tables<br>
+       For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:<br>
+       Table Color<br>
+The example below specifies the background color and text color of th elements:<br>
+<h4> A20E table Responsive</h4>
+<p>  Responsive Table<br>
+A responsive table will display a horizontal scroll bar if the screen is too small to display the full content:<br>
+Add a container element (like div) with overflow-x:auto around the table element to make it responsive:<br>
+Note: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).<br></p>
+<xmp>
+ CSS Table Properties
+ Property	Description
+ border	Sets all the border properties in one declaration
+ border-collapse	Specifies whether or not table borders should be collapsed
+ border-spacing	Specifies the distance between the borders of adjacent cells
+ caption-side	Specifies the placement of a table caption
+ empty-cells	Specifies whether or not to display borders and background on empty cells in a table
+ table-layout	Sets the layout algorithm to be used for a table 
+</xmp>
+
+   <h4> A21  CSS DISPLAY <h4>
+     <P>
+     CSS Layout - The display Property<br>
+     The display property is the most important CSS property for controlling layout.<br>
+     
+     The display Property<br>
+     The display property specifies if/how an element is displayed.<br>
+     
+     Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
+     
+     Block-level Elements<br></P>
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+<xmp>Examples of block-level elements:<br>
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+</xmp>
+Inline Elements<br>
+An inline element does not start on a new line and only takes up as much width as necessary.<br>
+
+This is an inline span element inside a paragraph.<br>
+
+Examples of inline elements:<br>
+
+span <br>
+a   <br>
+img   <br>
+Display: none;<br>
+display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+
+The script element uses display: none; as default. <br>
+Override The Default Display Value<br>
+As mentioned, every element has a default display value. However, you can override this.<br>
+
+Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.
+
+A common example is making inline li elements for horizontal menus:<br>
+Note: Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is. So, an inline element with display: block; is not allowed to have other block elements inside it.
+Hide an Element - display:none or visibility:hidden?<br>
+Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there:
+visibility:hidden; also hides an element.<br>
+
+However, the element will still take up the same space as before. The element will be hidden, but still affect the layout:
+<xmp>
+CSS Display/Visibility Properties
+Property	Description
+display	Specifies how an element should be displayed
+visibility	Specifies whether or not an element should be visible
+
+</xmp>
+
+
+
+
+       <h4> A22 CSS MAX-WIDTH<h4> 
+         <P>
+         CSS Layout - width and max-width<br>
+Using width, max-width and margin: auto;<br>
+As mentioned in the previous chapter; a block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:
+
+This div element has a width of 500px, and margin set to auto.<br>
+
+Note: The problem with the div above occurs when the browser window is smaller than the width of the element. The browser then adds a horizontal scrollbar to the page.
+
+Using max-width instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:
+
+This div element has a max-width of 500px, and margin set to auto.<br>
+
+Tip: Resize the browser window to less than 500px wide, to see the difference between the two divs!<br></P>
+
+     <h4> A23 CSS POSITION <h4> 
+       <P>
+       CSS Layout - The position Property<br>
+The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+
+The position Property<br>
+The position property specifies the type of positioning method used for an element.<br>
+
+There are five different position values:<br>
+
+static<br>
+relative<br>
+fixed<br>
+absolute<br>
+sticky<br>
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+position: static;<br>
+HTML elements are positioned static by default.<br>
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.<br>
+
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+This div element has position: static;<br>
+An element with position: relative; is positioned relative to its normal position.<br>
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+This div element has position: relative;<br>
+position: fixed;<br>
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.<br>
+
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:<br>
+position: absolute;<br>
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.<br>
+
+Here is a simple example:<br>
+
+This div element has position: relative;This div element has position: absolute;<br>
+position: sticky;<br>
+An element with position: sticky; is positioned based on the user's scroll position.<br>
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Note: Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example below). You must also specify at least one of top, right, bottom or left for sticky positioning to work.
+Overlapping Elements<br>
+When elements are positioned, they can overlap other elements.<br>
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+
+An element can have a positive or negative stack order:<br>
+
+An element with greater stack order is always in front of an element with a lower stack order.<br>
+
+Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.
+
+Positioning Text In an Image<br>
+How to position text over an image:<br></P>
+<xmp>
+All CSS Positioning Properties
+Property	Description
+bottom	Sets the bottom margin edge for a positioned box
+clip	Clips an absolutely positioned element
+left	Sets the left margin edge for a positioned box
+position	Specifies the type of positioning for an element
+right	Sets the right margin edge for a positioned box
+top	Sets the top margin edge for a positioned box
+z-index	Sets the stack order of an element
+</xmp>
+
+              <h4> A24 CSS OVERFLOW <h4>
+               CSS Layout - Overflow<br>
+               The CSS overflow property controls what happens to content that is too big to fit into an area.<br>
+               CSS Overflow<br>
+The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+
+The overflow property has the following values:<br>
+
+visible - Default. The overflow is not clipped. The content renders outside the element's box<br>
+hidden - The overflow is clipped, and the rest of the content will be invisible<br>
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content<br>
+auto - Similar to scroll, but it adds scrollbars only when necessary<br>
+Note: The overflow property only works for block elements with a specified height.<br>
+
+Note: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).
+
+overflow: visible<br>
+By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:<br>
+
+You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+overflow: scroll<br>
+Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):
+overflow: auto<br>
+The auto value is similar to scroll, but it adds scrollbars only when necessary<br>
+overflow-x and overflow-y<br>
+The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both):
+
+overflow-x specifies what to do with the left/right edges of the content.<br>
+overflow-y specifies what to do with the top/bottom edges of the content.<br>
+<xmp>
+
+All CSS Overflow Properties<br>
+Property	Description<br>
+overflow	Specifies what happens if content overflows an element's box<br>
+overflow-x	Specifies what to do with the left/right edges of the content if it overflows the element's content area<br>
+overflow-y	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area<br>
+</xmp>
+      <h4> A25 CSS FLOAT <h4> 
+        <h4> A25A float </h4>
+        <P>
+        CSS Layout - float and clear<br>
+        The CSS float property specifies how an element should float.<br>
+        
+        The CSS clear property specifies what elements can float beside the cleared element and on which side.<br>
+        The float Property<br>
+The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The float property can have one of the following values:<br>
+
+left - The element floats to the left of its container<br>
+right - The element floats to the right of its container<br>
+none - The element does not float (will be displayed just where it occurs in the text). This is default<br>
+inherit - The element inherits the float value of its parent<br>
+In its simplest use, the float property can be used to wrap text around images.<br>
+
+Example - float: right;<br>
+The following example specifies that an image should float to the right in a text:<br>
+Example - No float<br>
+In the following example the image will be displayed just where it occurs in the text (float: none;):
+Example - Float Next To Each Other<br>
+Normally div elements will be displayed on top of each other. However, if we use float: left we can let elements float next to each other
+
+        <h4> A25B clear </h4>
+        CSS Layout - clear and clearfix<br>
+The clear Property<br>
+When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+
+The clear property specifies what should happen with the element that is next to a floating element.<br>
+
+The clear property can have one of the following values:<br>
+
+none - The element is not pushed below left or right floated elements. This is default<br>
+left - The element is pushed below left floated elements<br>
+right - The element is pushed below right floated elements<br>
+both - The element is pushed below both left and right floated elements<br>
+inherit - The element inherits the clear value from its parent<br>
+When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.:<br>
+The clearfix Hack<br>
+If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem::<br>
+The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages::<br></P>
+
+        <h4>A25C float example </h4>
+        <xmp>
+         All CSS Float Properties
+         Property	Description
+         box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not
+         clear	Specifies what should happen with the element that is next to a floating element
+         float	Specifies whether an element should float to the left, right, or not at all
+         overflow	Specifies what happens if content overflows an element's box
+       </xmp>
+       <h4> A26 CSS INLINE-BLOCK <h4>  
+         <P>
+         overflow-x	Specifies what to do with the left/right edges of the content if it overflows the element's content area
+         overflow-y	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area
+         
+         
+         CSS Layout - display: inline-block<br>
+The display: inline-block Value<br>
+Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.:<br>
+
+Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.:<br>
+
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.:<br>
+
+The following example shows the different behavior of display: inline, display: inline-block and display: block:<br>
+Using inline-block to Create Navigation Links
+One common use for display: inline-block is to display list items horizontally instead of vertically. The following example creates horizontal navigation links::<br></P>
+
+        
+
+          <h4> A27 CSS ALIGN <h4> 
+            <P>
+           CSS Layout - Horizontal & Vertical Align<br>
+           Center Align Elements<br>
+To horizontally center a block element (like div), use margin: auto;<br>
+
+Setting the width of the element will prevent it from stretching out to the edges of its container.<br>
+
+The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+Note: Center aligning has no effect if the width property is not set (or set to 100%).<br>
+
+Center Align Text<br>
+To just center the text inside an element, use text-align: center;<br>
+Center an Image<br>
+To center an image, set left and right margin to auto and make it into a block element:<br>
+Left and Right Align - Using position<br>
+One method for aligning elements is to use position: absolute;:<br>
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.<br>
+Left and Right Align - Using float<br>
+Another method for aligning elements is to use the float property:<br>
+The clearfix Hack<br>
+Note: If an element is taller than the element containing it, and it is floated, it will overflow outside of its container. You can use the "clearfix hack" to fix this (see example below).
+Center Vertically - Using padding<br>
+There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding:<br>
+To center both vertically and horizontally, use padding and text-align: center:<br>
+Center Vertically - Using line-height<br>
+Another trick is to use the line-height property with a value that is equal to the height property:<br>
+Center Vertically - Using position & transform<br>
+If padding and line-height are not options, another solution is to use positioning and the transform property:<br>
+Center Vertically - Using Flexbox<br>
+You can also use flexbox to center things. Just note that flexbox is not supported in IE10 and earlier versions:<br></P>
+
+             <h4> A28 CSS COMBINATION <h4> 
+               <P>
+               CSS Combinators<br>
+CSS Combinators<br>
+A combinator is something that explains the relationship between the selectors.<br>
+
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.<br>
+
+There are four different combinators in CSS:<br>
+
+descendant selector (space)<br>
+child selector (>)<br>
+adjacent sibling selector (+)<br>
+general sibling selector (~)<br>
+Descendant Selector<br>
+The descendant selector matches all elements that are descendants of a specified element.<br>
+Child Selector (>)<br>
+The child selector selects all elements that are the children of a specified element.<br>
+Adjacent Sibling Selector (+)<br>
+The adjacent sibling selector is used to select an element that is directly after another specific element.<br>
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".<br>
+General Sibling Selector (~)<br>
+The general sibling selector selects all elements that are next siblings of a specified element.<br></P>
+<xmp>
+All CSS Combinator Selectors
+Selector	Example	Example description
+element element	div p	Selects all p elements inside div elements
+element>element	div > p	Selects all p elements where the parent is a div element
+element+element	div + p	Selects the first p element that are placed immediately after div elements
+element1~element2	p ~ ul	Selects every ul element that are preceded by a p element
+</xmp>
+        <h4> A29 CSS PSEUDO-CLASS <h4>
+           <P>
+         CSS Pseudo-classes<br>
+         What are Pseudo-classes?<br>
+         A pseudo-class is used to define a special state of an element.<br>
+         Syntax<br>
+The syntax of pseudo-classes:<br>
+Anchor Pseudo-classes<br>
+Links can be displayed in different ways:<br>
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive
+
+Pseudo-classes and CSS Classes<br>
+Pseudo-classes can be combined with CSS classes:<br>
+
+When you hover over the link in the example, it will change color:<br>
+Hover on div<br>
+An example of using the :hover pseudo-class on a div element<br>
+Simple Tooltip Hover<br>
+Hover over a div element to show a p element (like a tooltip):<br>
+
+Hover over me to show the p element.<br>
+CSS - The :first-child Pseudo-class<br>
+The :first-child pseudo-class matches a specified element that is the first child of another element.<br>
+
+Match the first p element<br>
+In the following example, the selector matches any p element that is the first child of any element<br>
+
+Match the first i element in all p elements<br>
+In the following example, the selector matches the first i element in all p elements:<br>
+Match all i elements in all first child p elements<br>
+ In the following example, the selector matches all i elements in p elements that are the first child of another element:
+ CSS - The :lang Pseudo-class<br>
+The :lang pseudo-class allows you to define special rules for different languages.<br>
+
+In the example below, :lang defines the quotation marks for <q> elements with lang="no":<br></P>
+<xmp>
+ All CSS Pseudo Classes
+ Selector	Example	Example description
+ :active	a:active	Selects the active link
+ :checked	input:checked	Selects every checked input element
+ :disabled	input:disabled	Selects every disabled input element
+ :empty	p:empty	Selects every p element that has no children
+ :enabled	input:enabled	Selects every enabled input element
+ :first-child	p:first-child	Selects every p elements that is the first child of its parent
+ :first-of-type	p:first-of-type	Selects every p element that is the first p element of its parent
+ :focus	input:focus	Selects the <input> element that has focus
+ :hover	a:hover	Selects links on mouse over
+ :in-range	input:in-range	Selects <input> elements with a value within a specified range
+ :invalid	input:invalid	Selects all <input> elements with an invalid value
+ :lang(language)	p:lang(it)	Selects every <p> element with a lang attribute value starting with "it"
+ :last-child	p:last-child	Selects every <p> elements that is the last child of its parent
+ :last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+ :link	a:link	Selects all unvisited links
+ :not(selector)	:not(p)	Selects every element that is not a <p> element
+ :nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+ :nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child
+ :nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+ :nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent
+ :only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
+ :only-child	p:only-child	Selects every <p> element that is the only child of its parent
+ :optional	input:optional	Selects <input> elements with no "required" attribute
+ :out-of-range	input:out-of-range	Selects <input> elements with a value outside a specified range
+ :read-only	input:read-only	Selects <input> elements with a "readonly" attribute specified
+ :read-write	input:read-write	Selects <input> elements with no "readonly" attribute
+ :required	input:required	Selects <input> elements with a "required" attribute specified
+ :root	root	Selects the document's root element
+ :target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+ :valid	input:valid	Selects all <input> elements with a valid value
+ :visited	a:visited	Selects all visited links
+ All CSS Pseudo Elements
+ Selector	Example	Example description
+ ::after	p::after	Insert content after every <p> element
+ ::before	p::before	Insert content before every <p> element
+ ::first-letter	p::first-letter	Selects the first letter of every <p> element
+ ::first-line	p::first-line	Selects the first line of every <p> element
+ ::selection	p::selection	Selects the portion of an element that is selected by a user
+ 
+
+
+</xmp>
+
+   <h4> A30 CSS PSEUDO-ELEMENT <h4>
+     <P>
+     CSS Pseudo-elements<br>
+     What are Pseudo-Elements?<br>
+     A CSS pseudo-element is used to style specified parts of an element.<br>
+     
+     For example, it can be used to:<br>
+     
+     Style the first letter, or line, of an element<br>
+     Insert content before, or after, the content of an element<br>
+     Syntax<br>
+     The syntax of pseudo-elements:<br>
+     The ::first-line Pseudo-element
+The ::first-line pseudo-element is used to add a special style to the first line of a text.<br>
+Note: The ::first-line pseudo-element can only be applied to block-level elements.<br>
+
+The following properties apply to the ::first-line pseudo-element:<br>
+
+font properties<br>
+color properties<br>
+background properties<br>
+word-spacing<br>
+letter-spacing<br>
+text-decoration<br>
+vertical-align<br>
+text-transform<br>
+line-height<br>
+clear<br>
+Notice the double colon notation - ::first-line versus :first-line<br>
+
+The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.<br>
+
+The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.<br>
+
+For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.<br>
+The ::first-letter Pseudo-element<br>
+The ::first-letter pseudo-element is used to add a special style to the first letter of a text.<br>
+Note: The ::first-letter pseudo-element can only be applied to block-level elements.<br>
+
+The following properties apply to the ::first-letter pseudo- element: <br>
+
+font properties<br>
+color properties <br>
+background properties<br>
+margin properties<br>
+padding properties<br>
+border properties<br>
+text-decoration<br>
+vertical-align (only if "float" is "none")<br>
+text-transform<br>
+line-height<br>
+float<br>
+clear<br>
+Pseudo-elements and CSS Classes<br>
+Pseudo-elements can be combined with CSS classes: <br>
+
+Multiple Pseudo-elements<br>
+Several pseudo-elements can also be combined.<br>
+
+In the following example, the first letter of a paragraph will be red, in an xx-large font size. The rest of the first line will be blue, and in small-caps. The rest of the paragraph will be the default font size and color:<br>
+CSS - The ::before Pseudo-element<br>
+The ::before pseudo-element can be used to insert some content before the content of an element.<br>
+CSS - The ::after Pseudo-element<br>
+The ::after pseudo-element can be used to insert some content after the content of an element.<br>
+CSS - The ::marker Pseudo-element<br>
+The ::marker pseudo-element selects the markers of list items.<br>
+CSS - The ::selection Pseudo-element<br>
+The ::selection pseudo-element matches the portion of an element that is selected by a user.<br>
+
+The following CSS properties can be applied to ::selection: color, background, cursor, and outline.<br>
+
+The following example makes the selected text red on a yellow background:<br></P>
+<xmp>
+All CSS Pseudo Elements
+Selector	Example	Example description
+::after	p::after	Insert something after the content of each p element
+::before	p::before	Insert something before the content of each p element
+::first-letter	p::first-letter	Selects the first letter of each p element
+::first-line	p::first-line	Selects the first line of each p element
+::marker	::marker	Selects the markers of list items
+::selection	p::selection	Selects the portion of an element that is selected by a user
+All CSS Pseudo Classes
+Selector	Example	Example description
+:active	a:active	Selects the active link
+:checked	input:checked	Selects every checked input element
+:disabled	input:disabled	Selects every disabled input element
+:empty	p:empty	Selects every p element that has no children
+:enabled	input:enabled	Selects every enabled input element
+:first-child	p:first-child	Selects every p elements that is the first child of its parent
+:first-of-type	p:first-of-type	Selects every p element that is the first p element of its parent
+:focus	input:focus	Selects the input element that has focus
+:hover	a:hover	Selects links on mouse over
+:in-range	input:in-range	Selects input elements with a value within a specified range
+:invalid	input:invalid	Selects all input elements with an invalid value
+:lang(language)	p:lang(it)	Selects every p element with a lang attribute value starting with "it"
+:last-child	p:last-child	Selects every p elements that is the last child of its parent
+:last-of-type	p:last-of-type	Selects every p element that is the last p element of its parent
+:link	a:link	Selects all unvisited links
+:not(selector)	:not(p)	Selects every element that is not a p element
+:nth-child(n)	p:nth-child(2)	Selects every p element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2)	Selects every p element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every p element that is the second p element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2)	Selects every p element that is the second p element of its parent
+:only-of-type	p:only-of-type	Selects every p element that is the only p element of its parent
+:only-child	p:only-child	Selects every p element that is the only child of its parent
+:optional	input:optional	Selects input elements with no "required" attribute
+:out-of-range	input:out-of-range	Selects input elements with a value outside a specified range
+:read-only	input:read-only	Selects input elements with a "readonly" attribute specified
+:read-write	input:read-write	Selects input elements with no "readonly" attribute
+:required	input:required	Selects input elements with a "required" attribute specified
+:root	root	Selects the document's root element
+:target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid	input:valid	Selects all input elements with a valid value
+:visited	a:visited	Selects all visited links
+
+</xmp>
+
+
+ <h4>31 CSS OPACITY <h4>
+   <P>
+   CSS Opacity / Transparency<br>
+   The opacity property specifies the opacity/transparency of an element.<br>
+   
+   Transparent Image<br>
+   The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:<br>
+   Transparent Hover Effect<br>
+The opacity property is often used together with the :hover selector to change the opacity on mouse-over:<br>
+Transparent Box<br>
+When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read:<br>
+Transparency using RGBA<br>
+If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text:<br></P>
+
+
+
+   <h4> A32 CSS NAVIGATION BAR <h4>
+     <P>
+     <h4> A32A navbar </h4> 
+     CSS Navigation Bar<br>
+Demo: Navigation Bars<br>
+Navigation Bars<br>
+Having easy-to-use navigation is important for any web site.<br>
+
+With CSS you can transform boring HTML menus into good-looking navigation bars.<br>
+
+Navigation Bar = List of Links<br>
+A navigation bar needs standard HTML as a base.<br>
+
+In our examples we will build the navigation bar from a standard HTML list.<br>
+
+A navigation bar is basically a list of links, so using the ul and li elements makes perfect sense:<br></P>
+
+     <h4> A32B vertical navbar </h4>
+     <P>
+     Vertical Navigation Bar Examples<br>
+     Create a basic vertical navigation bar with a gray background color and change the background color of the links when the user moves the mouse over them:<br>     
+       CSS Vertical Navigation Bar<br>
+Vertical Navigation Bar<br>
+To build a vertical navigation bar, you can style the a elements inside the list, in addition to the code from the previous page:<br>
+Active/Current Navigation Link<br>
+Add an "active" class to the current link to let the user know which page he/she is on:<br>
+Center Links & Add Borders<br>
+Add text-align:center to li or a to center the links.<br>
+
+Add the border property to ul add a border around the navbar. If you also want borders inside the navbar, add a border-bottom to all li elements, except for the last one:<br>
+Full-height Fixed Vertical Navbar<br>
+Create a full-height, "sticky" side navigation:<br>
+Note: This example might not work properly on mobile devices.<br></P>
+
+
+     <h4> A32C horizontal navbar </h4>
+     <P>
+     CSS Horizontal Navigation Bar<br>
+Horizontal Navigation Bar<br>
+There are two ways to create a horizontal navigation bar. Using inline or floating list items.<br>
+
+Inline List Items<br>
+One way to build a horizontal navigation bar is to specify the li elements as inline, in addition to the "standard" code from the previous page:<br>
+Floating List Items<br>
+Another way of creating a horizontal navigation bar is to float the li elements, and specify a layout for the navigation links:<br>
+Horizontal Navigation Bar Examples<br>
+Create a basic horizontal navigation bar with a dark background color and change the background color of the links when the user moves the mouse over them:<br>
+
+
+Active/Current Navigation Link<br>
+Add an "active" class to the current link to let the user know which page he/she is on:<br>
+Right-Align Links<br>
+Right-align links by floating the list items to the right (float:right;):<br>
+Border Dividers<br>
+Add the border-right property to li to create link dividers:<br>
+Fixed Navigation Bar<br>
+Make the navigation bar stay at the top or the bottom of the page, even when the user scrolls the page:<br>
+Note: Fixed position might not work properly on mobile devices.<br>
+Gray Horizontal Navbar<br>
+An example of a gray horizontal navigation bar with a thin gray border:<br>
+Sticky Navbar<br>
+Add position: sticky; to ul to create a sticky navbar.<br>
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).<br>
+Note: Internet Explorer do not support sticky positioning. Safari requires a -webkit- prefix (see example above). You must also specify at least one of top, right, bottom or left for sticky positioning to work.<br></P>
+
+
+     <h4> A33 CSS DROPDOWNS <h4> 
+       <P>
+       CSS Dropdowns<br>
+       Create a hoverable dropdown with CSS.<br>
+       
+       Basic Dropdown<br>
+       Create a dropdown box that appears when the user moves the mouse over an element.<br>
+       Dropdown Menu<br>
+       Create a dropdown menu that allows the user to choose an option from a list:<br>
+       Right-aligned Dropdown Content<br>
+       If you want the dropdown menu to go from right to left, instead of left to right, add right: 0;<br>   
+     <h4> A34 CSS IMAGE GALLERY <h4> 
+       CSS Image Gallery<br>
+       CSS can be used to create an image gallery.<br>
+       Image Gallery<br>
+The following image gallery is created with CSS:<br></P>
+<h4> A35 CSS IMAGE SPRITES <h4>
+<P>
+   CSS Image Sprites<br>
+     Image Sprites<br>
+     An image sprite is a collection of images put into a single image.<br>
+     
+     A web page with many images can take a long time to load and generates multiple server requests.<br>
+     
+     Using image sprites will reduce the number of server requests and save bandwidth.<br>
+     
+     Image Sprites - Simple Example<br>
+     Instead of using three separate images, we use this single image ("img_navsprites.gif"):<br>
+     With CSS, we can show just the part of the image we need.<br>
+
+In the following example the CSS specifies which part of the "img_navsprites.gif" image to show:<br>
+Image Sprites - Create a Navigation List<br>
+We want to use the sprite image ("img_navsprites.gif") to create a navigation list.<br>
+
+We will use an HTML list, because it can be a link and also supports a background image:<br>
+Image Sprites - Hover Effect<br>
+Now we want to add a hover effect to our navigation list.<br>
+
+Tip: The :hover selector can be used on all elements, not only on links.<br></P>
+
+     
+   
+
+           <h4> A36 CSS ATTR SELECTORS <h4>
+             <P>
+             CSS Attribute Selectors<br>
+Style HTML Elements With Specific Attributes<br>
+It is possible to style HTML elements that have specific attributes or attribute values.<br>
+
+CSS [attribute] Selector<br>
+The [attribute] selector is used to select elements with a specified attribute.<br>
+
+The following example selects all a elements with a target attribute:<br>
+CSS [attribute="value"] Selector<br>
+The [attribute="value"] selector is used to select elements with a specified attribute and value.<br>
+CSS [attribute~="value"] Selector<br>
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.<br>
+
+The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower":<br>
+CSS [attribute|="value"] Selector<br>
+The [attribute|="value"] selector is used to select elements with the specified attribute starting with the specified value.<br>
+
+The following example selects all elements with a class attribute value that begins with "top":<br>
+
+Note: The value has to be a whole word, either alone, like class="top", or followed by a hyphen( - ), like class="top-text"! <br>
+CSS [attribute^="value"] Selector<br>
+The [attribute^="value"] selector is used to select elements whose attribute value begins with a specified value.<br>
+
+The following example selects all elements with a class attribute value that begins with "top":<br>
+
+Note: The value does not have to be a whole word! <br>
+CSS [attribute$="value"] Selector<br>
+The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.<br>
+
+The following example selects all elements with a class attribute value that ends with "test":<br>
+
+Note: The value does not have to be a whole word!<br>  
+CSS [attribute*="value"] Selector<br>
+The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.<br>
+
+The following example selects all elements with a class attribute value that contains "te":<br>
+
+Note: The value does not have to be a whole word!  <br>
+Styling Forms<br>
+The attribute selectors can be useful for styling forms without class or ID:<br></p>
+<xmp>
+All CSS Attribute Selectors
+Selector	Example	Example description
+[attribute]	[target]	Selects all elements with a target attribute
+[attribute=value]	[target=_blank]	Selects all elements with target="_blank"
+[attribute~=value]	[title~=flower]	Selects all elements with a title attribute containing the word "flower"
+[attribute|=value]	[lang|=en]	Selects all elements with a lang attribute value starting with "en"
+[attribute^=value]	a[href^="https"]	Selects every a element whose href attribute value begins with "https"
+[attribute$=value]	a[href$=".pdf"]	Selects every a element whose href attribute value ends with ".pdf"
+[attribute*=value]	a[href*="w3schools"]	Selects every a element whose href attribute value contains the substring "w3schools"
+
+
+</xmp>
+              <h4>  A37  CSS FORMS <h4> 
+                <p>
+               CSS Forms<br>
+               The look of an HTML form can be greatly improved with CSS:<br>
+               Styling Input Fields<br>
+Use the width property to determine the width of the input field:<br>
+Padded Inputs<br>
+Use the padding property to add space inside the text field.<br>
+
+Tip: When you have many inputs after each other, you might also want to add some margin, to add more space outside of them:<br>
+Note that we have set the box-sizing property to border-box. This makes sure that the padding and eventually borders are included in the total width and height of the elements.<br>
+Bordered Inputs<br>
+Use the border property to change the border size and color, and use the border-radius property to add rounded corners:<br>
+
+If you only want a bottom border, use the border-bottom property:<br>
+Colored Inputs<br>
+Use the background-color property to add a background color to the input, and the color property to change the text color<br>
+Focused Inputs<br>
+By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding outline: none; to the input.<br>
+
+Use the :focus selector to do something with the input field when it gets focus:<br>
+Input with icon/image<br>
+If you want an icon inside the input, use the background-image property and position it with the background-position property. Also notice that we add a large left padding to reserve the space of the icon:<br>
+Animated Search Input<br>
+In this example we use the CSS transition property to animate the width of the search input when it gets focus.<br>
+Styling Textareas<br>
+Tip: Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):<br>
+Styling Select Menus<br>
+Styling Input Buttons<br>
+Responsive Form<br>
+Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.<br></p>
+
+          <h4>  A38 CSS COUNTERS <h4>
+            <p>
+           CSS Counters<br>
+           CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). Counters let you adjust the appearance of content based on its placement in the document.<br>
+           Automatic Numbering With Counters<br>
+CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).<br>
+
+To work with CSS counters we will use the following properties:<br>
+
+counter-reset - Creates or resets a counter<br>
+counter-increment - Increments a counter value<br>
+content - Inserts generated content<br>
+counter() or counters() function - Adds the value of a counter to an element<br>
+To use a CSS counter, it must first be created with counter-reset.<br>
+Nesting Counters<br>
+A counter can also be useful to make outlined lists because a new instance of a counter is automatically created in child elements. Here we use the counters() function to insert a string between different levels of nested counters:<br>
+CSS Counter Properties<br>
+Property	Description<br>
+content	Used with the ::before and ::after pseudo-elements, to insert generated content<br>
+counter-increment	Increments one or more counter values<br>
+counter-reset	Creates or resets one or more counters<br>
+counter()	Returns the current value of the named counter<br></p>
+
+              <h4> A39  CSS WEBSITE LAYOUT <h4> 
+                <P>
+               CSS Website Layout<br>
+               Website Layout<br>
+               A website is often divided into headers, menus, content and a footer:<br>
+               Header<br>
+A header is usually located at the top of the website (or right below a top navigation menu). It often contains a logo or the website name:<br>
+Navigation Bar<br>
+A navigation bar contains a list of links to help visitors navigating through your website:<br>
+Content<br>
+The layout in this section, often depends on the target users. The most common layout is one (or combining them) of the following:<br>
+
+1-column (often used for mobile browsers)<br>
+2-column (often used for tablets and laptops)<br>
+3-column layout (only used for desktops)<br>
+Unequal Columns<br>
+The main content is the biggest and the most important part of your site.<br>
+
+It is common with unequal column widths, so that most of the space is reserved for the main content. The side content (if any) is often used as an alternative navigation or to specify information relevant to the main content. Change the widths as you like, only remember that it should add up to 100% in total:<br>
+Footer<br>
+The footer is placed at the bottom of your page. It often contains information like copyright and contact info:<br>
+Responsive Website Layout<br>
+By using some of the CSS code above, we have created a responsive website layout, which varies between two columns and full-width columns depending on screen width:<br></p>
+
+       <h4> A40  CSS UNITS <h4>  
+         <p>
+         CSS Units<br>
+CSS Units<br>
+CSS has several different units for expressing a length.<br>
+
+Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.<br>
+
+Length is a number followed by a length unit, such as 10px, 2em, etc.<br>
+Note: A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.<br>
+
+For some CSS properties, negative lengths are allowed.<br>
+
+There are two types of length units: absolute and relative.<br>
+Absolute Lengths<br>
+The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.<br>
+
+Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.<br>
+* Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.<br>
+
+Relative Lengths<br>
+Relative length units specify a length relative to another length property. Relative length units scales better between different rendering mediums.<br>
+Tip: The em and rem units are practical in creating perfectly scalable layout!<br>
+* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.<br>
+Browser Support<br>
+The numbers in the table specify the first browser version that fully supports the length unit.<br></P>
+
+             <h4> A41 CSS SPECIFICITY <h4>
+                <p>
+               CSS Specificity<br>
+What is Specificity?<br>
+If there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.<br>
+
+Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.<br>
+
+The universal selector (*) has low specificity, while ID selectors are highly specific! <br>
+
+Note: Specificity is a common reason why your CSS-rules don't apply to some elements, although you think they should.<br>
+
+Specificity Hierarchy<br>
+Every selector has its place in the specificity hierarchy. There are four categories which define the specificity level of a selector:<br>
+
+Inline styles - An inline style is attached directly to the element to be styled. Example: h1 style="color: #ffffff;".<br>
+
+IDs - An ID is a unique identifier for the page elements, such as #navbar.<br>
+
+Classes, attributes and pseudo-classes - This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.<br>
+
+Elements and pseudo-elements - This category includes element names and pseudo-elements, such as h1, div, :before and :after.<br>
+
+How to Calculate Specificity?<br>
+Memorize how to calculate specificity!<br>
+
+Start at 0, add 1000 for style attribute, add 100 for each ID, add 10 for each attribute, class or pseudo-class, add 1 for each element name or pseudo-element.<br>
+Specificity Rules<br>
+Equal specificity: the latest rule counts - If the same rule is written twice into the external style sheet, then the lower rule in the style sheet is closer to the element to be styled, and therefore will be applied:<br>
+the latter rule is always applied.<br>
+
+ID selectors have a higher specificity than attribute selectors - Look at the following three code lines:<br>
+the first rule is more specific than the other two, and will be applied.<br>
+
+Contextual selectors are more specific than a single element selector - The embedded style sheet is closer to the element to be styled. So in the following situation<br>
+the latter rule will be applied.<br>
+
+A class selector beats any number of element selectors - a class selector such as .intro beats h1, p, div, etc:<br>
+The universal selector and inherited values have a specificity of 0 - *, body * and similar have a zero specificity. Inherited values also have a specificity of 0.<br>
+
+            </p> <h4>  A42 CSS IMPORTANT <h4> 
+
+              <p>
+                CSS The !important Rule<br>
+What is !important?<br>
+The !important rule in CSS is used to add more importance to a property/value than normal.<br>
+
+In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!<br>
+Important About !important<br>
+The only way to override an !important rule is to include another !important rule on a declaration with the same (or higher) specificity in the source code - and here the problem starts! This makes the CSS code confusing and the debugging will be hard, especially if you have a large style sheet!<br>
+Tip: It is good to know about the !important rule, you might see it in some CSS source code. However, do not use it unless you absolutely have to.
+Maybe One or Two Fair Uses of !important<br>
+One way to use !important is if you have to override a style that cannot be overridden in any other way. This could be if you are working on a Content Management System (CMS) and cannot edit the CSS code. Then you can set some custom styles to override some of the CMS styles.<br>
+H<br>
+Another way to use !important is: Assume you want a special look for all buttons on a page. Here, buttons are styled with a gray background color, white text, and some padding and border:<br></p>
+
+</body>
+
+</html>
